@@ -1,28 +1,28 @@
-import * as React from "react"
+import * as React from "react";
+import { FunctionComponent, useState } from "react";
+import * as ReactDOM from "react-dom";
 import styled from "styled-components";
 import { Navbar, BrandA, Ul, Li } from "../styles.ts";
-import { FullMenu } from "./FullMenu";
+import Hamburger from "./Hamburger";
+import FullMenu from "./FullMenu";
 
 const Navigation = () => {
   const brand = { name: "Ġebla", to: "/"};
-  const links = [
-    { name: "Indoor", to: "/indoor-home"},
-    { name: "Outdoor", to: "/outdoor-home"},
-    { name: "First Time ?", to: "/first-time"}
-  ];
 
+  const [open, setOpen] = useState<boolean>(false);
+  const close = () => setOpen(false);
+  // console.log(open);
   return (
     <Navbar>
       <BrandA href="/" />
       <Ul>
-        <Li key={links[0].name}><a href={links[0].to}>{links[0].name}</a></Li>
-        <Li key={links[1].name}><a href={links[1].to}>{links[1].name}</a></Li>
-        <Li key={links[2].name}><a href={links[2].to}>{links[2].name}</a></Li>
+        <Li key={"FirstTime"}><a href={"/first-time"}>First Time ?</a></Li>
+        <Hamburger open={open} setOpen={setOpen} />
       </Ul>
+      <FullMenu open={open} setOpen={setOpen} />
     </Navbar>
   )
 };
-
 
 
 export default Navigation;

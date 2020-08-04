@@ -1,6 +1,7 @@
 import * as React from "react";
+import * as ReactDOM from "react-dom";
 import styled from "styled-components";
-import { StyledHamburger } from "../styles.ts";
+import { MenuButton } from "../styles.ts";
 
 type Props = {
   open: boolean,
@@ -8,14 +9,9 @@ type Props = {
 };
 
 const Hamburger = (props: Props) => (
-  <StyledHamburger
-    open={props.open}
-    onClick={() => props.setOpen(!props.open)}
-  >
-    <div />
-    <div />
-    <div />
-  </StyledHamburger>
+  <div>
+    <MenuButton open={props.open} onClick={() => props.setOpen(!props.open)} />
+  </div>
 );
 
 export default Hamburger;

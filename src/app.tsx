@@ -6,6 +6,8 @@ import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
 import "typeface-montserrat";
 import { CenteredPage } from "./styles";
+import { FullMenu } from "./components/FullMenu";
+
 
 class AppContainer extends React.Component {
   constructor(props) {
@@ -16,6 +18,7 @@ class AppContainer extends React.Component {
     return (
       <CenteredPage>
         <Navigation />
+        {FullMenu}
         <Router>
           <Routes />
         </Router>

@@ -2,7 +2,7 @@ import styled from "styled-components";
 import indoorImg from "../assets/img/indoor.jpg";
 import outdoorImg from "../assets/img/outdoor.jpg";
 import logo from "../assets/img/logo.png";
-
+import menuImg from "../assets/img/hamburger2.png"
 
 const Theme = {
   colors: {
@@ -83,27 +83,27 @@ export const Navbar = styled.nav`
   background: ${Theme.colors.dark};
   font-family: Montserrat;
   display: flex;
+  flex-direction: row;
   align-items: stretch;
-  justify-content: space-between;
+  flex-wrap: nowrap;
 `;
 
 export const Ul = styled.ul`
   display: flex;
   flex-wrap: nowrap;
   overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
+  align-items: stretch;
+  align-content: stretch;
 `;
 
 export const Li = styled.li`
   flex: 0 0 auto;
   align-items: center;
   height: 100%;
-  justify-content: center;
   text-decoration: none;
   -webkit-box-align: center;
   -webkit-box-pack: center;
   -webkit-tap-highlight-color: transparent;
-  align-items: center;
   display: flex;
   font-size: 18px;
   height: 50px;
@@ -171,18 +171,16 @@ export const FlexRowFill = styled.div`
   background-size: cover;
 `;
 
-
 export const StyledMenu = styled.nav<{ open: boolean }>`
   top: 0;
   right: 0;
   height: 100vh;
-  width: 35vw;
+  width: ${({ open }) => (open ? "35vw" : "0vw")};
   position: fixed;
-  background-color: ${Theme.colors.light};
-  z-index: 1;
-  padding: 10rem 0;
-  flex-direction: column;
   display: ${({ open }) => (open ? "flex" : "none")};
+  background-color: ${Theme.colors.light};
+  z-index: ${({ open }) => (open ? 1 : -1 )};
+  flex-direction: column;
 `;
 
 export const StyledLink = styled.a`
@@ -190,37 +188,24 @@ export const StyledLink = styled.a`
   font-size: 2rem;
   color: ${Theme.colors.a1};
   text-decoration: none;
-
+  href: ${props => props.href};
   :hover {
     color: ${Theme.colors.a2};
     cursor: pointer;
   }
+  h2:hover {color: ${Theme.colors.a3};};
 `;
 
-export const StyledHamburger = styled.button<{ open: boolean }>`
-  position: fixed;
-  left: 3vw;
-  top: 3vw;
-  width: 2rem;
-  height: 2rem;
-  padding: 0;
-  background: transparent;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+export const MenuButton = styled.button<{ open: boolean }>`
+  background-image: url(${menuImg});
+  background-size: contain;
+  width: 70px;
+  height: 70px;
+  margin-right: 1rem;
+  background-repeat: no-repeat;
+  background-color: ${({ open }) => open ? Theme.colors.light : Theme.colors.dark };
   border: none;
-  cursor: pointer;
-  outline: none;
-  z-index: 1;
-  div {
-    position: relative;
-    width: 2rem;
-    height: 0.25rem;
-    border-radius: 10px;
-    background-color: ${({ open }) =>
-      open ? Theme.colors.light : Theme.colors.dark};
-  }
 `;
 
 export const InfoTable = styled.div`

@@ -1,21 +1,27 @@
 import * as React from "react";
+import { FunctionComponent, useState } from "react";
 import styled from "styled-components";
 import { Navbar, BrandA, Ul, Li, StyledMenu, StyledLink } from "../styles.ts";
 
-import Hamburger from "./Hamburger";
+type MenuProps = {
+  open: boolean,
+  setOpen: (v: boolean) => void,
+};
 
-const FullMenu = () => {
-  const [open, setOpen] = useState<boolean>(false);
-  const close = () => setOpen(false);
+const FullMenu = (props: MenuProps) => {
+  const links = [
+    { name: "Indoor", to: "/indoor-home"},
+    { name: "Outdoor", to: "/outdoor-home"},
+    { name: "First Time ?", to: "/first-time"}
+  ];
+  const close = () => props.setOpen(false);
   return (
-    <div>
-      <StyledMenu open={open}>
-        <StyledLink onClick={() => close()}>Link 1</StyledLink>
-        <StyledLink onClick={() => close()}>Link 2</StyledLink>
-        <StyledLink onClick={() => close()}>Link 3</StyledLink>
-      </StyledMenu>
-      <Hamburger open={open} setOpen={setOpen} />
-     </div>
+    <StyledMenu open={props.open}>
+      <StyledLink href="/indoor-home" onClick={() => close()}><h2>Indoor</h2></StyledLink>
+
+      <StyledLink href="/outdoor-home" onClick={() => close()}><h2>Outdoor</h2></StyledLink>
+      <StyledLink onClick={() => close()}>Link 3</StyledLink>
+    </StyledMenu>
    );
 };
 
