@@ -28,10 +28,16 @@ export const CenteredPage = styled.div`
   height: 100vh;
   background-color: ${Theme.colors.light};
   font-family: ${Theme.fonts.body};
-  a {color: ${Theme.colors.a4};};
+  a {color: ${Theme.colors.a1};};
+  a:link {color: ${Theme.colors.a2}; text-decoration: none;};
+  a:link:hover {color: ${Theme.colors.a3}; text-decoration: none;};
+  a:link:active {color: ${Theme.colors.a4}; text-decoration: none;};
   h1 {color: ${Theme.colors.a1};};
   h2 {color: ${Theme.colors.a2};};
   h3 {color: ${Theme.colors.a3};};
+  h4 {color: ${Theme.colors.a4};};
+  h5 {color: ${Theme.colors.dark};};
+  h6 {color: ${Theme.colors.light};};
 `;
 
 export const FlexColumnSpaceBetween = styled.div`
@@ -92,8 +98,7 @@ export const Ul = styled.ul`
   display: flex;
   flex-wrap: nowrap;
   overflow-x: auto;
-  align-items: stretch;
-  align-content: stretch;
+  align-items: center;
 `;
 
 export const Li = styled.li`
@@ -112,9 +117,6 @@ export const Li = styled.li`
   margin: 0 10px ;
   text-decoration: none;
   white-space: nowrap;
-  a:link {color: ${Theme.colors.a2}; text-decoration: none;};
-  a:hover {color: ${Theme.colors.a3}; text-decoration: none;};
-  a:active {color: ${Theme.colors.a4}; text-decoration: none;};
   h1 {background: ${Theme.colors.light};};
   h1:hover {color: ${Theme.colors.a3}; text-decoration: none;};
   h1:active {color: ${Theme.colors.a4}; text-decoration: none;};
@@ -175,7 +177,7 @@ export const StyledMenu = styled.nav<{ open: boolean }>`
   top: 0;
   right: 0;
   height: 100vh;
-  width: ${({ open }) => (open ? "35vw" : "0vw")};
+  width: ${({ open }) => (open ? "50vw" : "0vw")};
   position: fixed;
   display: ${({ open }) => (open ? "flex" : "none")};
   background-color: ${Theme.colors.light};
@@ -194,20 +196,38 @@ export const StyledLink = styled.a`
     cursor: pointer;
   }
   h2:hover {color: ${Theme.colors.a3};};
+  h2:active {color: ${Theme.colors.a4};};
 `;
 
 
 export const MenuButton = styled.button<{ open: boolean }>`
-  background-image: url(${menuImg});
   background-size: contain;
-  width: 70px;
-  height: 70px;
-  margin-right: 1rem;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-right: 2rem;
+  margin-left: 1rem;
   background-repeat: no-repeat;
   background-color: ${({ open }) => open ? Theme.colors.light : Theme.colors.dark };
   border: none;
+  background-position: center;
+  z-index: 2;
+  div {
+    position: relative;
+    width: 2rem;
+    height: 0.25rem;
+    border-radius: 10px;
+    background-color: ${({ open }) =>
+      open ? Theme.colors.a1 : Theme.colors.a2};
+    }
+  div:hover {
+    background-color: ${Theme.colors.a4};
+  }
 `;
 
+//indoor home types
 export const InfoTable = styled.div`
   flex-direction: column;
   rows: 2;
@@ -219,9 +239,7 @@ export const InfoItems = styled.div`
   flex-direction: row;
   display: flex;
   align-content: stretch;
-  columns: 4;
-  flex-grow: 1;
-  flex: 1 0 auto;
+  height: 10vh;
   justify-content: space-evenly;
 `;
 
@@ -229,25 +247,74 @@ export const InfoItem = styled.div`
   background-image: url(${props => props.img});
   align-items: stretch;
   background-size: cover;
+  background-color: ${props => props.color};
   flex-grow: 1;
   flex-wrap: no-wrap;
   justify-content: center;
   display: flex;
   padding: 0;
   margin: 0;
-  h1 {background: ${Theme.colors.dark};};
+  h1 {color: ${({ props.isActive }) => isActive ? Theme.colors.dark : Theme.colors.light}; background: ${({ props.isActive, props.color }) => isActive ? color : Theme.colors.dark};};
+  h1:hover {color: ${Theme.colors.dark}; background: ${Theme.colors.light};};
+  h1:active {color: ${Theme.colors.dark};};
 `;
 
 export const InfoDetail = styled.div`
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-grow: 4;
+  flex-direction: column;
+  padding: 2rem;
   background-image: url(${props => props.img});
   background-size: cover;
-  h2 {background: ${Theme.colors.dark};};
-  h3 {background: ${Theme.colors.dark}; padding: 10px;};
+  h2 {background: ${Theme.colors.dark}; padding: 2rem;};
+  h3 {background: ${Theme.colors.dark}; padding: 2rem;};
 `;
 
 export const TextDetail = styled.div`
   padding = 10px;
+`;
+
+// calendar types
+export const StyledCalendar = styled.div`
+  display: flex;
+  flex-direction: column;
+  rows: 3;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background-color: ${Theme.colors.dark};
+  flex-grow: 1;
+  align-items: stretch;
+  h1 {padding-left: 2rem;};
+`;
+
+export const StyledWeek = styled.div`
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  columns: 7;
+  justify-content: flex-start;
+`;
+
+export const StyledDay = styled.div`
+  display: flex;
+  border-color: ${Theme.colors.a1};
+  border-style: dotted dashed solid dashed;
+  width: 14%;
+  flex-direction: column;
+  a {padding: 5px; font-weight: bold;};
+  a:link {color: ${Theme.colors.a2}; font-weight: normal;};
+  a:active {color: ${Theme.colors.a4}; text-decoration: none;};
+
+`;
+
+export const StyledTable = styled.table`
+  display: flex;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background-color: ${Theme.colors.dark};
+  border: 3px dotted ${Theme.colors.a1};
+  th {color: ${Theme.colors.a4}; padding-top: 1rem; padding-right: 1rem; text-align: left; border-bottom: 2px dashed ${Theme.colors.a3};};
+  td {color: ${Theme.colors.a2};};
 `;

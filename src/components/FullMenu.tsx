@@ -20,7 +20,7 @@ const FullMenu = (props: MenuProps) => {
       <StyledLink href="/indoor-home" onClick={() => close()}><h2>Indoor</h2></StyledLink>
 
       <StyledLink href="/outdoor-home" onClick={() => close()}><h2>Outdoor</h2></StyledLink>
-      <StyledLink onClick={() => close()}>Link 3</StyledLink>
+      <StyledLink href="/calendar" onClick={() => close()}>Calendar</StyledLink>
     </StyledMenu>
    );
 };

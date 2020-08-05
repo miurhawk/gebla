@@ -7,6 +7,7 @@ import FirstTime from "../FirstTime";
 import Login from "../Login";
 import CreateAccount from "../CreateAccount";
 import PersonalInformation from "../PersonalInformation";
+import Calendar from "../Calendar";
 
 export const Paths = {
   HOME: "/",
@@ -16,6 +17,7 @@ export const Paths = {
   INDOOR_HOME_PAGE: "/indoor-home",
   OUTDOOR_HOME_PAGE: "/outdoor-home",
   FIRST_TIME: "/first-time",
+  CALENDAR: "/calendar",
 };
 
 const Routes = () => {
@@ -31,6 +33,7 @@ const Routes = () => {
       <Route path={Paths.INDOOR_HOME_PAGE} exact component={IndoorHome} />
       <Route path={Paths.OUTDOOR_HOME_PAGE} exact component={OutdoorHome} />
       <Route path={Paths.FIRST_TIME} exact component={FirstTime} />
+      <Route path={Paths.CALENDAR} exact component={Calendar} />
 
     </Switch>
   );

@@ -10,7 +10,11 @@ type Props = {
 
 const Hamburger = (props: Props) => (
   <div>
-    <MenuButton open={props.open} onClick={() => props.setOpen(!props.open)} />
+    <MenuButton open={props.open} onClick={() => props.setOpen(!props.open)}>
+      <div />
+      <div />
+      <div />
+    </MenuButton>
   </div>
 );
 
