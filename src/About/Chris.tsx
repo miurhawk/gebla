@@ -22,7 +22,7 @@ const Chris = () => {
     <FlexRowFill style={{minHeight: `600px`} img={chrisImg} />
       <FlexColSmaller>
         <a>
-        <p>Chris has been climbing for years. He first learned in his native Italy, but has happily adapted to the Maltese limestone.</p>
+        <p>Chris has been climbing for 6 years. He first learned in his native Italy, but has happily adapted to the Maltese limestone.</p>
         <p>Chris is our numbers guy and his attention to detail is unparalleled.</p>
         <p>As a co-owner of Ġebla, Chris hopes to share his knowledge of climbing safety and protocols to foster a succesful next generation of climbers.</p>
         <br />
