@@ -1,14 +1,5 @@
 import * as React from "react";
-import { useState } from "react";
-import { Link } from "react-router-dom";
 import { DetailRow, FlexRowFill, GalleryDots, FlexRow, FlexColSmaller } from "../styles";
-import { FunctionComponent, useState } from "react";
-import { Tabs } from "../components/Tabs";
-import { Gallery } from "../components/Gallery";
-
-import menuImg from "../../assets/img/fenechseacliff.jpg"
-import outdoorImg from "../../assets/img/outdoor.jpg"
-import indoorImg from "../../assets/img/indoor.jpg"
 
 const steveImg = require("../../assets/img/stevedahletqorrot.jpg");
 

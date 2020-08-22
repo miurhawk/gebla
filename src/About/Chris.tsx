@@ -1,16 +1,6 @@
 import * as React from "react";
-import { useState } from "react";
-import { Link } from "react-router-dom";
 import { FlexRowFill, DetailRow, FlexRow, FlexColSmaller, FlexCol, InfoItem, InfoItemsSmall, InfoDetail, TextDetail, FlexRowFill } from "../styles";
-import { FunctionComponent, useState } from "react";
-import { Tabs } from "../components/Tabs";
-import { Gallery } from "../components/Gallery";
-
-import menuImg from "../../assets/img/lapsitr.JPG"
-import outdoorImg from "../../assets/img/outdoor.jpg"
-import indoorImg from "../../assets/img/indoor.jpg"
-
-const chrisImg = require("../../assets/img/chrisclimbing.jpeg");
+const chrisImg = require("../../assets/img/img33.jpg");
 
 
 

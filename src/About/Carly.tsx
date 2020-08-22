@@ -1,12 +1,7 @@
 import * as React from "react";
-import { useState } from "react";
-import { Link } from "react-router-dom";
 import { DetailRow, FlexRowFill, GalleryDots, FlexRow, FlexColSmaller, FlexCol, InfoItem, InfoItemsSmall, InfoDetail, TextDetail, FlexRowFill } from "../styles";
-import { FunctionComponent, useState } from "react";
-import { Tabs } from "../components/Tabs";
-import { Gallery } from "../components/Gallery";
 
-const carlyImg = require("../../assets/img/babu.jpg");
+const carlyImg = require("../../assets/img/img2.jpg");
 
 
 

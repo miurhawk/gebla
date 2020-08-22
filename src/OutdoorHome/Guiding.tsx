@@ -4,7 +4,7 @@ import { DetailRow, FlexRowFill, GalleryDots, FlexRow, FlexColSmaller, FlexCol, 
 import { FunctionComponent, useState } from "react";
 import { Tabs } from "../components/Tabs";
 
-import indoorImg from "../../assets/img/abseil.jpg"
+import indoorImg from "../../assets/img/img.jpg"
 
 
 

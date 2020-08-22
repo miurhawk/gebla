@@ -11,12 +11,10 @@ import Miura from "./Miura.tsx";
 import "typeface-montserrat";
 
 
-const logo = require("../../assets/img/logo.png");
-const miuraImg = require("../../assets/img/miura.jpg");
-const steveImg = require("../../assets/img/steve.jpg");
-const carlyImg = require("../../assets/img/carlyxini.jpg");
+const miuraImg = require("../../assets/img/img24.jpg");
+const steveImg = require("../../assets/img/img33.jpg"); //36
+const carlyImg = require("../../assets/img/img33.jpg");
 const chrisImg = require("../../assets/img/chris.jpg");
-const teamImg = require("../../assets/img/team.jpg");
 
 // type TabDetail {item: InfoItem; detail: InfoDetail;};
 // const TabDetails Array<TabDetail> = [
