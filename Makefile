@@ -1,6 +1,6 @@
 IMAGE=miurhawk/gebla
 PACKAGE_NAME=miurhawk/gebla
-BUILDVERSION=v0.8
+BUILDVERSION=v0.9
 
 .PHONY: build test start push package
 
@@ -22,7 +22,7 @@ login:
 	aws ecr get-login-password --region us-east-2 | docker login --username AWS --password-stdin 788017480756.dkr.ecr.us-east-2.amazonaws.com
 
 package:
-	 docker build -t "miurhawk/gebla:v0.7" --file Dockerfile .
+	 docker build -t "miurhawk/gebla:v0.9" --file Dockerfile .
 
 run:
 	 docker run --name gebl -d -p 8080:80 gebla:v0.7

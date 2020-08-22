@@ -32,32 +32,22 @@ const About = (props: { setTitle: (v: string) => void, }) => {
   // const Details = [BoulderingDetail, CoachingDetail];
   return (
     <InfoTable>
-      <Tabs defaultTab="Team">
+      <Tabs defaultTab="">
         <InfoItems height="40vh">
-          <Tabs.Tab label="Team" color={colorArray[Math.floor(Math.random() * colorArray.length)]}></Tabs.Tab>
           <Tabs.Tab img={steveImg} label="Steve" color={colorArray[Math.floor(Math.random() * colorArray.length)]}></Tabs.Tab>
-          <Tabs.Tab img={carlyImg} label="Carly" color={colorArray[Math.floor(Math.random() * colorArray.length)]}></Tabs.Tab>
           <Tabs.Tab img={chrisImg} label="Chris" color={colorArray[Math.floor(Math.random() * colorArray.length)]}></Tabs.Tab>
+          <Tabs.Tab img={carlyImg} label="Carly" color={colorArray[Math.floor(Math.random() * colorArray.length)]}></Tabs.Tab>
           <Tabs.Tab img={miuraImg} label="Miura" color={colorArray[Math.floor(Math.random() * colorArray.length)]}></Tabs.Tab>
         </InfoItems>
-          <Tabs.Panel label="Team">
-          <DetailRow>
-            <FlexColSmaller style={{minHeight: `600px`}}>
-            <a><p>Ġebla would be nothing without our support team! Thanks to all our friends for supporting us.</p>
 
-            </a>
-            </FlexColSmaller>
-            <FlexRowFill img={teamImg} />
-            </DetailRow>
-          </Tabs.Panel>
           <Tabs.Panel label="Steve">
             <Steve />
           </Tabs.Panel>
-          <Tabs.Panel label="Carly">
-            <Carly />
-          </Tabs.Panel>
           <Tabs.Panel label="Chris">
             <Chris />
+          </Tabs.Panel>
+          <Tabs.Panel label="Carly">
+            <Carly />
           </Tabs.Panel>
           <Tabs.Panel label="Miura">
             <Miura />
@@ -68,7 +58,18 @@ const About = (props: { setTitle: (v: string) => void, }) => {
 };
 
 export default About;
+// <Tabs.Tab label="Team" color={colorArray[Math.floor(Math.random() * colorArray.length)]}></Tabs.Tab>
 
+// <Tabs.Panel label="Team">
+// <DetailRow>
+//   <FlexColSmaller style={{minHeight: `600px`}}>
+//   <a><p>Ġebla would be nothing without our support team! Thanks to all our friends for supporting us.</p>
+//
+//   </a>
+//   </FlexColSmaller>
+//   <FlexRowFill img={teamImg} />
+//   </DetailRow>
+// </Tabs.Panel>
 
 // <p>Special shoutout to the following businesses:</p>
 // <ul>
