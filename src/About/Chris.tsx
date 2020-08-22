@@ -1,6 +1,6 @@
 import * as React from "react";
 import { FlexRowFill, DetailRow, FlexRow, FlexColSmaller, FlexCol, InfoItem, InfoItemsSmall, InfoDetail, TextDetail, FlexRowFill } from "../styles";
-const chrisImg = require("../../assets/img/img33.jpg");
+const chrisImg = require("../../assets/img/img35.jpg");
 
 
 

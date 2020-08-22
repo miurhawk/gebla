@@ -34,7 +34,7 @@ const Sport = () => {
               <FlexRowFill img={lukasImg} />
             </Gallery.GalleryItem>
             <Gallery.GalleryItem label="3">
-              <FlexRowFill img={evImg} style={{backgroundPosition: `top`}} />
+              <FlexRowFill img={evImg} style={{backgroundPosition: `left top`}} />
             </Gallery.GalleryItem>
             <Gallery.GalleryItem label="4">
               <FlexRowFill img={fenechImg} />

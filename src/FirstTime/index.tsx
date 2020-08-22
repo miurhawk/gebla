@@ -47,7 +47,7 @@ const FirstTime = (props: { setTitle: (v: string) => void, }) => {
                 <p>Email <a href="mailto:coach@gebla.mt">coach@gebla.mt</a> to schedule a lesson.</p>
               </a>
             </FlexColSmaller>
-            <FlexRowFill img={costyImg}><h1>Take a Class</h1></FlexRowFill>
+            <FlexRowFill img={costyImg} style={{backgroundPosition: `left center`}}><h1>Take a Class</h1></FlexRowFill>
 
           </DetailRow>
         </Tabs.Panel>

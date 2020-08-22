@@ -5,7 +5,7 @@ import { FunctionComponent, useState } from "react";
 import { Tabs } from "../components/Tabs";
 
 const beginnerImg = require("../../assets/img/img16.jpg");
-const towerImg = require("../../assets/img/img34.jpg");
+const towerImg = require("../../assets/img/img34.jpg");//34
 const kidsImg = require("../../assets/img/img17.jpg");
 const charlieImg = require("../../assets/img/img6.jpg");
 const multipitchImg = require("../../assets/img/img27.jpg");
