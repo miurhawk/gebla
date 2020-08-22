@@ -1,7 +1,6 @@
 import * as React from "react";
 import { Link } from "react-router-dom";
 import { FlexCol, FlexRow, FlexRowFill, InfoTable, InfoItem, InfoItems, InfoDetail, TextDetail } from "../styles";
-import shoesImg from "../../assets/img/shoesrock.jpg";
 // import { FunctionComponent, useState } from "react";
 // import { Tabs } from "../components/Tabs";
 // import Bouldering from "./Bouldering.tsx";

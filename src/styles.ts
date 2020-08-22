@@ -1,6 +1,4 @@
 import styled, { createGlobalStyle } from "styled-components";
-import indoorImg from "../assets/img/indoor.jpg";
-import outdoorImg from "../assets/img/outdoor.jpg";
 import logo from "../assets/img/logo.png";
 import "typeface-montserrat";
 import liberatorHeavyURL from "../assets/fonts/Liberator-Heavy.ttf";

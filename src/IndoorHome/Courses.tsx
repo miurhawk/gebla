@@ -6,7 +6,7 @@ import { FunctionComponent, useState } from "react";
 import { Tabs } from "../components/Tabs";
 import { Gallery } from "../components/Gallery";
 
-import indoorImg from "../../assets/img/indoor.jpg"
+import indoorImg from "../../assets/img/img3.jpg"
 
 
 

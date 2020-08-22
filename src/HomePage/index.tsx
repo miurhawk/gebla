@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { FlexRowFill, FlexRow, FlexAColumnFill } from "../styles";
 
 const indoorImg = require("../../assets/img/holds.jpg");
-const outdoorImg = require("../../assets/img/outdoor.jpg");
+const outdoorImg = require("../../assets/img/img28.jpg");
 
 
 const HomePage = () => {
@@ -15,7 +15,7 @@ const HomePage = () => {
           </FlexRowFill>
         </FlexAColumnFill>
         <FlexAColumnFill href="/outdoor-home">
-          <FlexRowFill img={outdoorImg}>
+          <FlexRowFill img={outdoorImg} style={{backgroundPosition: `top`}}>
             <h1>Outdoor</h1>
           </FlexRowFill>
         </FlexAColumnFill>

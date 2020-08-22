@@ -5,11 +5,11 @@ import { DetailRow, GalleryDots, FlexRow, FlexColSmaller, FlexCol, InfoItem, Inf
 import { FunctionComponent, useState } from "react";
 import { Gallery } from "../components/Gallery";
 import { Tabs } from "../components/Tabs";
-import lauraImg from "../../assets/img/lauraclip.JPG";
-import lukasImg from "../../assets/img/lukasoverhang.JPG";
-import evImg from "../../assets/img/evlead.JPG";
-import fenechImg from "../../assets/img/fenechseacliff.jpg";
-import suhailImg from "../../assets/img/suhail.jpg";
+import lauraImg from "../../assets/img/img20.jpg";
+import lukasImg from "../../assets/img/img21.jpg";
+import evImg from "../../assets/img/img11.jpg";
+import fenechImg from "../../assets/img/img14.jpg";
+import suhailImg from "../../assets/img/img32.jpg";
 
 
 const Sport = () => {

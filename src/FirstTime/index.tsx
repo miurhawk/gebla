@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 import { FlexRowFill, DetailRow, FullPhoto, StyledTable, FlexRow, InfoTable, FlexCol, FlexColSmaller, InfoItem, InfoItems, InfoDetail, TextDetail } from "../styles";
 import { FunctionComponent, useState } from "react";
 import { Tabs } from "../components/Tabs";
-import martinImg from "../../assets/img/carlyxini.JPG";
-import costyImg from "../../assets/img/costy.jpg";
-import ladiesImg from "../../assets/img/ladies.jpg";
-import fenechImg from "../../assets/img/fenechdescent.jpg";
+import martinImg from "../../assets/img/img4.jpg";
+import costyImg from "../../assets/img/img8.jpg";
+import ladiesImg from "../../assets/img/img18.jpg";
+import fenechImg from "../../assets/img/img13.jpg";
 
 const FirstTime = (props: { setTitle: (v: string) => void, }) => {
   props.setTitle("First Time");

@@ -4,7 +4,6 @@ import * as ReactDOM from "react-dom";
 import styled from "styled-components";
 import { GalleryContext } from "./Gallery";
 import { InfoTable, GalleryDetail, InfoItem, InfoItems, InfoDetail, LRGalleryButtons, TextDetail } from "../styles";
-const indoorImg = require("../../assets/img/indoor.jpg");
 
 interface IGalleryItemProps {
   label: number

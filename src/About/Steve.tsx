@@ -1,7 +1,7 @@
 import * as React from "react";
 import { DetailRow, FlexRowFill, GalleryDots, FlexRow, FlexColSmaller } from "../styles";
 
-const steveImg = require("../../assets/img/stevedahletqorrot.jpg");
+const steveImg = require("../../assets/img/img31.jpg");
 
 
 const Steve = () => {

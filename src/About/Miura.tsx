@@ -1,6 +1,6 @@
 import * as React from "react";
 import { DetailRow, GalleryDots, FlexRow, FlexColSmaller, FlexCol, InfoItem, InfoItemsSmall, InfoDetail, TextDetail, FlexRowFill } from "../styles";
-const miuraImg = require("../../assets/img/miuraclimbing.jpg");
+const miuraImg = require("../../assets/img/img25.jpg");
 
 
 const Miura = () => {

@@ -6,8 +6,6 @@ import { TabsContext } from "./Tabs";
 import { createBrowserHistory } from 'history';
 
 const browserHistory = createBrowserHistory();
-// const indoorImg = require("../../assets/img/indoor.jpg");
- // img={indoorImg}
 
 export interface ITabProps {
   label: string

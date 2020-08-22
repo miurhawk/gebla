@@ -4,7 +4,6 @@ import * as ReactDOM from "react-dom";
 import styled from "styled-components";
 import { TabsContext } from "./Tabs";
 import { InfoTable, InfoItem, InfoItems, InfoDetail, TextDetail } from "../styles";
-const indoorImg = require("../../assets/img/indoor.jpg");
 
 interface IPanelProps {
   label: string

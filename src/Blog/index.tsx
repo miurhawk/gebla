@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Link } from "react-router-dom";
 import { FlexCol, FlexRow, FlexRowFill, InfoTable, InfoItem, InfoItems, InfoDetail, TextDetail } from "../styles";
-import shoesImg from "../../assets/img/goetufa.jpg";
+import shoesImg from "../../assets/img/img15.jpg";
 
 
 const IndoorHome = (props: { setTitle: (v: string) => void, }) => {

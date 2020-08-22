@@ -4,12 +4,11 @@ import { FullPhoto, DetailRow, Divider, FlexRowFill, StyledTable, FlexRow, InfoT
 import { FunctionComponent, useState } from "react";
 import { Tabs } from "../components/Tabs";
 
-const indoorImg = require("../../assets/img/indoor.jpg");
-const beginnerImg = require("../../assets/img/justine.jpg");
-const towerImg = require("../../assets/img/towerpower.jpg");
-const kidsImg = require("../../assets/img/kids.jpg");
-const charlieImg = require("../../assets/img/charliemelli.jpg");
-const multipitchImg = require("../../assets/img/multipitch.jpg");
+const beginnerImg = require("../../assets/img/img16.jpg");
+const towerImg = require("../../assets/img/img34.jpg");
+const kidsImg = require("../../assets/img/img17.jpg");
+const charlieImg = require("../../assets/img/img6.jpg");
+const multipitchImg = require("../../assets/img/img27.jpg");
 
 // type TabDetail {item: InfoItem; detail: InfoDetail;};
 // const TabDetails Array<TabDetail> = [

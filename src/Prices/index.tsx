@@ -4,7 +4,6 @@ import { StyledTable, FlexCol, InfoTable, InfoItem, InfoItems, InfoDetail, TextD
 import { FunctionComponent, useState } from "react";
 import { Tabs } from "../components/Tabs";
 
-const indoorImg = require("../../assets/img/indoor.jpg");
 // <caption><a>*Student, Retired, Unemployed, or MCC/MRCC member with proof</a></caption>
 
 const Prices = (props: { setTitle: (v: string) => void, }) => {

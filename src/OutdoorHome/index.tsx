@@ -7,9 +7,6 @@ import Sport from "./Sport.tsx";
 import GuidingDetail from "./Guiding.tsx";
 import MaltaDetail from "./Malta.tsx";
 
-const indoorImg = require("../../assets/img/indoor.jpg");
-
-
 
 const OutdoorHome = (props: { setTitle: (v: string) => void, }) => {
   // const BoulderingDetail =

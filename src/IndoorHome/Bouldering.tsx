@@ -6,9 +6,9 @@ import { FunctionComponent, useState } from "react";
 import { Tabs } from "../components/Tabs";
 import { Gallery } from "../components/Gallery";
 
-import menuImg from "../../assets/img/lukasoverhang.JPG"
-import outdoorImg from "../../assets/img/outdoor.jpg"
-import indoorImg from "../../assets/img/indoor.jpg"
+import menuImg from "../../assets/img/img21.jpg"
+import outdoorImg from "../../assets/img/img28.jpg"
+import indoorImg from "../../assets/img/img3.jpg"
 
 
 
