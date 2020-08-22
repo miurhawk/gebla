@@ -1,8 +1,8 @@
-IMAGE=788017480756.dkr.ecr.us-east-2.amazonaws.com/offwidth-app
-PACKAGE_NAME=github.com/miurhawk/chalk
-BUILDVERSION=v0.0.1
+IMAGE=miurhawk/gebla
+PACKAGE_NAME=miurhawk/gebla
+BUILDVERSION=v0.8
 
-.PHONY: build test start push
+.PHONY: build test start push package
 
 all: build start
 start:
@@ -11,9 +11,9 @@ start:
 
 build:
 	yarn install
-	yarn run prod
+	yarn run build
 	docker build \
-		--pull -t "$(IMAGE):$(BUILDVERSION)" \
+		-t "$(IMAGE):$(BUILDVERSION)" \
 		--file Dockerfile .
 
 push:
@@ -21,3 +21,8 @@ push:
 login:
 	aws ecr get-login-password --region us-east-2 | docker login --username AWS --password-stdin 788017480756.dkr.ecr.us-east-2.amazonaws.com
 
+package:
+	 docker build -t "miurhawk/gebla:v0.7" --file Dockerfile .
+
+run:
+	 docker run --name gebl -d -p 8080:80 gebla:v0.7

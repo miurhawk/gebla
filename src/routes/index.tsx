@@ -8,6 +8,10 @@ import Login from "../Login";
 import CreateAccount from "../CreateAccount";
 import PersonalInformation from "../PersonalInformation";
 import Calendar from "../Calendar";
+import Prices from "../Prices";
+import Courses from "../Courses";
+import About from "../About";
+import Blog from "../Blog";
 
 export const Paths = {
   HOME: "/",
@@ -18,23 +22,28 @@ export const Paths = {
   OUTDOOR_HOME_PAGE: "/outdoor-home",
   FIRST_TIME: "/first-time",
   CALENDAR: "/calendar",
+  PRICES: "/prices",
+  COURSES: "/courses",
+  ABOUT: "/about",
+  BLOG: "/blog",
 };
 
-const Routes = () => {
+type RouterProps = {
+  setTitle: (v: string) => void,
+};
+
+const Routes = (props: RouterProps) => {
   return (
     <Switch>
-      <Route path={Paths.HOME} exact component={HomePage} />
-      <Route path={Paths.LOG_IN_PAGE} component={Login} />
-      <Route path={Paths.CREATE_ACCOUNT_PAGE} component={CreateAccount} />
-      <Route
-        path={Paths.PERSONAL_INFORMATION_FORM}
-        component={PersonalInformation}
-      />
-      <Route path={Paths.INDOOR_HOME_PAGE} exact component={IndoorHome} />
-      <Route path={Paths.OUTDOOR_HOME_PAGE} exact component={OutdoorHome} />
-      <Route path={Paths.FIRST_TIME} exact component={FirstTime} />
-      <Route path={Paths.CALENDAR} exact component={Calendar} />
-
+      <Route path={Paths.HOME} exact><HomePage /></Route>
+      <Route path={Paths.INDOOR_HOME_PAGE} exact><IndoorHome setTitle={props.setTitle} /></Route>
+      <Route path={Paths.OUTDOOR_HOME_PAGE} exact><OutdoorHome setTitle={props.setTitle} /></Route>
+      <Route path={Paths.FIRST_TIME} exact><FirstTime setTitle={props.setTitle} /></Route>
+      <Route path={Paths.CALENDAR} exact><Calendar setTitle={props.setTitle} /></Route>
+      <Route path={Paths.PRICES}><Prices setTitle={props.setTitle} /></Route>
+      <Route path={Paths.COURSES}><Courses setTitle={props.setTitle} /></Route>
+      <Route path={Paths.ABOUT}><About setTitle={props.setTitle} /></Route>
+      <Route path={Paths.BLOG}><Blog setTitle={props.setTitle} /></Route>
     </Switch>
   );
 };

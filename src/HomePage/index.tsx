@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Link } from "react-router-dom";
-import { FlexRowFill, FlexARowFill, IndoorRow, OutdoorRow, HomeTable, Li } from "../styles";
+import { FlexRowFill, FlexRow, FlexAColumnFill } from "../styles";
 
 const indoorImg = require("../../assets/img/indoor.jpg");
 const outdoorImg = require("../../assets/img/outdoor.jpg");
@@ -8,18 +8,18 @@ const outdoorImg = require("../../assets/img/outdoor.jpg");
 
 const HomePage = () => {
   return (
-    <HomeTable>
-        <FlexARowFill href="/indoor-home">
-          <FlexRowFill img={indoorImg}>
+    <FlexRow>
+        <FlexAColumnFill href="/indoor-home">
+          <FlexRowFill>
             <h1>Indoor</h1>
           </FlexRowFill>
-        </FlexARowFill>
-        <FlexARowFill href="/outdoor-home">
+        </FlexAColumnFill>
+        <FlexAColumnFill href="/outdoor-home">
           <FlexRowFill img={outdoorImg}>
-            <Li key="Outdoor"><h1>Outdoor</h1></Li>
+            <h1>Outdoor</h1>
           </FlexRowFill>
-        </FlexARowFill>
-    </HomeTable>
+        </FlexAColumnFill>
+    </FlexRow>
   );
 };
 

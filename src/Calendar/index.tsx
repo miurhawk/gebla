@@ -2,11 +2,10 @@ import * as React from "react";
 import { Link } from "react-router-dom";
 import { StyledCalendar, StyledWeek, StyledDay } from "../styles";
 
-const Calendar = () => {
-
+const Calendar = (props: { setTitle: (v: string) => void, }) => {
+  props.setTitle("Calendar");
   return (
     <StyledCalendar>
-      <h1>Calendar</h1>
       <StyledWeek>
         <StyledDay>
           <a>1 Mon</a>

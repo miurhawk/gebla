@@ -2,12 +2,19 @@ import * as React from "react";
 import { FunctionComponent, useState } from "react";
 import * as ReactDOM from "react-dom";
 import styled from "styled-components";
-import { Navbar, BrandA, Ul, Li } from "../styles.ts";
+import { Navbar, BrandA, Ul, PageTitle } from "../styles.ts";
 import Hamburger from "./Hamburger";
 import FullMenu from "./FullMenu";
 
-const Navigation = () => {
-  const brand = { name: "Ġebla", to: "/"};
+
+
+type NavProps = {
+  title: string,
+  setTitle: (v: string) => void,
+};
+
+
+const Navigation = (props: NavProps) => {
 
   const [open, setOpen] = useState<boolean>(false);
   const close = () => setOpen(false);
@@ -15,10 +22,8 @@ const Navigation = () => {
   return (
     <Navbar>
       <BrandA href="/" />
-      <Ul>
-        <Li key={"FirstTime"}><a href={"/first-time"}>First Time ?</a></Li>
+        <PageTitle>{props.title}</PageTitle>
         <Hamburger open={open} setOpen={setOpen} />
-      </Ul>
       <FullMenu open={open} setOpen={setOpen} />
     </Navbar>
   )
@@ -26,3 +31,7 @@ const Navigation = () => {
 
 
 export default Navigation;
+//
+// <Ul>
+//   <a href={"/first-time"}>First Time ?</a>
+//   </Ul>

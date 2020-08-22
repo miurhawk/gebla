@@ -22,7 +22,17 @@ export const TabsContext = createContext<ITabsContext | undefined>(
 )
 
 const Tabs: FunctionComponent  & ITabsComposition = props => {
-  const [activeTab, setActiveTab] = useState(props.defaultTab)
+  console.log(window.location.href);
+  const queryString = window.location.href.split("##")[1];
+  console.log(queryString);
+  if !queryString {
+    queryString = props.defaultTab;
+  }
+  var re = /%20/gi;
+  queryString = queryString.replace(re, " ");
+  console.log(queryString);
+
+  const [activeTab, setActiveTab] = useState(queryString)
   return (
     <TabsContext.Provider value={{ activeTab, setActiveTab}}>
         {props.children}
