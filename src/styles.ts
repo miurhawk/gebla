@@ -357,6 +357,7 @@ export const InfoItem = styled.div`
   background-image: url(${({ props.isActive, props.img }) => isActive ? "" : img});
   align-items: center;
   background-size: cover;
+  background-position: left;
   background-color: ${({ props.isActive, props.color }) => isActive ? Theme.colors.light : color};
   flex-grow: 1;
   flex-wrap: no-wrap;

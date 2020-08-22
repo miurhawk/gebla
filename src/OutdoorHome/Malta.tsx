@@ -14,8 +14,8 @@ const MaltaDetail = () => {
 
   return (
     <DetailRow>
-    <FlexRowFill img={indoorImg} style={{backgroundSize: `cover`, backgroundRepeat: `no-repeat`}}/>
-      <FlexColSmaller style={{maxWidth: `60vw`}}>
+    <FlexRowFill img={indoorImg} style={{backgroundPosition: `left top`}}/>
+      <FlexColSmaller>
         <a style={{textAlign: `left`}}>
         <p>We are blessed in Malta with easy access to stunning crags, never more than a 15-minute walk from the parking, often with incredible sea views and just a quick jaunt from a beach for swimming afterwards.</p>
         <p>The island is well-connected with roads accessible to cars and bikes or scooters leading almost anywhere. Thanks to its small size, you never have to drive far to reach the crag.</p>

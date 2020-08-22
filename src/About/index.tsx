@@ -14,7 +14,7 @@ import "typeface-montserrat";
 const logo = require("../../assets/img/logo.png");
 const miuraImg = require("../../assets/img/miura.jpg");
 const steveImg = require("../../assets/img/steve.jpg");
-const carlyImg = require("../../assets/img/carly.jpg");
+const carlyImg = require("../../assets/img/carlyxini.jpg");
 const chrisImg = require("../../assets/img/chris.jpg");
 const teamImg = require("../../assets/img/team.jpg");
 
@@ -44,12 +44,7 @@ const About = (props: { setTitle: (v: string) => void, }) => {
           <DetailRow>
             <FlexColSmaller style={{minHeight: `600px`}}>
             <a><p>Ġebla would be nothing without our support team! Thanks to all our friends for supporting us.</p>
-<p>Special shoutout to the following businesses:</p>
-            <ul>
-            <p>Malta Climbing Club</p>
-            <p>Malta Adventure and Camping</p>
-            <p>Crossfit F15</p>
-            </ul>
+
             </a>
             </FlexColSmaller>
             <FlexRowFill img={teamImg} />
@@ -73,3 +68,11 @@ const About = (props: { setTitle: (v: string) => void, }) => {
 };
 
 export default About;
+
+
+// <p>Special shoutout to the following businesses:</p>
+// <ul>
+// <p>Malta Climbing Club</p>
+// <p>Malta Adventure and Camping</p>
+// <p>Crossfit F15</p>
+// </ul>

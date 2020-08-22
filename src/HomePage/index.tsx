@@ -2,7 +2,7 @@ import * as React from "react";
 import { Link } from "react-router-dom";
 import { FlexRowFill, FlexRow, FlexAColumnFill } from "../styles";
 
-const indoorImg = require("../../assets/img/indoor.jpg");
+const indoorImg = require("../../assets/img/holds.jpg");
 const outdoorImg = require("../../assets/img/outdoor.jpg");
 
 
@@ -10,7 +10,7 @@ const HomePage = () => {
   return (
     <FlexRow>
         <FlexAColumnFill href="/indoor-home">
-          <FlexRowFill>
+          <FlexRowFill img={indoorImg}>
             <h1>Indoor</h1>
           </FlexRowFill>
         </FlexAColumnFill>
