@@ -11,7 +11,7 @@ const Miura = () => {
     <FlexRowFill style={{minHeight: `600px`} img={miuraImg} />
       <FlexColSmaller>
         <a>
-        <p>Miura has been climbing for over 20 years and represented the United States in IFSC World Cups and other international competitions for over half of that time.</p>
+        <p>Miura has been climbing for over 20 years and represented the United States in IFSC World Cups and other international competitions for half of that time.</p>
         <p>When she's not climbing she's either writing software or making tshirts.</p>
         <p>Miura is a co-owner of Ġebla, as well as the head coach and lead instructor.</p>
         <br />

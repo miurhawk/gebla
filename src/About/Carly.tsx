@@ -10,7 +10,7 @@ const Carly = () => {
 
   return (
     <DetailRow>
-    <FlexRowFill style={{minHeight: `600px`} img={carlyImg} style={{backgroundPosition: `left center`}}/>
+    <FlexRowFill img={carlyImg} style={{minHeight: `600px`, backgroundPosition: `left bottom`}}/>
       <FlexColSmaller>
         <a>
         <p>Carly is our Marketing Wizard (TM). She is originally from the UK but has been in Malta for seven years.</p>

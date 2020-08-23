@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { FlexRowFill, DetailRow, FullPhoto, StyledTable, FlexRow, InfoTable, FlexCol, FlexColSmaller, InfoItem, InfoItems, InfoDetail, TextDetail } from "../styles";
 import { FunctionComponent, useState } from "react";
 import { Tabs } from "../components/Tabs";
-import martinImg from "../../assets/img/img4.jpg";
+import martinImg from "../../assets/img/img9.jpg";
 import costyImg from "../../assets/img/img8.jpg";
 import ladiesImg from "../../assets/img/img18.jpg";
 import fenechImg from "../../assets/img/img13.jpg";
@@ -26,7 +26,7 @@ const FirstTime = (props: { setTitle: (v: string) => void, }) => {
         <Tabs.Panel label="Climbing Now">
 
         <DetailRow>
-          <FlexRowFill img={martinImg}><h1>Try it out</h1></FlexRowFill>
+          <FlexRowFill img={martinImg} style={{backgroundPosition: `0% 30%`}}><h1>Try it out</h1></FlexRowFill>
           <FlexColSmaller>
             <a style={{textAlign: `left`, paddingRight: `3rem`}}>
               <p>Always wanted to try climbing but don't know where to start?</p>
