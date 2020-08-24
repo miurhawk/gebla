@@ -15,7 +15,7 @@ const HomePage = () => {
           </FlexRowFill>
         </FlexAColumnFill>
         <FlexAColumnFill href="/outdoor-home">
-          <FlexRowFill img={outdoorImg} style={{backgroundPosition: `top`}}>
+          <FlexRowFill img={outdoorImg} style={{backgroundPosition: `left top`}}>
             <h1>Outdoor</h1>
           </FlexRowFill>
         </FlexAColumnFill>

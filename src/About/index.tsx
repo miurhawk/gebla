@@ -12,7 +12,7 @@ import "typeface-montserrat";
 
 
 const miuraImg = require("../../assets/img/img24.jpg");
-const steveImg = require("../../assets/img/img33.jpg"); //36
+const steveImg = require("../../assets/img/img36.jpg"); 
 const carlyImg = require("../../assets/img/img4.jpg");
 const chrisImg = require("../../assets/img/img7.jpg");
 
