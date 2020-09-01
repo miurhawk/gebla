@@ -44,7 +44,7 @@ const OutdoorHome = (props: { setTitle: (v: string) => void, }) => {
 
 
 
-<p>Find out more (button & link)</p>
+<p>Find out more</p>
             </a>
           </FlexCol>
             <Gallery defaultTab="1">
