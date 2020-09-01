@@ -6,10 +6,11 @@ import OutdoorHome from "../OutdoorHome";
 import FirstTime from "../FirstTime";
 import CreateAccount from "../CreateAccount";
 import Calendar from "../Calendar";
-import Prices from "../Prices";
 import Courses from "../Courses";
 import About from "../About";
 import Blog from "../Blog";
+import Corporate from "../Corporate";
+
 
 export const Paths = {
   HOME: "/",
@@ -20,10 +21,10 @@ export const Paths = {
   OUTDOOR_HOME_PAGE: "/outdoor-home",
   FIRST_TIME: "/first-time",
   CALENDAR: "/calendar",
-  PRICES: "/prices",
   COURSES: "/courses",
   ABOUT: "/about",
   BLOG: "/blog",
+  CORPORATE: "/corporate",
 };
 
 type RouterProps = {
@@ -38,10 +39,11 @@ const Routes = (props: RouterProps) => {
       <Route path={Paths.OUTDOOR_HOME_PAGE} exact><OutdoorHome setTitle={props.setTitle} /></Route>
       <Route path={Paths.FIRST_TIME} exact><FirstTime setTitle={props.setTitle} /></Route>
       <Route path={Paths.CALENDAR} exact><Calendar setTitle={props.setTitle} /></Route>
-      <Route path={Paths.PRICES}><Prices setTitle={props.setTitle} /></Route>
       <Route path={Paths.COURSES}><Courses setTitle={props.setTitle} /></Route>
       <Route path={Paths.ABOUT}><About setTitle={props.setTitle} /></Route>
       <Route path={Paths.BLOG}><Blog setTitle={props.setTitle} /></Route>
+      <Route path={Paths.CORPORATE}><Corporate setTitle={props.setTitle} /></Route>
+
     </Switch>
   );
 };

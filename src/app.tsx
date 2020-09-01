@@ -19,6 +19,12 @@ const AppContainer = () => {
     <CenteredPage>
       <Navigation title={title} />
       {FullMenu}
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+
       <Divider />
       <br />
       <Router >

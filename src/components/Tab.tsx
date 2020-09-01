@@ -23,8 +23,8 @@ export const Tab: FunctionComponent<ITabProps> = props => {
     browserHistory.push("##"+prop);
   }
   return (
-    <InfoItem img={props.img} isActive={isActive} darkenHover={props.darkenHover} color={props.color} onClick={() => setTab(props.label)}>
-      <h3>{props.hideLabel ? "" : props.label}</h3>
+    <InfoItem img={props.img} style={props.style} isActive={isActive} darkenHover={props.darkenHover} color={props.color} onClick={() => setTab(props.label)}>
+      <a>{props.hideLabel ? "" : props.label}</a>
     </InfoItem>
   )
 }

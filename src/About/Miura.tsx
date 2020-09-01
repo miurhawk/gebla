@@ -1,5 +1,5 @@
 import * as React from "react";
-import { DetailRow, GalleryDots, FlexRow, FlexColSmaller, FlexCol, InfoItem, InfoItemsSmall, InfoDetail, TextDetail, FlexRowFill } from "../styles";
+import { DetailRow, HalfImageText, FlexCol, FlexColSmaller, FlexCol, InfoItem, InfoItemsSmall, InfoDetail, TextDetail, FlexRowFill } from "../styles";
 const miuraImg = require("../../assets/img/img25.jpg");
 
 
@@ -8,8 +8,7 @@ const Miura = () => {
 
   return (
     <DetailRow>
-    <FlexRowFill style={{minHeight: `600px`} img={miuraImg} />
-      <FlexColSmaller>
+      <FlexCol>
         <a>
         <p>Miura has been climbing for over 20 years and represented the United States in IFSC World Cups and other international competitions for half of that time.</p>
         <p>When she's not climbing she's either writing software or making tshirts.</p>
@@ -17,7 +16,9 @@ const Miura = () => {
         <br />
         <p><a href="mailto:miura@gebla.mt">miura@gebla.mt</a></p>
         </a>
-      </FlexColSmaller>
+      </FlexCol>
+      <HalfImageText right=true style={{minHeight: `600px`} img={miuraImg} />
+
     </DetailRow>
   );
 };

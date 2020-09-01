@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Link } from "react-router-dom";
-import { FlexCol, FlexRow, FlexRowFill, InfoTable, InfoItem, InfoItems, InfoDetail, TextDetail } from "../styles";
+import { DetailCol, Headline, FlexCol, FlexRow, FlexRowFill, InfoTable, InfoItem, InfoItems, InfoDetail, TextDetail } from "../styles";
 // import { FunctionComponent, useState } from "react";
 // import { Tabs } from "../components/Tabs";
 // import Bouldering from "./Bouldering.tsx";
@@ -51,13 +51,12 @@ const IndoorHome = (props: { setTitle: (v: string) => void, }) => {
   props.setTitle("Indoor");
   // const Details = [BoulderingDetail, CoachingDetail];
   return (
-    <FlexCol style={{textAlign: `center`}}>
-      <h1>COMING SOON</h1>
-      <a>we're still gearing up</a>
-      <br />
-      <a>check back here for more details</a>
-      <br />
-    </FlexCol>
+    <DetailCol>
+    <Headline>COMING SOON</Headline>
+
+      <a><p>we're still gearing up</p>
+      <p>check back here for more details</p></a>
+    </DetailCol>
   );
 };
 // <FlexRowFill img={shoesImg} style={{minHeight: `120vh`}} />

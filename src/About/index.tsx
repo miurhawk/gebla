@@ -12,7 +12,7 @@ import "typeface-montserrat";
 
 
 const miuraImg = require("../../assets/img/img24.jpg");
-const steveImg = require("../../assets/img/img36.jpg"); 
+const steveImg = require("../../assets/img/img36.jpg");
 const carlyImg = require("../../assets/img/img4.jpg");
 const chrisImg = require("../../assets/img/img7.jpg");
 
@@ -32,7 +32,7 @@ const About = (props: { setTitle: (v: string) => void, }) => {
     <InfoTable>
       <Tabs defaultTab="">
         <InfoItems height="40vh">
-          <Tabs.Tab img={steveImg} label="Steve" color={colorArray[Math.floor(Math.random() * colorArray.length)]}></Tabs.Tab>
+          <Tabs.Tab img={steveImg} style={{backgroundPosition: `0% 28%`}} label="Steve" color={colorArray[Math.floor(Math.random() * colorArray.length)]}></Tabs.Tab>
           <Tabs.Tab img={chrisImg} label="Chris" color={colorArray[Math.floor(Math.random() * colorArray.length)]}></Tabs.Tab>
           <Tabs.Tab img={carlyImg} label="Carly" color={colorArray[Math.floor(Math.random() * colorArray.length)]}></Tabs.Tab>
           <Tabs.Tab img={miuraImg} label="Miura" color={colorArray[Math.floor(Math.random() * colorArray.length)]}></Tabs.Tab>

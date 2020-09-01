@@ -1,7 +1,7 @@
 import * as React from "react";
-import { DetailRow, FlexRowFill, GalleryDots, FlexRow, FlexColSmaller } from "../styles";
+import { DetailRow, HalfImageText, FlexCol } from "../styles";
 
-const steveImg = require("../../assets/img/img31.jpg");
+const steveImg = require("../../assets/img/img30.jpg");
 
 
 const Steve = () => {
@@ -9,8 +9,7 @@ const Steve = () => {
 
   return (
     <DetailRow>
-    <FlexRowFill style={{minHeight: `600px`}} img={steveImg} />
-      <FlexColSmaller>
+      <FlexCol>
       <a>
         <p>Steve is one of 5 Maltese people to climb a grade 8 climb.</p>
         <p>He started climbing three years ago and it was love at first onsight. In his real life he's an architecht, but he spends as much time as he can on the rocks.</p>
@@ -18,7 +17,9 @@ const Steve = () => {
         <br />
         <p><a href="mailto:steve@gebla.mt">steve@gebla.mt</a></p>
         </a>
-      </FlexColSmaller>
+      </FlexCol>
+      <HalfImageText right=true style={{minHeight: `600px`}} img={steveImg} />
+
     </DetailRow>
   );
 };

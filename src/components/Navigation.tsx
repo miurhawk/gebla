@@ -22,13 +22,13 @@ const Navigation = (props: NavProps) => {
   return (
     <Navbar>
       <BrandA href="/" />
-        <PageTitle>{props.title}</PageTitle>
-        <Hamburger open={open} setOpen={setOpen} />
+      <Hamburger open={open} setOpen={setOpen} />
       <FullMenu open={open} setOpen={setOpen} />
     </Navbar>
   )
 };
 
+// <PageTitle>{props.title}</PageTitle>
 
 export default Navigation;
 //

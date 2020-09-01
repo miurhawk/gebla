@@ -9,24 +9,24 @@ type MenuProps = {
 };
 
 const FullMenu = (props: MenuProps) => {
-  const links = [
-    { name: "Indoor", to: "/indoor-home"},
-    { name: "Outdoor", to: "/outdoor-home"},
-    { name: "First Time ?", to: "/first-time"}
-  ];
+
+  // <MenuButton onClick={close} open={props.open}><div style={{transform: `rotate(45deg)`, zIndex: `1`, position: `absolute`, top: `5vh`}} /><div  style={{transform: `rotate(-45deg)`, zIndex: `2`, position: `absolute`, top: `5vh`}}/></MenuButton>
+
   const close = () => props.setOpen(false);
   return (
     <StyledMenu open={props.open}>
-      <MenuButton onClick={close} open={props.open}><div style={{transform: `rotate(45deg)`, zIndex: `1`, position: `absolute`, top: `5vh`}} /><div  style={{transform: `rotate(-45deg)`, zIndex: `2`, position: `absolute`, top: `5vh`}}/></MenuButton>
       <br />
       <br />
+      <br />
+      <br />
+
       <a href="/first-time" onClick={() => close()}>First Time</a>
       <a href="/indoor-home" onClick={() => close()}>Indoor</a>
       <a href="/outdoor-home" onClick={() => close()}>Outdoor</a>
       <a href="/courses" onClick={() => close()}>Courses & Coaching</a>
       <a href="/courses?dummy=y##Kids'%20Programs" onClick={() => close()}>Kids</a>
-      <a href="/outdoor-home?dummy=y##Guiding" onClick={() => close()}>Guiding</a>
-      <a href="/first-time?dummy=y##Corporate%20Teambuilding" onClick={() => close()}>Corporate</a>
+      <a href="/outdoor-home#guiding" onClick={() => close()}>Guiding</a>
+      <a href="/corporate" onClick={() => close()}>Corporate</a>
       <a href="/blog" onClick={() => close()}>Blog</a>
       <a href="/about" onClick={() => close()}>About</a>
 
