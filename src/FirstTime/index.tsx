@@ -16,13 +16,19 @@ const FirstTime = (props: { setTitle: (v: string) => void, }) => {
   return (
     <DetailCol>
 
-          <FullPhoto img={enricoImg} style={{backgroundPosition: `0% 30%`}}><h1>HERE is</h1><h1>\a headline.</h1></FullPhoto>
+          <FullPhoto img={enricoImg} style={{backgroundPosition: `0% 30%`}}><h1>FIND THE </h1><h1>CLIMBER IN YOU</h1></FullPhoto>
           <FlexCol right=true>
             <a>
-              <p>Always wanted to try climbing but don't know where to start?</p>
-              <p>There's an endless supply of techniques and procedures to learn, but we suggest you leave the safety to us for your first time: we offer a <a href="/courses#CE">Climb Experience</a> for those wishing to just get straight on the rocks.</p>
-              <p>We'll triple-check your knots and harness before you set off and share knowledge with you along the way, but this is the easiest way to the top to enjoy the view.</p>
-              <p>Email <a href="mailto:info@gebla.mt">info@gebla.mt</a> to schedule your Climb Experience.</p>
+              <span style={{fontWeight: `bold`}}><p>Always wanted to try climbing but don't know where to start?</p></span>
+
+              <p>Anyone can climb. We feel pretty passionate about this. You don’t need to be an athlete, have ‘strong fingers’, be able to do pull ups, or be ‘young’.  So if you’re doubting yourself, put that to one side and let’s give it a try.</p> 
+
+<p>Our <a href="/courses#CE">Climb Experience</a> is perfect if you’ve never tried it before. You can feel safe in the knowledge you’ll be in experienced hands and get to find out what it’s all about and have a great day out - on your own or with a group of friends. </p>
+
+<p><a href="mailto:info@gebla.mt">Book now</a> or check out our range of courses below:</p>
+
+             
+             
             </a>
           </FlexCol>
         <br />
@@ -69,10 +75,10 @@ const FirstTime = (props: { setTitle: (v: string) => void, }) => {
         <br />
 
         <DetailRow>
-          <InfoItem img={costyImg} style={{height: `25vw`, backgroundPosition: `0% 28%`}}><h3>1st</h3></InfoItem>
-          <InfoItem img={ladiesImg}><h3>2nd</h3></InfoItem>
-          <InfoItem img={enricoImg}><h3>3rd</h3></InfoItem>
-          <InfoItem img={ladiesImg}><h3>4th</h3></InfoItem>
+          <InfoItem img={costyImg} style={{height: `25vw`, backgroundPosition: `0% 28%`}}><h3>basics </h3></InfoItem>
+          <InfoItem img={ladiesImg}><h3>advanced</h3></InfoItem>
+          <InfoItem img={costyImg}><h3>Under 18s</h3></InfoItem>
+          <InfoItem img={ladiesImg}><h3>coaching</h3></InfoItem>
         </DetailRow>
 
         </DetailCol>

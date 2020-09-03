@@ -28,7 +28,7 @@ const OutdoorHome = (props: { setTitle: (v: string) => void, }) => {
           <FlexCol>
             <a>
             <h2 style={{margin: `0`}}>GO OUTSIDE. <br /><span style={{paddingTop: `0.5rem`, color: `#23E5BF`}}>FEEL ALIVE.</span></h2>
-              <p>Here in Malta we’re lucky to have access to hundreds of sport climbing routes, all easily accessible and in some of the most beautiful spots on the Islands. </p>
+           
 
 
 
@@ -82,15 +82,17 @@ const OutdoorHome = (props: { setTitle: (v: string) => void, }) => {
           <FlexCol right=true>
             <a>
             <h2 style={{margin: `0`}}>guiding</h2>
-            <p>Our highly-experienced guides are ready to show you a great day on the rocks. Guides are available on an hourly basis and can function in any of the following capacities:</p>
+            <p>Our highly experienced guides are ready to show you a great day on the rocks. 
+
+Available on an hourly basis, guides can:</p>
             <ul>
-              <li>Taking an experienced group of climbers to a new area</li>
-              <li>Showing climbers from abroad to the crag and reccomending routes worth climbing</li>
-              <li>Acting as a belay or multipitch partner</li>
-              <li>Taking inexperienced climbers to a toprope climbing area</li>
+              <li>take an experienced group of climbers to a new area,</li>
+              <li>act as a belay or multipitch partner,</li>
+              <li>show climbers from abroad to, and around, the crag,</li>
+              <li>take less experienced climbers to a toprope climbing area.</li>
 
             </ul>
-            <p>Guiding services are €35 per hour, per guide. Send an email to <a href="mailto:info@gebla.mt">info@gebla.mt</a> with your party size and dates to book.</p>
+            <p>Guiding services are €35 per hour, per guide. <a href="mailto:info@gebla.mt">Contact us</a> with your party size and dates to book.</p>
             </a>
           </FlexCol>
         </DetailRow>
@@ -105,10 +107,14 @@ const OutdoorHome = (props: { setTitle: (v: string) => void, }) => {
 
         <FlexCol right=true>
             <a>
-            <p>We are blessed in Malta with easy access to stunning crags, never more than a 15-minute walk from the parking, often with incredible sea views and just a quick jaunt from a beach for swimming afterwards.</p>
-            <p>The island is well-connected with roads accessible to cars and bikes or scooters leading almost anywhere. Thanks to its small size, you never have to drive far to reach the crag.</p>
-            <p>Maltese rock is limestone, and the crags often have a range of difficulties to suit climbers of all levels.</p>
-            <p>Thanks to the friendliness of the people, a great restaurant and bar scene, and the relentless good weather, Malta is a wonderful place for your next climbing destination. And our <a href="/outdoor-home?dummy=guide##Guiding">guides</a> are here to save you time finding the crags and make sure you have a great vacation.</p>
+            <p>These beautiful Islands are blessed with easy access to stunning crags and hundreds of routes, often with incredible sea views.  </p>
+
+            <p>Thanks to its small size, you never have to travel far to reach the crag and you’ll usually be just a quick jaunt from a beach for swimming afterwards.
+
+</p>
+            <p>Maltese rock is limestone, with everything from epic overhanging lines in ancient caves to sketchy slabs. And each crag usually has a range of difficulties to suit climbers of all levels.</p>
+
+            <p>Thanks to the friendliness of the people, a great restaurant and bar scene, an incredible cultural heritage and relentless clear blue sky, Malta is a wonderful place for your next climbing trip. And our <a href="/outdoor-home?dummy=guide##Guiding">guides</a> are here to save you time finding the crags and make sure you have a great vacation.</p>
             </a>
         </FlexCol>
         </DetailRow>
