@@ -44,10 +44,6 @@ const Advanced = () => {
 
       </SmallDetailCol>
       <SmallDetailCol>
-      <br />
-      <br />
-      <br />
-      <br />
           <BookButton><h7>Book Now</h7></BookButton>
           </SmallDetailCol>
         <SmallDetailCol>
@@ -95,10 +91,6 @@ const Advanced = () => {
           <br />
         </SmallDetailCol>
         <SmallDetailCol>
-        <br />
-        <br />
-        <br />
-        <br />
             <BookButton><h7>Book Now</h7></BookButton>
             </SmallDetailCol>
       </DetailRow>

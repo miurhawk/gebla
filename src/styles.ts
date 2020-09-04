@@ -90,7 +90,7 @@ export const BrandA = styled.a`
 export const BookButton = styled.button`
   background-color: ${Theme.colors.a1};
   height: 60px;
-  margin: 5rem;
+  margin: 150px 230px 150px 230px;
   width: 150px;
   align-self: center;
   a {

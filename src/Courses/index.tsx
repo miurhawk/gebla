@@ -19,8 +19,15 @@ const Courses = (props: { setTitle: (v: string) => void, }) => {
   return (
     <DetailCol>
 
-      <FullPhoto img={multipitchImg}><h1>learn the <span style={{color: `#23E5BF`}}> ropes</span></h1></FullPhoto>
+      <FullPhoto img={multipitchImg}><h1>learn the ropes</h1></FullPhoto>
+      <a>
+        <span style={{fontWeight: `bold`}}><p>Something for everyone</p></span>
+         
+<p>Our courses range from entry level through to coaching for advanced technique. </p>
+              
+<p>Our instructors are world-class and have been climbing for decades so we'll make sure you're confident and proficient before we release you into the wild on your own.</p>
 
+      </a>
 
       <Tabs defaultTab="">
         <InfoItems>

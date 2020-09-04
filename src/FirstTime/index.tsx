@@ -10,16 +10,17 @@ import ladiesImg from "../../assets/img/img18.jpg";
 const FirstTime = (props: { setTitle: (v: string) => void, }) => {
   props.setTitle("First Time");
   let colorArray: Array<string> = ["#23E5BF","#57D0FF","#8888FF","#FF8DEA"];
-  // const CoachingDetail = <InfoDetail><h3>Coaching</h3></InfoDetail>;
 
-  // const Details = [BoulderingDetail, CoachingDetail];
   return (
     <DetailCol>
 
           <FullPhoto img={enricoImg} style={{backgroundPosition: `0% 50%`}}><h1>Find the climber in you</h1></FullPhoto>
             <a>
-              <p><span style={{fontWeight: `bold`}}>Anyone can climb. We feel pretty passionate about this.</span> You don’t need to be an athlete. You don’t need ‘strong fingers’, to be able to do pull ups, or to be ‘lean’ or ‘young’.  So if you’re doubting yourself, put that to one side and let’s give it a try.</p>
-              <p>Our <a href="/courses#CE">Climb Experience</a> is perfect if you’ve never tried it before and you’d like to have a great day out. You can feel safe in the knowledge you’ll be in experienced hands and get to find out what it’s all about - on your own or with a group of friends. </p>
+              <span style={{fontWeight: `bold`}}><p>Always wanted to try climbing but don't know where to start?</p></span>
+              <p>Anyone can climb. We feel pretty passionate about this. You don’t need to be an athlete, have ‘strong fingers’, be able to do pull ups, or be ‘young’.  So if you’re doubting yourself, put that to one side and let’s give it a try.</p> 
+<p>Our <a href="/courses#CE">Climb Experience</a> is perfect if you’ve never tried it before. You can feel safe in the knowledge you’ll be in experienced hands and get to find out what it’s all about and have a great day out - on your own or with a group of friends. </p>
+
+<p><a href="mailto:info@gebla.mt">Book now</a> or check out our range of courses below:</p>
             </a>
         <br />
 
@@ -55,8 +56,6 @@ const FirstTime = (props: { setTitle: (v: string) => void, }) => {
       <br />
         <br />
         <br />
-
-
 
         </DetailCol>
 };

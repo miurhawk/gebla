@@ -35,10 +35,6 @@ const Basics = () => {
           </a>
         </SmallDetailCol>
         <SmallDetailCol>
-        <br />
-        <br />
-        <br />
-        <br />
             <BookButton><h7>Book Now</h7></BookButton>
             </SmallDetailCol>
         <SmallDetailCol>
@@ -64,10 +60,6 @@ const Basics = () => {
           </a>
         </SmallDetailCol>
         <SmallDetailCol>
-        <br />
-        <br />
-        <br />
-        <br />
             <BookButton><h7>Book Now</h7></BookButton>
             </SmallDetailCol>
         <SmallDetailCol>

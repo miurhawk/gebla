@@ -57,10 +57,6 @@ const Basics = () => {
 
         </SmallDetailCol>
         <SmallDetailCol>
-        <br />
-        <br />
-        <br />
-        <br />
             <BookButton><h7>Sign Up</h7></BookButton>
             </SmallDetailCol>
       </DetailRow>
