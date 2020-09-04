@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Link } from "react-router-dom";
-import { DetailCol, Headline, FlexRowFill, FullPhoto, InfoItem, InfoItems, InfoDetail, TextDetail } from "../styles";
+import { DetailCol, Headline, FullPhoto } from "../styles";
 import shoesImg from "../../assets/img/img15.jpg";
 
 

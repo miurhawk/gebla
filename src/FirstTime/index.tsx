@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Link } from "react-router-dom";
-import { HalfImageText, DetailCol, Divider, Headline, FlexRowFill, DetailRow, FullPhoto, StyledTable, FlexRow, InfoTable, FlexCol, FlexColSmaller, InfoItem, InfoItems, InfoDetail, TextDetail } from "../styles";
+import { HalfImageText, DetailCol, DetailRow, FullPhoto, FlexCol } from "../styles";
 import { FunctionComponent, useState } from "react";
 import { Tabs } from "../components/Tabs";
 import enricoImg from "../../assets/img/img9.jpg";
@@ -16,19 +16,11 @@ const FirstTime = (props: { setTitle: (v: string) => void, }) => {
   return (
     <DetailCol>
 
-          <FullPhoto img={enricoImg} style={{backgroundPosition: `0% 30%`}}><h1>HERE is</h1><h1>\a headline.</h1></FullPhoto>
-          <FlexCol right=true>
+          <FullPhoto img={enricoImg} style={{backgroundPosition: `0% 50%`}}><h1>Find the climber in you</h1></FullPhoto>
             <a>
-              <p>Always wanted to try climbing but don't know where to start?</p>
-              <p>There's an endless supply of techniques and procedures to learn, but we suggest you leave the safety to us for your first time: we offer a <a href="/courses#CE">Climb Experience</a> for those wishing to just get straight on the rocks.</p>
-              <p>We'll triple-check your knots and harness before you set off and share knowledge with you along the way, but this is the easiest way to the top to enjoy the view.</p>
-              <p>Email <a href="mailto:info@gebla.mt">info@gebla.mt</a> to schedule your Climb Experience.</p>
+              <p><span style={{fontWeight: `bold`}}>Anyone can climb. We feel pretty passionate about this.</span> You don’t need to be an athlete. You don’t need ‘strong fingers’, to be able to do pull ups, or to be ‘lean’ or ‘young’.  So if you’re doubting yourself, put that to one side and let’s give it a try.</p>
+              <p>Our <a href="/courses#CE">Climb Experience</a> is perfect if you’ve never tried it before and you’d like to have a great day out. You can feel safe in the knowledge you’ll be in experienced hands and get to find out what it’s all about - on your own or with a group of friends. </p>
             </a>
-          </FlexCol>
-        <br />
-        <br />
-
-        <br />
         <br />
 
         <DetailRow>
@@ -43,10 +35,6 @@ const FirstTime = (props: { setTitle: (v: string) => void, }) => {
           <HalfImageText right="true" img={costyImg} style={{backgroundPosition: `left center`}}><h2>Take a Class</h2></HalfImageText>
 
         </DetailRow>
-        <br />
-        <br />
-
-        <br />
         <br />
 
       <DetailRow>
@@ -68,14 +56,16 @@ const FirstTime = (props: { setTitle: (v: string) => void, }) => {
         <br />
         <br />
 
-        <DetailRow>
-          <InfoItem img={costyImg} style={{height: `25vw`, backgroundPosition: `0% 28%`}}><h3>1st</h3></InfoItem>
-          <InfoItem img={ladiesImg}><h3>2nd</h3></InfoItem>
-          <InfoItem img={enricoImg}><h3>3rd</h3></InfoItem>
-          <InfoItem img={ladiesImg}><h3>4th</h3></InfoItem>
-        </DetailRow>
+
 
         </DetailCol>
 };
 
+//
+// <DetailRow>
+//   <InfoItem img={costyImg} style={{height: `25vw`, backgroundPosition: `0% 28%`}}><h3>Enjoy a day out</h3></InfoItem>
+//   <InfoItem img={ladiesImg} style={{height: `25vw`}}><h3>Learn the basics</h3></InfoItem>
+//   <InfoItem img={enricoImg} style={{height: `25vw`}}><h3>Advanced training</h3></InfoItem>
+//   <InfoItem img={ladiesImg} style={{height: `25vw`}}><h3>Kids' programs</h3></InfoItem>
+// </DetailRow>
 export default FirstTime;

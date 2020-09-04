@@ -1,5 +1,5 @@
 import * as React from "react";
-import { DetailRow, HalfImageText, FlexCol, FlexRow, FlexColSmaller, FlexCol, InfoItem, InfoItemsSmall, InfoDetail, TextDetail, FlexRowFill } from "../styles";
+import { DetailRow, HalfImageText, FlexCol } from "../styles";
 
 const carlyImg = require("../../assets/img/img2.jpg");
 

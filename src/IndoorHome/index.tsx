@@ -1,6 +1,10 @@
 import * as React from "react";
 import { Link } from "react-router-dom";
-import { DetailCol, Headline, FlexCol, FlexRow, FlexRowFill, InfoTable, InfoItem, InfoItems, InfoDetail, TextDetail } from "../styles";
+import { Social, FullPhoto, DetailCol, GroupRow, Headline, FlexCol, FlexRowFill, InfoItem, InfoItems, InfoDetail } from "../styles";
+
+import ig from "../../assets/img/ig.png";
+import fb from "../../assets/img/fb.png";
+import constructionImg from "../../assets/img/gato2.jpg";
 // import { FunctionComponent, useState } from "react";
 // import { Tabs } from "../components/Tabs";
 // import Bouldering from "./Bouldering.tsx";
@@ -52,10 +56,14 @@ const IndoorHome = (props: { setTitle: (v: string) => void, }) => {
   // const Details = [BoulderingDetail, CoachingDetail];
   return (
     <DetailCol>
-    <Headline>COMING SOON</Headline>
+    <FullPhoto img={constructionImg} style={{backgroundPosition: `0 30%`}}><h1>coming soon</h1></FullPhoto>
 
-      <a><p>we're still gearing up</p>
-      <p>check back here for more details</p></a>
+      <a><p>We're still gearing up.</p>
+      <p>Keep an eye out for updates and exciting news:</p></a>
+      <GroupRow style={{alignSelf: `center`}}>
+      <Social img={ig} href="https://www.instagram.com/gebla.climb/" />
+      <Social img={fb} href="https://www.facebook.com/gebla.climbing" />
+      </GroupRow>
     </DetailCol>
   );
 };

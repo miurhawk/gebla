@@ -3,7 +3,6 @@ import { FunctionComponent, useState, createContext } from "react";
 import * as ReactDOM from "react-dom";
 import styled from "styled-components";
 import { Panel, IPanelProps } from "./Panel";
-import { InfoTable, InfoItem, InfoItems, InfoDetail, TextDetail } from "../styles";
 import { Tab, ITabProps } from "./Tab";
 
 

@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Link } from "react-router-dom";
-import { DetailRow, FlexCol, HalfImageText, FlexRowFill, GalleryDots, Divider, DetailCol, Headline, StyledTable, InfoTable, InfoItem, InfoItems, InfoDetail, TextDetail, FullPhoto } from "../styles";
+import { DetailRow, FlexCol, HalfImageText, FlexRowFill, GalleryDots, Divider, DetailCol, Headline, StyledTable, InfoItem, InfoItems, InfoDetail, FullPhoto } from "../styles";
 import { FunctionComponent, useState } from "react";
 import { Gallery } from "../components/Gallery";
 
@@ -27,24 +27,11 @@ const OutdoorHome = (props: { setTitle: (v: string) => void, }) => {
         <DetailRow>
           <FlexCol>
             <a>
-            <h2 style={{margin: `0`}}>GO OUTSIDE. <br /><span style={{paddingTop: `0.5rem`, color: `#23E5BF`}}>FEEL ALIVE.</span></h2>
+              <h2>GO OUTSIDE. <br /><span style={{color: `#23E5BF`}}>FEEL ALIVE.</span></h2>
               <p>Here in Malta we’re lucky to have access to hundreds of sport climbing routes, all easily accessible and in some of the most beautiful spots on the Islands. </p>
-
-
-
-<p>Sport climbing is the safest type of outdoor climbing, so you can push your physical limits rather than your luck, or just have some fun on something nice and easy. </p>
-
-
-
-<p>If you want to give it a try for the first time, our Climb Experience might be right for you. Once you're hooked we offer a series of courses to help you learn the safety and communication protocols of climbing so you can become a self-sufficient climber and belayer.</p>
-
-
-
-<p>When you become a climber, you join a global community of welcoming, adventurous and eclectic folks who will be eager to share a belay, and a beer, anywhere in the world.</p>
-
-
-
-<p>Find out more</p>
+              <p>Sport climbing is the safest type of outdoor climbing, so you can push your physical limits rather than your luck, or just have some fun on something nice and easy. </p>
+              <p>If you want to give it a try for the first time, our Climb Experience might be right for you. Once you're hooked we offer a series of courses to help you learn the safety and communication protocols of climbing so you can become a self-sufficient climber and belayer.</p>
+              <p>When you become a climber, you join a global community of welcoming, adventurous and eclectic folks who will be eager to share a belay, and a beer, anywhere in the world.</p>
             </a>
           </FlexCol>
             <Gallery defaultTab="1">
@@ -81,7 +68,7 @@ const OutdoorHome = (props: { setTitle: (v: string) => void, }) => {
 
           <FlexCol right=true>
             <a>
-            <h2 style={{margin: `0`}}>guiding</h2>
+            <h2>guiding</h2>
             <p>Our highly-experienced guides are ready to show you a great day on the rocks. Guides are available on an hourly basis and can function in any of the following capacities:</p>
             <ul>
               <li>Taking an experienced group of climbers to a new area</li>
@@ -90,7 +77,7 @@ const OutdoorHome = (props: { setTitle: (v: string) => void, }) => {
               <li>Taking inexperienced climbers to a toprope climbing area</li>
 
             </ul>
-            <p>Guiding services are €35 per hour, per guide. Send an email to <a href="mailto:info@gebla.mt">info@gebla.mt</a> with your party size and dates to book.</p>
+            <p>Guiding services are €35 per hour, per guide. <a href="mailto:info@gebla.mt">Contact us</a> with your party size and dates to book.</p>
             </a>
           </FlexCol>
         </DetailRow>
@@ -101,14 +88,14 @@ const OutdoorHome = (props: { setTitle: (v: string) => void, }) => {
 
         <FullPhoto img={martinImg} style={{minHeight: `50vh`, backgroundPosition: `center`}}/>
         <DetailRow>
-        <HalfImageText><h2><span style={{ color: `#23E5BF`}}>malta:</span> Discover</h2><h2 style={{paddingTop: `0.5rem`}}>something special</h2></HalfImageText>
+        <FlexCol><h2><span style={{ color: `#23E5BF`}}>malta:</span> Discover<br />something special</h2></FlexCol>
 
         <FlexCol right=true>
             <a>
-            <p>We are blessed in Malta with easy access to stunning crags, never more than a 15-minute walk from the parking, often with incredible sea views and just a quick jaunt from a beach for swimming afterwards.</p>
-            <p>The island is well-connected with roads accessible to cars and bikes or scooters leading almost anywhere. Thanks to its small size, you never have to drive far to reach the crag.</p>
-            <p>Maltese rock is limestone, and the crags often have a range of difficulties to suit climbers of all levels.</p>
-            <p>Thanks to the friendliness of the people, a great restaurant and bar scene, and the relentless good weather, Malta is a wonderful place for your next climbing destination. And our <a href="/outdoor-home?dummy=guide##Guiding">guides</a> are here to save you time finding the crags and make sure you have a great vacation.</p>
+            <p>We are blessed in Malta with easy access to stunning crags, often with incredible sea views.</p>
+            <p>Thanks to its small size, you never have to drive far to reach the crag, and you'll be just a quick jaunt from a beach for swimming afterwards.</p>
+            <p>Maltese rock is limestone, with everything from epic overhanging lines in ancient caves to sketchy slabs. And each crag usually has a range of difficulties to suit climbers of all levels.</p>
+            <p>Thanks to the friendliness of the people, a great restaurant and bar scene, and incredible cultural heritage, and the relentless clear blue sky, Malta is a wonderful place for your next climbing destination. And our <a href="/outdoor-home?dummy=guide##Guiding">guides</a> are here to save you time finding the crags and make sure you have a great vacation.</p>
             </a>
         </FlexCol>
         </DetailRow>

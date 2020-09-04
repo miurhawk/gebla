@@ -1,7 +1,7 @@
 import * as React from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { DetailRow, FlexRowFill, GalleryDots, FlexRow, FlexColSmaller, FlexCol, InfoItem, InfoItemsSmall, InfoDetail, TextDetail, FlexRowFill } from "../styles";
+import { DetailRow, FlexCol, FlexRowFill } from "../styles";
 import { FunctionComponent, useState } from "react";
 import { Tabs } from "../components/Tabs";
 import { Gallery } from "../components/Gallery";
@@ -16,7 +16,7 @@ const EventsDetail = () => {
   return (
     <DetailRow>
     <FlexRowFill img={indoorImg} />
-      <FlexColSmaller>
+      <FlexCol>
       <a>
         <p>Check out our <a href="/calendar">events calendar</a> for public events.</p>
         <p>We also host private events! Great for birthday parties and corporate team-building. We offer two formats:</p>
@@ -26,7 +26,7 @@ const EventsDetail = () => {
         </ul>
         <p>Contact us for scheduling and availability</p>
         </a>
-      </FlexColSmaller>
+      </FlexCol>
     </DetailRow>
   );
 };

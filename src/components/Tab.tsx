@@ -1,7 +1,7 @@
 import * as React from "react";
 import { FunctionComponent, useContext } from "react";
 import * as ReactDOM from "react-dom";
-import { InfoTable, InfoItem, InfoItems, InfoDetail, TextDetail } from "../styles";
+import { InfoItem } from "../styles";
 import { TabsContext } from "./Tabs";
 import { createBrowserHistory } from 'history';
 

@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Link } from "react-router-dom";
-import { FlexColSmaller, DetailRow, FlexRow, FlexRowFill, InfoTable, InfoItem, InfoItems, InfoDetail, TextDetail } from "../styles";
+import { DetailRow, DetailCol, FlexRowFill, InfoItem, InfoItems, InfoDetail } from "../styles";
 import { FunctionComponent, useState } from "react";
 import { Tabs } from "../components/Tabs";
 import Steve from "./Steve.tsx";
@@ -29,7 +29,7 @@ const About = (props: { setTitle: (v: string) => void, }) => {
   props.setTitle("About Us");
   // const Details = [BoulderingDetail, CoachingDetail];
   return (
-    <InfoTable>
+    <DetailCol>
       <Tabs defaultTab="">
         <InfoItems height="40vh">
           <Tabs.Tab img={steveImg} style={{backgroundPosition: `0% 28%`}} label="Steve" color={colorArray[Math.floor(Math.random() * colorArray.length)]}></Tabs.Tab>
@@ -51,7 +51,7 @@ const About = (props: { setTitle: (v: string) => void, }) => {
             <Miura />
           </Tabs.Panel>
       </Tabs>
-    </InfoTable>
+    </DetailCol>
   );
 };
 

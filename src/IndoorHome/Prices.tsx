@@ -1,5 +1,5 @@
 import * as React from "react";
-import { StyledTable, FlexRowFill, DetailRow, GalleryDots, FlexRow, FlexColSmaller, FlexCol, InfoItem, InfoItemsSmall, InfoDetail, TextDetail, FlexRowFill } from "../styles";
+import { StyledTable, DetailRow, FlexCol, InfoItem, InfoItemsSmall, InfoDetail, FlexRowFill } from "../styles";
 import { FunctionComponent, useState } from "react";
 
 

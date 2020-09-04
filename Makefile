@@ -1,6 +1,6 @@
 IMAGE=miurhawk/gebla
 PACKAGE_NAME=miurhawk/gebla
-BUILDVERSION=v0.15
+BUILDVERSION=v0.16
 
 .PHONY: build test start push
 

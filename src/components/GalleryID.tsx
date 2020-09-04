@@ -1,7 +1,7 @@
 import * as React from "react";
 import { FunctionComponent, useContext } from "react";
 import * as ReactDOM from "react-dom";
-import { InfoTable, InfoItem, InfoItems, InfoDetail, TextDetail, GalleryDot } from "../styles";
+import { GalleryDot } from "../styles";
 import { GalleryContext } from "./Gallery";
 
 export interface IGalleryIDProps {

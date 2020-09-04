@@ -1,5 +1,5 @@
 import * as React from "react";
-import { DetailRow, HalfImageText, FlexCol, FlexColSmaller, FlexCol, InfoItem, InfoItemsSmall, InfoDetail, TextDetail, FlexRowFill } from "../styles";
+import { DetailRow, HalfImageText, FlexCol } from "../styles";
 const miuraImg = require("../../assets/img/img25.jpg");
 
 

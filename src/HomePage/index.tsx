@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Link } from "react-router-dom";
-import { HalfImageText, Headline, DetailRow, DetailCol, FlexRowFill, FlexRow, FlexAColumnFill } from "../styles";
+import { HalfImageText, Headline, DetailRow, DetailCol, FlexRowFill, FlexAColumnFill } from "../styles";
 
 const indoorImg = require("../../assets/img/holds.jpg");
 const outdoorImg = require("../../assets/img/img28.jpg");
@@ -26,13 +26,7 @@ const HomePage = () => {
     </DetailRow>
     <a>
     <span style={{fontWeight: `bold`}}><p>Hello. We love climbing and we think you will too. That’s why we’ve started Gebla. </p></span>
-
-
-
-<p>People often tell us ‘climbing isn’t for me’, but we’re not buying it. Climbing is for everyone! Every age, shape and size. </p>
-
-
-
+<p>People often tell us, "climbing isn’t for me", but we’re not buying it. Climbing is for everyone! Every age, shape and size. </p>
 <p>Maybe you’ll have to try it to believe it; come and find out for yourself. Or check out our story to find out why… </p>
     </a>
     </DetailCol>

@@ -1,5 +1,5 @@
 import * as React from "react";
-import { HalfImageText, DetailRow, FlexCol, FlexColSmaller, FlexCol, InfoItem, InfoItemsSmall, InfoDetail, TextDetail, FlexRowFill } from "../styles";
+import { HalfImageText, DetailRow, FlexCol } from "../styles";
 const chrisImg = require("../../assets/img/img35.jpg");
 
 
