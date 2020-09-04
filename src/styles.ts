@@ -68,6 +68,11 @@ export const CenteredPage = styled.div`
   a:visited {color: ${Theme.colors.a1}; text-decoration: none;};
   a:visited:hover {color: ${Theme.colors.a3}; text-decoration: none;};
   a:visited:active {color: ${Theme.colors.a4}; text-decoration: none;};
+  @media (max-width: 780px) {
+    a {font-size: 24px;};
+    h6 {font-size: 28px;};
+    h7 {font-size: 26px;};
+  }
 `;
 
 export const BrandA = styled.a`
@@ -220,6 +225,9 @@ export const HalfImageText = styled.div`
   a {
     margin: 0;
   };
+  @media (max-width: 780px) {
+    width: 100vw;
+  }
 
 `;
 export const FlexRowFill = styled.div`
@@ -320,6 +328,9 @@ export const SmallDetailCol = styled.div`
     padding: 1rem 3rem 1rem 3rem;
     text-align: center;
   };
+  @media (max-width: 780px) {
+    max-width: 100vw;
+  }
 `;
 
 export const FlexCol = styled.div`
@@ -350,6 +361,9 @@ export const FlexCol = styled.div`
   }
   h2:nth-child(2) {
     padding: 0.5rem 3rem 0 3rem;
+  }
+  @media (max-width: 780px) {
+    width: 100vw;
   }
 `;
 
