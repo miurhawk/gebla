@@ -16,7 +16,9 @@ const Basics = () => {
   return (
     <DetailCol>
       <DetailRow>
-          <a><p><span style={{fontWeight: `bold`}}>All of our Basics courses include all the gear you need.</span> Please bring plenty of water, appropriate clothes for exercise in the weather of the day, and snacks. We will send detailed information on where to meet your guides on the day before your course.</p>
+          <a><p><span style={{fontWeight: `bold`}}>Discover climbing with one of our Basics courses. </span> </p>
+
+<p>Each one will be tailored to you and we'll bring all the gear you need. Please come with plenty of water, appropriate clothes for exercise, and snacks. We'll send detailed information on where to meet your instructors on the day before your course.</p>
           <p>Email <a href="mailto:info@gebla.mt">info@gebla.mt</a> with your details to book a session.</p>
           </a>
 
@@ -44,7 +46,12 @@ const Basics = () => {
           <br />
           <br />
 
-            <p>In this course we will teach you general principles of climbing and basic climbing technique, introduce you to safety equipment and protocols, and get you started with belaying.</p>
+        
+
+	<p>In this tailored session we'll teach you general principles of climbing, some technique, basic understanding of anchors and safety.</p>
+
+<p>We'll get you started with belaying, and of course you’ll get some actual climbing practice during the session.</p>
+
             <p>You won't be ready to climb without supervision after this course, but you'll be well on your way.</p>
           </a>
         </SmallDetailCol>
@@ -54,9 +61,9 @@ const Basics = () => {
           €130 pp | 4 hours | Intro to Climbing required
           <br />
           <br />
-            <p>During the first 3 hours we reinforce what you learned in the intro course. You’ll practice belaying and learn about different belay devices and best practices when it comes to anchors.</p>
-            <p>During the last hour we will test you - checking the lines, tying in, partner safety checks, belay set up and technique.</p>
-            <p>If you pass, it means that we are confident in your top rope climbing abilities and you can join other groups as a climber or belayer on top rope.</p>
+            <p>During the first 3 hours we reinforce what you learnt in the intro. You’ll learn to catch falls, practice belaying and learn about different devices as well as recognising safe anchor set up. </p>
+            <p>We’ll help you improve your technique and general competence on the rock and teach you as much as you can take on board!  </p>
+            <p>During the last hour we test you - checking the lines, tying in, partner safety checks, belay set up and technique. Assuming you pass, you’d be confident top rope climbing elsewhere and can confidently go to any sport climbing gym and pass their test for entry.</p>
           </a>
         </SmallDetailCol>
         <SmallDetailCol>
@@ -69,7 +76,7 @@ const Basics = () => {
           <br />
           <br />
             <p>Want the thrill without all the hard work? Abseiling may be for you.</p>
-            <p>In this course we'll teach you everything you need to know to be confident and safe when using your own gear to abseil:  technique, equipment handling and setting your own anchors.</p>
+            <p>In this course we'll teach you  technique, equipment handling and how to set your own anchors; everything you need to know to be confident and safe when using your own gear. </p>
           </a>
         </SmallDetailCol>
       </DetailRow>

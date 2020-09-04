@@ -13,8 +13,9 @@ const Carly = () => {
     <HalfImageText img={carlyImg} style={{minHeight: `600px`, backgroundPosition: `left bottom`}}/>
       <FlexCol right=true>
         <a>
-        <p>Carly is our Marketing Wizard (TM). She is originally from the UK but has been in Malta for seven years.</p>
-        <p>She first tried climbing a decade ago, as part of a family outing, and ended up enjoying it more than the kids!</p>
+        <p>Carly is originally from the UK but is now settled in Malta, happy on the rocks or in the sea!</p>
+        <p>She first tried climbing a decade ago, starting out as an indoor boulderer in a London gym and turning to sport climbing when she arrived in Malta, four years ago. </p>
+
         <p>As co-owner of Ġebla, Carly is passionate about creating a community and sharing her love for the outdoors.</p>
         <br />
         <p><a href="mailto:carly@gebla.mt">carly@gebla.mt</a></p>

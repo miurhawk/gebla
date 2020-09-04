@@ -21,11 +21,12 @@ const Courses = (props: { setTitle: (v: string) => void, }) => {
 
       <FullPhoto img={multipitchImg}><h1>learn the ropes</h1></FullPhoto>
       <a>
-        <span style={{fontWeight: `bold`}}><p>Something for everyone</p></span>
-         
-<p>Our courses range from entry level through to coaching for advanced technique. </p>
+        <span style={{fontWeight: `bold`}}><p>Something for everyone: our courses range from entry level through to coaching for advanced technique. </p></span>
+        
               
-<p>Our instructors are world-class and have been climbing for decades so we'll make sure you're confident and proficient before we release you into the wild on your own.</p>
+<p>Our instructors are all highly experienced, so we'll make sure you're confident and proficient before we release you into the wild on your own.</p>
+
+<p>Check out the options below, or get in touch to find out more.</p>
 
       </a>
 
