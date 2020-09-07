@@ -13,7 +13,7 @@ import "typeface-montserrat";
 
 const miuraImg = require("../../assets/img/img24.jpg");
 const steveImg = require("../../assets/img/img36.jpg");
-const carlyImg = require("../../assets/img/img4.jpg");
+const carlyImg = require("../../assets/img/img40.jpg");
 const chrisImg = require("../../assets/img/img7.jpg");
 
 // type TabDetail {item: InfoItem; detail: InfoDetail;};

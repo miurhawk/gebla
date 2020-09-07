@@ -4,7 +4,7 @@ import { HalfImageText, DetailCol, DetailRow, FullPhoto, FlexCol } from "../styl
 import { FunctionComponent, useState } from "react";
 import { Tabs } from "../components/Tabs";
 import enricoImg from "../../assets/img/img9.jpg";
-import costyImg from "../../assets/img/img8.jpg";
+import costyImg from "../../assets/img/img39.jpg";
 import ladiesImg from "../../assets/img/img18.jpg";
 import TACImg from "../../assets/img/img38.jpg";
 
@@ -28,14 +28,16 @@ const FirstTime = (props: { setTitle: (v: string) => void, }) => {
  <br />
 
       <DetailRow>
-      <HalfImageText img={TACImg}><h2>Take a Class</h2></HalfImageText>
+      <HalfImageText img={TACImg}><h2>Take a course</h2></HalfImageText>
 
         <FlexCol right=true>
           <a>
             
-<p>For those who know they want to learn the safety procedures and communication protocols of climbing, we offer a series of <a href="/courses">courses</a> to master the basic and then advanced techniques.</p>
-              <p>Our instructors are world-class and have been climbing for decades so they'll make sure you're confident and proficient before we release you into the wild on your own.</p>
-              <p>Once you become a competent climber and belayer, you'll be able to organize your own climbing sessions with old and new friends around the world, and the relationships you build through climbing will be rock-solid.</p>
+<p>Get to grips with sport climbing! Learn with expert instructors. Master the safety procedures, become comfortable with the basics and you’ll be ready to partner up with other climbers and get out there.</p>
+
+              <p>And when you’d like to take your skills to the next level or improve your technique, we have a range of advanced courses and coaching sessions to chose from.</p>
+
+         
               <p>Email <a href="mailto:coach@gebla.mt">coach@gebla.mt</a> to schedule a lesson.</p>
 
             <p>Check out our <a href="/courses">courses</a> and book today!</p>
@@ -50,10 +52,11 @@ const FirstTime = (props: { setTitle: (v: string) => void, }) => {
           <FlexCol>
             <a>
               
-              <p>Climbing teaches children perseverence, discipline, and respect for the environment. And the friends they make on the wall will last them a lifetime.</p>
-            <p>We will offer several regular kids' programs in our gym once it opens, but until then we also offer all of our outdoor programs for children as well.</p>
-            <p>Climbing can be a great activity for the whole family, no need to find a babysitter.</p>
-            <p>Check out our <a href="/courses">courses</a> to see the best set for your family.</p>
+              <p>Kids have tons of energy and it’s not easy to find new activities to keep them interested and learning at the same time. Climbing is a great way to put all that energy to good use. </p>
+            <p>It teaches children perseverance, discipline, and respect for the environment. They’ll make lifelong friends, built on something special, and they’ll come home tired and happy.
+</p>
+            <p>It’s also a great activity for families; a chance to come together and build new memories which will last a lifetime. </p>
+            <p>  Check out our <a href="/courses">courses</a> or  <a href="mailto:info@gebla.mt">get in touch</a> to find out more.</p>
             </a>
           </FlexCol>
           <HalfImageText right="true" img={costyImg} style={{backgroundPosition: `left center`}}><h2>Family fun</h2></HalfImageText>
