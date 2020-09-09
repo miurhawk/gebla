@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { HalfImageText, Headline, DetailRow, DetailCol, FlexRowFill, FlexAColumnFill } from "../styles";
 
 const indoorImg = require("../../assets/img/holds.jpg");
-const outdoorImg = require("../../assets/img/img28.jpg");
+const outdoorImg = require("../../assets/img/img43.jpg");
 
 
 const HomePage = () => {
