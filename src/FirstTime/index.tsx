@@ -6,7 +6,7 @@ import { Tabs } from "../components/Tabs";
 import enricoImg from "../../assets/img/img9.jpg";
 import costyImg from "../../assets/img/img39.jpg";
 import ladiesImg from "../../assets/img/img18.jpg";
-import TACImg from "../../assets/img/img38.jpg";
+import tACImg from "../../assets/img/img38.jpg";
 
 const FirstTime = (props: { setTitle: (v: string) => void, }) => {
   props.setTitle("First Time");
@@ -18,7 +18,7 @@ const FirstTime = (props: { setTitle: (v: string) => void, }) => {
           <FullPhoto img={enricoImg} style={{backgroundPosition: `0% 50%`}}><h1>Find the climber in you</h1></FullPhoto>
             <a>
               <span style={{fontWeight: `bold`}}><p>Always wanted to try climbing but don't know where to start?</p></span>
-              <p>Anyone can climb. We feel pretty passionate about this. You don’t need to be an athlete, have ‘strong fingers’, be able to do pull ups, or be ‘young’.  So if you’re doubting yourself, put that to one side and let’s give it a try.</p> 
+              <p>Anyone can climb. We feel pretty passionate about this. You don’t need to be an athlete, have ‘strong fingers’, be able to do pull ups, or be ‘young’.  So if you’re doubting yourself, put that to one side and let’s give it a try.</p>
 <p>Our <a href="/courses#CE">Climb Experience</a> is perfect if you’ve never tried it before. You can feel safe in the knowledge you’ll be in experienced hands and get to find out what it’s all about and have a great day out - on your own or with a group of friends. </p>
 
 <p><a href="mailto:info@gebla.mt">Book now</a> or check out our range of courses below:</p>
@@ -28,16 +28,14 @@ const FirstTime = (props: { setTitle: (v: string) => void, }) => {
  <br />
 
       <DetailRow>
-      <HalfImageText img={TACImg}><h2>Take a course</h2></HalfImageText>
+      <HalfImageText img={tACImg}><h2>Take a course</h2></HalfImageText>
 
         <FlexCol right=true>
           <a>
-            
-<p>Get to grips with sport climbing! Learn with expert instructors. Master the safety procedures, become comfortable with the basics and you’ll be ready to partner up with other climbers and get out there.</p>
+
+          <p>Get to grips with sport climbing! Learn with expert instructors. Master the safety procedures, become comfortable with the basics and you’ll be ready to partner up with other climbers and get out there.</p>
 
               <p>And when you’d like to take your skills to the next level or improve your technique, we have a range of advanced courses and coaching sessions to chose from.</p>
-
-         
               <p>Email <a href="mailto:coach@gebla.mt">coach@gebla.mt</a> to schedule a lesson.</p>
 
             <p>Check out our <a href="/courses">courses</a> and book today!</p>
@@ -51,7 +49,7 @@ const FirstTime = (props: { setTitle: (v: string) => void, }) => {
         <DetailRow>
           <FlexCol>
             <a>
-              
+
               <p>Kids have tons of energy and it’s not easy to find new activities to keep them interested and learning at the same time. Climbing is a great way to put all that energy to good use. </p>
             <p>It teaches children perseverance, discipline, and respect for the environment. They’ll make lifelong friends, built on something special, and they’ll come home tired and happy.
 </p>
@@ -69,7 +67,7 @@ const FirstTime = (props: { setTitle: (v: string) => void, }) => {
 
         <FlexCol right=true>
           <a>
-            
+
 
             <p>It's not just about doing things you never imagined you could. It’s about new friendships built on something different. A worldwide community you’re suddenly and automatically welcomed into. </p>
 

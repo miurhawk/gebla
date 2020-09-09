@@ -333,6 +333,52 @@ export const SmallDetailCol = styled.div`
   }
 `;
 
+export const StyledForm = styled.form`
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  width: 600px;
+  align-items: stretch;
+  justify-content: space-evenly;
+  align-self: center;
+  h6 {
+    color: ${Theme.colors.a1};
+  };
+  label {
+    font-family: ${Theme.fonts.body};
+  };
+  select {
+    background-color: ${Theme.colors.light};
+    border-radius: 5px;
+    border: none;
+  };
+  input {
+    background-color: ${Theme.colors.light};
+    border-radius: 5px;
+    border: none;
+    value {
+      font-size: 30pt;
+    }
+  };
+
+  label {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    select {
+      flex-grow: 1;
+      margin-left: 10px;
+    };
+    input {
+      flex-grow: 1;
+      margin-left: 10px;
+    };
+
+  };
+
+`;
+
 export const FlexCol = styled.div`
   display: flex;
   flex-direction: column;

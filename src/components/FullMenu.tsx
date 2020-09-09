@@ -21,6 +21,7 @@ const FullMenu = (props: MenuProps) => {
       <br />
 
       <a href="/first-time" onClick={() => close()}>First Time</a>
+      <a href="/climb-exp" onClick={() => close()}>Climb Experience</a>
       <a href="/indoor-home" onClick={() => close()}>Indoor</a>
       <a href="/outdoor-home" onClick={() => close()}>Outdoor</a>
       <a href="/courses" onClick={() => close()}>Courses & Coaching</a>
