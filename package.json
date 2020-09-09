@@ -12,14 +12,20 @@
     "build": "parcel build src/index.html --no-source-maps"
   },
   "dependencies": {
+    "@types/node": "^14.6.4",
+    "@types/nodemailer": "^6.4.0",
+    "@types/nodemailer-direct-transport": "^1.0.31",
+    "@types/nodemailer-smtp-transport": "^2.7.4",
     "@types/react-router-dom": "^5.1.5",
     "components": "^0.1.0",
     "global": "^4.4.0",
+    "nodemailer": "^6.4.11",
     "parcel": "^1.12.4",
     "parcel-bundler": "^1.12.4",
     "react": ">=15",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
+    "setimmediate": "^1.0.5",
     "styled-components": "^5.1.1",
     "typeface-montserrat": "^0.0.75"
   },

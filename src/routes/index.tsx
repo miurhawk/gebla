@@ -8,6 +8,9 @@ import Courses from "../Courses";
 import About from "../About";
 import Blog from "../Blog";
 import Corporate from "../Corporate";
+import Form from "../Form";
+import Success from "../Success";
+import ClimbExp from "../ClimbExp";
 
 
 export const Paths = {
@@ -20,6 +23,9 @@ export const Paths = {
   ABOUT: "/about",
   BLOG: "/blog",
   CORPORATE: "/corporate",
+  FORM: "/form/:product",
+  SUCCESS: "/success"
+  CLIMB_EXP: "/climb-exp"
 };
 
 type RouterProps = {
@@ -37,6 +43,9 @@ const Routes = (props: RouterProps) => {
       <Route path={Paths.ABOUT}><About setTitle={props.setTitle} /></Route>
       <Route path={Paths.BLOG}><Blog setTitle={props.setTitle} /></Route>
       <Route path={Paths.CORPORATE}><Corporate setTitle={props.setTitle} /></Route>
+      <Route path={Paths.FORM}><Form setTitle={props.setTitle} /></Route>
+      <Route path={Paths.SUCCESS}><Success /></Route>
+      <Route path={Paths.CLIMB_EXP}><ClimbExp setTitle={props.setTitle} /></Route>
 
     </Switch>
   );
