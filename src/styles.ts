@@ -417,13 +417,13 @@ export const FlexCol = styled.div`
 export const StyledMenu = styled.nav<{ open: boolean }>`
   top: 0;
   right: 0;
-  height: 26rem;
+  height: 500px;
   flex-wrap: nowrap;
   position: fixed;
   display: flex;
   background-color: ${Theme.colors.light};
   z-index: 2;
-  width: 18rem;
+  width: 300px;
   flex-direction: column;
   align-items: left;
   justify-content: flex-start;
@@ -436,7 +436,7 @@ export const StyledMenu = styled.nav<{ open: boolean }>`
   a {
     :link {padding-left: 2rem;
       padding-top: 1rem;
-      font-size: 16px;
+      font-size: 18px;
       color: ${Theme.colors.dark};
       :hover {color: ${Theme.colors.a1};};
       transition: transform 0.5s;

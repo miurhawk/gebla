@@ -20,24 +20,23 @@ const Courses = (props: { setTitle: (v: string) => void, }) => {
     <DetailCol>
 
       <FullPhoto img={multipitchImg}><h1>learn the ropes</h1></FullPhoto>
-      <a>
-        <span style={{fontWeight: `bold`}}><p>Something for everyone: our courses range from entry level through to coaching for advanced technique. </p></span>
-        
-              
-<p>Our instructors are all highly experienced, so we'll make sure you're confident and proficient before we release you into the wild on your own.</p>
 
-<p>Check out the options below, or get in touch to find out more.</p>
-
-      </a>
-
-      <Tabs defaultTab="">
+      <Tabs defaultTab="Intro">
         <InfoItems>
           <Tabs.Tab label="Basics" color={colorArray[Math.floor(Math.random() * colorArray.length)]}></Tabs.Tab>
           <Tabs.Tab label="Advanced" color={colorArray[Math.floor(Math.random() * colorArray.length)]}></Tabs.Tab>
           <Tabs.Tab label="Kids' Programs" color={colorArray[Math.floor(Math.random() * colorArray.length)]}></Tabs.Tab>
           <Tabs.Tab label="1-to-1 Coaching" color={colorArray[Math.floor(Math.random() * colorArray.length)]}></Tabs.Tab>
         </InfoItems>
-
+        <Tabs.Panel label="Intro">
+          <DetailCol>
+            <a>
+            <span style={{fontWeight: `bold`}}><p>Something for everyone: our courses range from entry level through to coaching for advanced technique. </p></span>
+            <p>Our instructors are all highly experienced, so we'll make sure you're confident and proficient before we release you into the wild on your own.</p>
+            <p>Check out the options above, or get in touch to find out more.</p>
+            </a>
+          </DetailCol>
+        </Tabs.Panel>
         <Tabs.Panel label="Basics">
           <Basics />
         </Tabs.Panel>
