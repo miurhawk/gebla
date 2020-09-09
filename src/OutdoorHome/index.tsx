@@ -28,7 +28,9 @@ const OutdoorHome = (props: { setTitle: (v: string) => void, }) => {
           <FlexCol>
             <a>
               <h2>GO OUTSIDE. <br /><span style={{color: `#23E5BF`}}>FEEL ALIVE.</span></h2>
-              <p>If you want to give it a try for the first time, our Climb Experience might be right for you. Once you're hooked we offer a series of courses to help you learn the safety and communication protocols of climbing so you can become a self-sufficient climber and belayer.</p>
+              <p>If you want to give it a try for the first time, our <a href="/courses#CE">Climb Experience</a> might be right for you.</p>
+
+<p>Once you're hooked we offer a series of <a href="/courses">courses</a> to help you learn the safety and communication protocols of climbing so you can become a self-sufficient climber and belayer.</p>
               <p>When you become a climber, you join a global community of welcoming, adventurous and eclectic folks who will be eager to share a belay, and a beer, anywhere in the world.</p>
             </a>
           </FlexCol>

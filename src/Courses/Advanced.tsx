@@ -15,8 +15,11 @@ const Advanced = () => {
 
 
       <DetailRow>
-      <a><p><span style={{fontWeight: `bold`}}>Our advanced courses assume you are familiar with toprope belaying and climbing and have all your own gear. </span>You should be able to confidently climb at least a grade 5 climb on toprope.</p>
-      <p>Because each student is unique, we can't tell you beforehand how many sessions will be required to gain a competence in a new skill. We will evaluate you after each session and tell you whether we think you're ready to perform the skill without supervision or not. But expect each skill to take 2-5 sessions to master.</p>
+      <a><p><span style={{fontWeight: `bold`}}>Advance your skills.</span></p>
+
+<p>Our advanced courses assume you're confident with toprope climbing to at least grade 5. We also need you to be happy toprope belaying, and have your own gear.</p>
+
+      <p>Because each student is unique, we can't tell you beforehand how many sessions will be required to gain a competence in a new skill. We'll evaluate you after each session and tell you whether we think you're ready to perform the skill without supervision or not. But expect each skill to take 2-5 sessions to master.</p>
       <p>Each session is 3 hours long and costs €120. A maximum of 2 participants per guide is allowed.</p>
       <p>Email <a href="mailto:info@gebla.mt">info@gebla.mt</a> with your details to book a session.</p></a>
 

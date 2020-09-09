@@ -27,12 +27,12 @@ const Basics = () => {
       <DetailRow style={{flexWrap: `wrap`, justifyContent: `center`}}>
         <SmallDetailCol>
           <a id="CE">
-          <h6>Climbing Now</h6>
+          <h6>Climb Experience</h6>
           €65 pp | 4 hours | no prerequisites
           <br />
           <br />
-            <p>Climbing Now allows you to try climbing if you're not sure you want to commit to learning all the skills necessary to climb on your own.</p>
-            <p>Our expert guides will look out for your safety and maximize your climbing time.</p>
+            <p>This fun session allows you to try climbing if you're not sure you want to commit to learning all the skills necessary to climb on your own.</p>
+            <p>Our expert guides will look out for your safety and maximise your climbing time.</p>
             <p>While you won't learn any rope skills during the session, it's a great way to introduce yourself and start getting acquainted with the gear and protocols.</p>
           </a>
         </SmallDetailCol>
