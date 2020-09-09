@@ -5,11 +5,11 @@ import { FunctionComponent, useState } from "react";
 import { Gallery } from "../components/Gallery";
 
 
-import lauraImg from "../../assets/img/img43.jpg";
-import lukasImg from "../../assets/img/img20.jpg";
-import evImg from "../../assets/img/img11.jpg";
-import fenechImg from "../../assets/img/img14.jpg";
-import suhailImg from "../../assets/img/img32.jpg";
+import lauraImg from "../../assets/img/img52.jpg";
+import lukasImg from "../../assets/img/img48.jpg";
+import evImg from "../../assets/img/img49.jpg";
+import fenechImg from "../../assets/img/img47.jpg";
+import suhailImg from "../../assets/img/img51.jpg";
 import charlieImg from "../../assets/img/img.jpg"
 
 import otherImg from "../../assets/img/img19.jpg";

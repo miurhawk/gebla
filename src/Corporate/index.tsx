@@ -26,8 +26,8 @@ return (
 
 <p>No one will be forced to do more than they are able. But since climbing really is an activity anyone can try, the whole group will leave feeling inspired and that they have accomplished something they never imagined they could.</p>
 
-            <p>We currently offer <a href="/courses#CE">Climb Experiences</a> for groups, which can be followed up with a picnic with a view.</p>
-            <p>Email <a href="mailto:info@gebla.mt">info@gebla.mt</a> to schedule your group event.</p>
+       <br>
+</br>
           </a>
         </FlexCol>
       </DetailRow>
@@ -38,18 +38,24 @@ return (
           <FlexCol>
             <a>
               
-              <p>new copy to go here</p>
+              <p>Climb Experience for team building: try something new today!</p>
 
-            <p>It teaches children perseverance, discipline, and respect for the environment. They’ll make lifelong friends, built on something special, and they’ll come home tired and happy.
-</p>
-            <p>It’s also a great activity for families; a chance to come together and build new memories which will last a lifetime. </p>
+            <p>We can tailor full or half days, depending on your requirements and group size, but we recommend our Climb Experience for an awesome team building opportunity.</p>
 
- <p>It’s also a great activity for families; a chance to come together and build new memories which will last a lifetime. </p>
+            <p>Designed to be focused on fun rather than learning rope work and climbing skills, we’ll ensure everyone has a great day out while pushing limits and encouraging teamwork, communication and trust.</p>
 
-            <p><a href="mailto:info@gebla.mt">Book today</a> or check out our <a href="/courses">courses</a> to explore our range of courses.</p>
+ <p>No matter how big your group is, there are several exercises which can be done in pairs or small groups to help build the team and bring people together.</p>
+
+<p> Our expert guides will set everything up, provide all the equipment needed and ensure everyone is comfortable and safe. </p>
+
+<p>We can also include a picnic before or after the session, at the crag or in a scenic spot nearby.</p>
+
+<p>Prices start at €65pp | 4 hours | no prerequisites | all equipment provided</p>
+
+            <p><a href="mailto:info@gebla.mt">Book today</a> </p>
             </a>
           </FlexCol>
-          <HalfImageText right="true" img={costyImg} style={{backgroundPosition: `left center`}}><h2>Climb Experience</h2></HalfImageText>
+          <HalfImageText right="true" img={costyImg} style={{backgroundPosition: `left center`}}><h2>The Climb Experience</h2></HalfImageText>
 
         </DetailRow>
 
