@@ -29,7 +29,6 @@ const Tabs: FunctionComponent  & ITabsComposition = props => {
   }
   var re = /%20/gi;
   queryString = queryString.replace(re, " ");
-  console.log(queryString);
 
   const [activeTab, setActiveTab] = useState(queryString)
   return (

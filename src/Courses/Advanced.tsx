@@ -21,7 +21,7 @@ const Advanced = () => {
 
       <p>Because each student is unique, we can't tell you beforehand how many sessions will be required to gain a competence in a new skill. We'll evaluate you after each session and tell you whether we think you're ready to perform the skill without supervision or not. But expect each skill to take 2-5 sessions to master.</p>
       <p>Each session is 3 hours long and costs €120. A maximum of 2 participants per guide is allowed.</p>
-      <p>Email <a href="mailto:info@gebla.mt">info@gebla.mt</a> with your details to book a session.</p></a>
+      <p><a href="/form/Advanced_Course">Click here</a> or email <a href="mailto:info@gebla.mt">info@gebla.mt</a> with your details to book a session.</p></a>
 
       </DetailRow>
 
@@ -47,7 +47,7 @@ const Advanced = () => {
 
       </SmallDetailCol>
       <SmallDetailCol>
-          <BookButton><h7>Book Now</h7></BookButton>
+          <BookButton onClick={() => window.location.href='/form/Advanced_Course'}><h7>Book Now</h7></BookButton>
           </SmallDetailCol>
         <SmallDetailCol>
           <a id="CE">
@@ -94,7 +94,7 @@ const Advanced = () => {
           <br />
         </SmallDetailCol>
         <SmallDetailCol>
-            <BookButton><h7>Book Now</h7></BookButton>
+            <BookButton onClick={() => window.location.href='/form/Advanced_Course'}><h7>Book Now</h7></BookButton>
             </SmallDetailCol>
       </DetailRow>
       <FullPhoto img={towerImg} style={{minHeight: `120vh`}}></FullPhoto>

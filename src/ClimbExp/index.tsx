@@ -24,7 +24,7 @@ return (
 
 <p>Because in the end, you won’t remember the time you spent in the office, or yet another day doing the chores. But you will remember the time, you felt the fear and did it anyway.</p>
 
-           
+
             <p>Book now <a href="mailto:info@gebla.mt">info@gebla.mt</a></p>
           </a>
         </FlexCol>

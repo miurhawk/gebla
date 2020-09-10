@@ -37,7 +37,7 @@ const Basics = () => {
           </a>
         </SmallDetailCol>
         <SmallDetailCol>
-            <BookButton><h7>Book Now</h7></BookButton>
+            <BookButton onClick={() => window.location.href='/form/Climb_Experience'}><h7>Book Now</h7></BookButton>
             </SmallDetailCol>
         <SmallDetailCol>
           <a>
@@ -46,7 +46,7 @@ const Basics = () => {
           <br />
           <br />
 
-        
+
 
 	<p>In this tailored session we'll teach you general principles of climbing, some technique, basic understanding of anchors and safety.</p>
 
@@ -67,7 +67,7 @@ const Basics = () => {
           </a>
         </SmallDetailCol>
         <SmallDetailCol>
-            <BookButton><h7>Book Now</h7></BookButton>
+            <BookButton onClick={() => window.location.href='/form/Climb_Experience'}><h7>Book Now</h7></BookButton>
             </SmallDetailCol>
         <SmallDetailCol>
           <a>
