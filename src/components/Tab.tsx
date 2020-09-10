@@ -25,6 +25,8 @@ export const Tab: FunctionComponent<ITabProps> = props => {
   return (
     <InfoItem img={props.img} style={props.style} isActive={isActive} darkenHover={props.darkenHover} color={props.color} onClick={() => setTab(props.label)}>
       <a>{props.hideLabel ? "" : props.label}</a>
+      <div />
+      <div />
     </InfoItem>
   )
 }

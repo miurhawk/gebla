@@ -17,10 +17,10 @@ const FirstTime = (props: { setTitle: (v: string) => void, }) => {
   return (
     <DetailCol>
 
-          <FullPhoto img={enricoImg} style={{backgroundPosition: `0% 50%`}}><h1>Find the climber in you</h1> 
+          <FullPhoto img={enricoImg} style={{backgroundPosition: `0% 50%`}}><h1>Find the climber in you</h1>
 <br>
 </br>
-<BookButton style={{margin: `0 50px 0 0`, alignleft: `flex-end`}} onClick={() => window.location.href='/form/Corporate_Climb_Experience'}><h7>Book Now</h7></BookButton></FullPhoto>
+<BookButton onClick={() => window.location.href='/courses'}><h7>See Our Courses</h7></BookButton></FullPhoto>
             <a>
               <span style={{fontWeight: `bold`}}><p>Always wanted to try climbing but don't know where to start?</p></span>
               <p>Anyone can climb. We feel pretty passionate about this. You don’t need to be an athlete, have ‘strong fingers’, be able to do pull ups, or be ‘young’.  So if you’re doubting yourself, put that to one side and let’s give it a try.</p>

@@ -84,7 +84,7 @@ const OutdoorHome = (props: { setTitle: (v: string) => void, }) => {
 
 <br>
 </br>
-<BookButton style={{margin: `0 50px 0 0`, alignleft: `flex-end`}} onClick={() => window.location.href='/form/Corporate_Climb_Experience'}><h7>Book Now</h7></BookButton>
+<BookButton onClick={() => window.location.href='/form/Corporate_Climb_Experience'}><h7>Book Now</h7></BookButton>
           </FlexCol>
         </DetailRow>
 

@@ -58,9 +58,9 @@ export const CenteredPage = styled.div`
   h3 {color: ${Theme.colors.light}; font-family: ${Theme.fonts.heading}; font-size: 40pt;};
   h4 {color: ${Theme.colors.a4}; font-family: ${Theme.fonts.heading};};
   h5 {color: ${Theme.colors.dark}; font-family: ${Theme.fonts.heading};};
-  h6 {color: ${Theme.colors.light}; font-family: ${Theme.fonts.body}; font-size: 24px; margin: 0;};
-  h7 {color: ${Theme.colors.dark}; font-family: ${Theme.fonts.body}; font-size: 20px; margin: 0;};
-  a {color: ${Theme.colors.light}; font-family: ${Theme.fonts.body}; font-size: 18px;};
+  h6 {color: ${Theme.colors.light}; font-family: ${Theme.fonts.body}; font-size: 26px; margin: 0;};
+  h7 {color: ${Theme.colors.dark}; font-family: ${Theme.fonts.body}; font-size: 16px; margin: 0;};
+  a {color: ${Theme.colors.light}; font-family: ${Theme.fonts.body}; font-size: 16px;};
   a:link {color: ${Theme.colors.a1}; text-decoration: none; padding: 0;};
   a:link:hover {color: ${Theme.colors.a3}; text-decoration: none;};
   a:link:active {color: ${Theme.colors.a4}; text-decoration: none;};
@@ -98,17 +98,17 @@ export const BookButton = styled.button`
   margin: 150px 230px 150px 230px;
   width: 150px;
   align-self: center;
+  opacity: 0.6;
   a {
     padding: 0;
     margin: 0;
   }
-  border: none;
-  border-radius: 4px;
+  border: 4px solid rgba(35, 229, 191, .5);
   :hover {
     h7 {
       font-weight: bold;
     };
-    border: 2px solid ${Theme.colors.light};
+    opacity: 1;
   }
 `;
 
@@ -156,6 +156,7 @@ export const Navbar = styled.nav`
   align-items: stretch;
   flex-wrap: nowrap;
   z-index: 1;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 `;
 
 export const Ul = styled.ul`
@@ -265,19 +266,24 @@ export const FullPhoto = styled.div`
   min-height: 20rem;
   text-align: left;
   h1 {
-    margin: 0;
+    margin: 0 60vw 0 0;
     padding: 0 0 0 3rem;
   }
   h1:nth-child(2) {
     padding: 0.5rem 0 0 3rem;
   }
   h2 {
-    margin: 0;
+    margin: 0 60vw 0 0;
     justify-self: left;
     padding: 2rem 0 0 3rem;
   }
   h2:nth-child(2) {
     padding: 0.5rem 0 0 3rem;
+  }
+  button {
+    align-self: flex-start;
+    margin: 0 0 0 3rem;
+    width: 300px;
   }
 `;
 
@@ -411,6 +417,10 @@ export const FlexCol = styled.div`
   @media (max-width: 780px) {
     width: 100vw;
   }
+  button {
+    align-self: ${props => props.right ? `flex-start` : `flex-end`};
+    margin: ${props => props.right ? `0 0 0 50` : `0 50px 0 0`};
+  }
 `;
 
 
@@ -523,7 +533,8 @@ export const InfoItem = styled.div`
     padding: 0 5vw 0 5vw;
     a {color: ${Theme.colors.dark};};
   };
-  background-image: url(${({ props.isActive, props.img }) => isActive ? "" : img});
+  opacity: ${({ props.img, props.isActive }) => img ? isActive ? 0.5 : 1 : 1};
+  background-image: url(${({ props.img }) => img});
   align-items: center;
   background-size: cover;
   background-position: left;
@@ -548,6 +559,31 @@ export const InfoItem = styled.div`
   h3 {
     padding: 0 3rem 0 3rem;
   }
+  div {
+    position: ${({ open }) => open ? `fixed` : `relative` };
+    top: ${({ open }) => open ? `50px`: `0` };
+    width: 40px;
+    height: 2px;
+    border-radius: 10px;
+    background-color: ${Theme.colors.a1};
+    transition: transform 0.5s ease;
+    z-index: 4;
+    }
+  :hover {
+    div {
+      background-color: ${Theme.colors.a4};
+    }
+  }
+  div:nth-child(2) {
+    transform: rotate(45deg);
+  }
+  div:nth-child(1) {
+    transform: rotate(-45deg);
+  }
+  div:nth-child(3) {
+    transform: rotate(-45deg);
+
+  };
 `;
 
 
