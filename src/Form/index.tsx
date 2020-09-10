@@ -8,7 +8,14 @@ import martinImg from "../../assets/img/img23.jpg";
 
 const BaseForm = (props: { setTitle: (v: string) => void, }) => {
   const { product } = useParams();
+  console.log(product);
+  if (product) {
+    var re = /_/gi;
+    let endProduct = product.replace(re, " ");
+  } else {
 
+    let endProduct = "Climb Experience";
+  }
   const today = new Date().toLocaleDateString("en-CA");
 
   const [name, setName] = useState(""):
@@ -22,12 +29,12 @@ const BaseForm = (props: { setTitle: (v: string) => void, }) => {
 
   const handleSubmit = (evt) => {
     evt.preventDefault();
-    console.log(name + email + phone + date + time + product);
+    console.log(name + email + phone + date + time + endProduct);
 
-    var text = "Good Day,\nThis is a confirmation that "+name+" has requested a "+product+" booking for "+number+" people on "+date+" "+time+".\nContact details: "+phone;
+    var text = "Good Day,\nThis is a confirmation that "+name+" has requested a "+endProduct+" booking for "+number+" people on "+date+" "+time+".\nContact details: "+phone;
     let data = JSON.stringify({
       text: text,
-      title: "New " +product+" Booking Request",
+      title: "New " +endProduct+" Booking Request",
       recipient: email,
       secret: "XmTpO1",
     });
@@ -50,6 +57,7 @@ const BaseForm = (props: { setTitle: (v: string) => void, }) => {
   return (
 
     <StyledForm onSubmit={handleSubmit}>
+      <h6 style={{color: `#EEEDF4`}}>{endProduct} Booking</h6>
 
       <label><h6>Full Name: </h6> <input type="text" required value={name} onChange={(e) => setName(e.target.value)} /></label>
 
