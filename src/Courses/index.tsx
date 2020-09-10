@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Link } from "react-router-dom";
 import { DetailCol, Headline, HalfImageText, FlexCol, FullPhoto, DetailRow, Divider, FlexCol, InfoItem, InfoItems } from "../styles";
-import { FunctionComponent, useState } from "react";
+import { FunctionComponent, useState, useEffect } from "react";
 import { Tabs } from "../components/Tabs";
 import Basics from "./Basics.tsx";
 import Advanced from "./Advanced.tsx";
@@ -13,8 +13,23 @@ const multipitchImg = require("../../assets/img/img27.jpg");
 
 
 const Courses = (props: { setTitle: (v: string) => void, }) => {
-  props.setTitle("Courses & Coaching");
+  // props.setTitle("Courses & Coaching");
   let colorArray: Array<string> = ["#23E5BF","#57D0FF","#8888FF","#FF8DEA"];
+  const [color1, updateColor1] = useState("#23E5BF");
+  const [color2, updateColor2] = useState("");
+  const [color3, updateColor3] = useState("");
+  const [color4, updateColor4] = useState("");
+
+
+  useEffect(() => {
+    setTimeout(() => updateColor1(""), 200)
+    setTimeout(() => updateColor2("#23E5BF"), 200)
+    setTimeout(() => updateColor2(""), 400)
+    setTimeout(() => updateColor3("#23E5BF"), 400)
+    setTimeout(() => updateColor3(""), 600)
+    setTimeout(() => updateColor4("#23E5BF"), 600)
+    setTimeout(() => updateColor4(""), 800)
+  }, []);
 
   return (
     <DetailCol>
@@ -23,10 +38,10 @@ const Courses = (props: { setTitle: (v: string) => void, }) => {
 
       <Tabs defaultTab="Intro">
         <InfoItems>
-          <Tabs.Tab label="Basics" color={colorArray[Math.floor(Math.random() * colorArray.length)]}></Tabs.Tab>
-          <Tabs.Tab label="Advanced" color={colorArray[Math.floor(Math.random() * colorArray.length)]}></Tabs.Tab>
-          <Tabs.Tab label="Kids' Programs" color={colorArray[Math.floor(Math.random() * colorArray.length)]}></Tabs.Tab>
-          <Tabs.Tab label="1-to-1 Coaching" color={colorArray[Math.floor(Math.random() * colorArray.length)]}></Tabs.Tab>
+          <Tabs.Tab label="Basics" color={color1}></Tabs.Tab>
+          <Tabs.Tab label="Advanced" color={color2}></Tabs.Tab>
+          <Tabs.Tab label="Kids' Programs" color={color3}></Tabs.Tab>
+          <Tabs.Tab label="1-to-1 Coaching" color={color4}></Tabs.Tab>
         </InfoItems>
         <Tabs.Panel label="Intro">
           <DetailCol>

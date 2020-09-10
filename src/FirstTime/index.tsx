@@ -93,7 +93,7 @@ const FirstTime = (props: { setTitle: (v: string) => void, }) => {
 
         <FullPhoto img={martinImg} style={{minHeight: `50vh`, backgroundPosition: `top`}}/>
         <DetailRow>
-        <FlexCol><h2> More than <span style={{ color: `#23E5BF`}}>climbing</span><br /></h2></FlexCol>
+        <FlexCol><a><h2> More than <span style={{ color: `#23E5BF`}}>climbing</span><br /></h2></a></FlexCol>
 
         <FlexCol right=true>
             <a>

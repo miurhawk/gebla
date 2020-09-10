@@ -98,17 +98,17 @@ export const BookButton = styled.button`
   margin: 150px 230px 150px 230px;
   width: 150px;
   align-self: center;
-  opacity: 0.6;
   a {
     padding: 0;
     margin: 0;
   }
-  border: 4px solid rgba(35, 229, 191, .5);
+  border: none;
+  box-shadow: 8px 8px 0px ${Theme.colors.light};
   :hover {
+    box-shadow: none;
     h7 {
       font-weight: bold;
     };
-    opacity: 1;
   }
 `;
 
@@ -207,8 +207,9 @@ export const FlexAColumnFill = styled.a`
 export const HalfImageText = styled.div`
   display: flex;
   flex-direction: column;
-  width: 50vw;
-  minheight: 30vw;
+  width: 48vw;
+  margin: ${props => props.right ? `0 0 0 2vw` : `0 2vw 0 0`};
+  min-height: 30vw;
   align-items: ${props => props.right ? `flex-start` : `flex-end`};
   flex-wrap: wrap;
   background-image: url(${props => props.img});
@@ -334,6 +335,11 @@ export const SmallDetailCol = styled.div`
     padding: 1rem 3rem 1rem 3rem;
     text-align: center;
   };
+  button {
+    margin: 0;
+    height: 30px;
+    width: 100px;
+  }
   @media (max-width: 780px) {
     max-width: 100vw;
   }
@@ -355,12 +361,10 @@ export const StyledForm = styled.form`
   };
   select {
     background-color: ${Theme.colors.light};
-    border-radius: 5px;
     border: none;
   };
   input {
     background-color: ${Theme.colors.light};
-    border-radius: 5px;
     border: none;
     value {
       font-size: 30pt;
@@ -396,30 +400,30 @@ export const FlexCol = styled.div`
   href: ${props => props.href};
   a {
     text-align: ${props => props.right ? `left` : `right`};
-    padding: 1rem 3rem 0 3rem;
+    padding: 1rem 2rem 0 2rem;
   };
   h1 {
     text-align: ${props => props.right ? `left` : `right`};
     margin: 0;
-    padding: ${props => props.right ? `2rem 3rem 0 0` : `2rem 0 0 3rem`};
+    padding: ${props => props.right ? `2rem 2rem 0 0` : `2rem 0 0 2rem`};
   }
   h1:nth-child(2) {
-    padding: 0.5rem 3rem 0 3rem;
+    padding: 0.5rem 2rem 0 2rem;
   }
   h2 {
     text-align: ${props => props.right ? `left` : `right`};
     margin: 0;
-    padding: ${props => props.right ? `2rem 3rem 0 0` : `2rem 0 0 3rem`};
+    padding: ${props => props.right ? `2rem 2rem 0 0` : `2rem 0 0 2rem`};
   }
   h2:nth-child(2) {
-    padding: 0.5rem 3rem 0 3rem;
+    padding: 0.5rem 2rem 0 2rem;
   }
   @media (max-width: 780px) {
     width: 100vw;
   }
   button {
     align-self: ${props => props.right ? `flex-start` : `flex-end`};
-    margin: ${props => props.right ? `0 0 0 50` : `0 50px 0 0`};
+    margin: ${props => props.right ? `0 0 0 2rem` : `0 2rem 0 0`};
   }
 `;
 
@@ -431,7 +435,8 @@ export const StyledMenu = styled.nav<{ open: boolean }>`
   flex-wrap: nowrap;
   position: fixed;
   display: flex;
-  background-color: ${Theme.colors.light};
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+  background-color: ${Theme.colors.dark};
   z-index: 2;
   width: 300px;
   flex-direction: column;
@@ -447,19 +452,26 @@ export const StyledMenu = styled.nav<{ open: boolean }>`
     :link {padding-left: 2rem;
       padding-top: 1rem;
       font-size: 18px;
-      color: ${Theme.colors.dark};
+      color: ${Theme.colors.light};
       :hover {color: ${Theme.colors.a1};};
       transition: transform 0.5s;
       -webkit-transition: transform 0.5s;
       -moz-transition: transform 0.5s;
       -o-transition: transform 0.5s;
-      :visited {color: ${Theme.colors.dark}};
+      :visited {color: ${Theme.colors.light}};
     };
     :hover {transform: translate(25px, 0);};
     :visited {
-      color: ${Theme.colors.dark};
+      color: ${Theme.colors.light};
       :hover {color: ${Theme.colors.a1};};
     };
+  };
+  @media (max-width: 780px) {
+    width: 100vw;
+    height: 100vh;
+    a {
+      :link {font-size: 30px;};
+    }
   };
 `;
 
@@ -475,11 +487,11 @@ export const MenuButton = styled.button<{ open: boolean, right: boolean }>`
   margin-right: 2rem;
   margin-left: 1rem;
   margin-top: 1rem;
-  background-color: ${({ open }) => open ? Theme.colors.light : Theme.colors.dark };
+  background-color: ${Theme.colors.dark};
   outline: none;
   border: none;
   z-index: 3;
-  transition: right 0.5s ease-in-out 0.2s;
+  transition: right 0.5s ease-in-out;
   div {
     position: ${({ open }) => open ? `fixed` : `relative` };
     top: ${({ open }) => open ? `50px`: `0` };
@@ -504,6 +516,9 @@ export const MenuButton = styled.button<{ open: boolean, right: boolean }>`
   div:nth-child(3) {
     transform: ${({ open }) => open ? `rotate(-45deg)` : `` };
   }
+  @media (max-width: 780px) {
+    right: 80px;
+  };
 `;
 
 export const InfoItems = styled.div`
@@ -529,7 +544,7 @@ export const GalleryDots = styled.div`
 
 export const InfoItem = styled.div`
   :hover {
-    background-color: ${({props.isActive, props.darkenHover, props.color}) => isActive ? Theme.colors.light : darkenHover ? Theme.colors.dark : Theme.colors.a1};
+    background-color: ${({props.isActive, props.darkenHover}) => isActive ? Theme.colors.light : darkenHover ? Theme.colors.dark : Theme.colors.a1};
     padding: 0 5vw 0 5vw;
     a {color: ${Theme.colors.dark};};
   };
@@ -538,7 +553,7 @@ export const InfoItem = styled.div`
   align-items: center;
   background-size: cover;
   background-position: left;
-  background-color: ${({ props.isActive }) => isActive ? Theme.colors.light : Theme.colors.dark};
+  background-color: ${({ props.color, props.isActive }) => color ? color : isActive ? Theme.colors.light : Theme.colors.dark};
   flex-grow: 1;
   -webkit-flex-grow: 1;
   flex-wrap: wrap;

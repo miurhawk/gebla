@@ -25,40 +25,34 @@ const Basics = () => {
         <SmallDetailCol>
           <a>
           <h6>Kids' Club</h6>
-          €170 per month | ages 5-16
-          <br />
-          <br />
+          <p style={{ color: `#23E5BF`}}>€170 per month | ages 5-16</p>
           <p>Kids' Club is for children who want to climb socially and regularly.</p>
           <p>Club will meet regularly once per week in our gym, where experienced coaches will play climbing games and work on improving technique with the group.</p>
           <p>Members of kids club will get free shoe rental during their weekly session.</p>
           </a>
+          <BookButton onClick={() => window.location.href='/form/Kids_Club'}><h7>Join</h7></BookButton>
+
         </SmallDetailCol>
         <SmallDetailCol>
           <a>
           <h6>Competitive Team</h6>
-          €250 per month | ages 8-19
-          <br />
-          <br />
+          <p style={{ color: `#23E5BF`}}>€250 per month | ages 8-19</p>
           <p>The competitive team is for kids who want to excel at climbing and compete internationally.</p>
           <p>We will accept children of all ability levels, as long as they are motivated to train hard and improve. The team will meet three times per week to train together, and all team members will have free access to the gym during any opening hours.</p>
           <p>Team dues also include competition jerseys, individual training plans, and coaching at local and international competitions.</p>
-
           </a>
+          <BookButton onClick={() => window.location.href='/form/Competitive_Team'}><h7>Join</h7></BookButton>
         </SmallDetailCol>
         <SmallDetailCol>
           <a>
           <h6>Birthday Parties</h6>
-          €35 pp for 3 hours
-          <br />
-          <br />
+          <p style={{ color: `#23E5BF`}}>€35 pp for 3 hours</p>
           <p>Climbing is a great birthday party activity: the kids will bond over solving tricky climbs, and get a physical and mental workout before sitting down in our cafe to open presents and celebrate the birthday boy or girl.</p>
           <p>We'll supervise the climbing and give the group an introduction to safety in the gym. You bring the cake.</p>
           </a>
-
+          <BookButton onClick={() => window.location.href='/form/Birthday_Party'}><h7>Book</h7></BookButton>
         </SmallDetailCol>
-        <SmallDetailCol>
-            <BookButton><h7>Sign Up</h7></BookButton>
-            </SmallDetailCol>
+
       </DetailRow>
       <FullPhoto img={kidsImg} style={{backgroundPosition: `top`, height: `120vh`}}></FullPhoto>
 
