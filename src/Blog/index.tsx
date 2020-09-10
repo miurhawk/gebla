@@ -12,9 +12,8 @@ const IndoorHome = (props: { setTitle: (v: string) => void, }) => {
   return (
     <DetailCol style={{textAlign: `center`}}>
       <Headline>COMING SOON</Headline>
-      <a>we're still gearing up</a>
-      <br />
-      <a>check back here for more details</a>
+      <a>We're still gearing up.</a>
+      <a>Check back here for stories and news, coming soon!</a>
       <br />
       <FullPhoto img={shoesImg} style={{minHeight: `100vh`}} />
 

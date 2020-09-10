@@ -40,11 +40,12 @@ const About = (props: { setTitle: (v: string) => void, }) => {
           <Tabs.Panel label="Intro">
 
             <a>
-                        <span style={{fontWeight: `bold`}}><p>Always wanted to try climbing but don't know where to start?</p></span>
-                        <p>We all started climbing for different reasons, at different times in our lives, in cities, in the mountains, indoor, and outdoors. Each of us discovered the same thing every climber will tell you - it’s about so much more than climbing. </p>
+<span style={{fontWeight: `bold`}}><p>Welcome to Gebla</p></span>
+
+                                                <p>We all started climbing for different reasons, at different times in our lives. In cities, in the mountains, indoor, and outdoors. Each of us discovered the same thing every climber will tell you - it’s about so much more than climbing. </p>
                         <p>We believe in giving people the opportunity to try it for themselves. To open up a new way to keep fit, without the repetition of gym sessions. To inspire people to do more than they thought they could. To help people improve their minds, to overcome challenges and feel the incredible sense of accomplishment you get right from that very first session. </p>
                         <p>Gebla is a place that's not about making judgements or feeling judged. It’s about feeling empowered and knowing yourself in a way you never did before. </p>
-                        <p>In the end, you won’t remember the time you spent in the office, or yet another day doing the chores. But you will remember the time, you felt the fear and did it anyway.
+                        <p>In the end, you won’t remember the time you spent at your desk, or yet another day doing the chores. But you will remember the time, you felt the fear and did it anyway.
                         </p>
                       </a>
           </Tabs.Panel>

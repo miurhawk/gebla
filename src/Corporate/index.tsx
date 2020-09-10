@@ -20,7 +20,7 @@ return (
             <p>Bring your team together. Make it one to remember.</p>
             <p>If you’re searching for an exciting and innovative team building activity, look no further!</p>
 
- <p>Climbing is one of the best sports for team building because it promotes trust, team work and communication. It’s as much a mental activity as it is physical, so it’s the perfect combination for bringing a group together and encouraging them to think differently.</p>
+ <p>Climbing is one of the best sports for team building because it promotes <span style={{fontWeight: `bold`}}>trust, team work</span> and <span style={{fontWeight: `bold`}}>communication</span>. It’s as much a mental activity as it is physical, so it’s the perfect combination for bringing a group together and encouraging them to think differently.</p>
 
 <p>Climbing fosters a supportive and collaborative environment, as we gently encourage people to step outside their comfort zone. And it provides a new opportunity for problem solving and building confidence - individually and as a team.</p>
 
@@ -38,10 +38,9 @@ return (
  <DetailRow>
           <FlexCol>
             <a>
+<p><span style={{ color: `#23E5BF`}}>Prices start at €65pp | 4 hours | no prerequisites | all equipment provided</span></p>
 
-              <p>Climb Experience for team building: try something new today!</p>
-
-            <p>We can tailor full or half days, depending on your requirements and group size, but we recommend our Climb Experience for an awesome team building opportunity.</p>
+            <p>Try our Climb Experience for an awesome team building opportunity! We can tailor full or half days, depending on your requirements and group size.</p>
 
             <p>Designed to be focused on fun rather than learning rope work and climbing skills, we’ll ensure everyone has a great day out while pushing limits and encouraging teamwork, communication and trust.</p>
 
@@ -51,9 +50,6 @@ return (
 
 <p>We can also include a picnic before or after the session, at the crag or in a scenic spot nearby.</p>
 
-<p>Prices start at €65pp | 4 hours | no prerequisites | all equipment provided</p>
-
-            <p><a href="mailto:info@gebla.mt">Book today</a> </p>
             </a>
             <BookButton style={{margin: `0 50px 0 0`, alignSelf: `flex-end`}} onClick={() => window.location.href='/form/Corporate_Climb_Experience'}><h7>Book Now</h7></BookButton>
 

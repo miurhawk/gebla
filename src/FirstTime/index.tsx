@@ -1,12 +1,14 @@
 import * as React from "react";
 import { Link } from "react-router-dom";
-import { HalfImageText, DetailCol, DetailRow, FullPhoto, FlexCol } from "../styles";
+import { HalfImageText, BookButton, DetailCol, DetailRow, FullPhoto, FlexCol } from "../styles";
 import { FunctionComponent, useState } from "react";
 import { Tabs } from "../components/Tabs";
 import enricoImg from "../../assets/img/img9.jpg";
 import costyImg from "../../assets/img/img39.jpg";
 import ladiesImg from "../../assets/img/img18.jpg";
 import tACImg from "../../assets/img/img38.jpg";
+import martinImg from "../../assets/img/img54.jpg";
+import teamImg from "../../assets/img/img55.jpg";
 
 const FirstTime = (props: { setTitle: (v: string) => void, }) => {
   props.setTitle("First Time");
@@ -15,13 +17,13 @@ const FirstTime = (props: { setTitle: (v: string) => void, }) => {
   return (
     <DetailCol>
 
-          <FullPhoto img={enricoImg} style={{backgroundPosition: `0% 50%`}}><h1>Find the climber in you</h1></FullPhoto>
+          <FullPhoto img={enricoImg} style={{backgroundPosition: `0% 50%`}}><h1>Find the climber in you</h1> 
+<br>
+</br>
+<BookButton style={{margin: `0 50px 0 0`, alignleft: `flex-end`}} onClick={() => window.location.href='/form/Corporate_Climb_Experience'}><h7>Book Now</h7></BookButton></FullPhoto>
             <a>
               <span style={{fontWeight: `bold`}}><p>Always wanted to try climbing but don't know where to start?</p></span>
               <p>Anyone can climb. We feel pretty passionate about this. You don’t need to be an athlete, have ‘strong fingers’, be able to do pull ups, or be ‘young’.  So if you’re doubting yourself, put that to one side and let’s give it a try.</p>
-<p>Our <a href="/courses#CE">Climb Experience</a> is perfect if you’ve never tried it before. You can feel safe in the knowledge you’ll be in experienced hands and get to find out what it’s all about and have a great day out - on your own or with a group of friends. </p>
-
-<p><a href="mailto:info@gebla.mt">Book now</a> or check out our range of courses below:</p>
             </a>
         <br />
 
@@ -63,12 +65,38 @@ const FirstTime = (props: { setTitle: (v: string) => void, }) => {
         <br />
 
       <DetailRow>
-      <HalfImageText img={ladiesImg}><h2>More than climbing</h2></HalfImageText>
+      <HalfImageText img={teamImg}><h2>Book your Climb Experience</h2></HalfImageText>
 
         <FlexCol right=true>
           <a>
 
+            <p>If you are looking for a thrilling outdoor activity to get stuck into, something to bring the family together, or an unforgettable experience gift for an adventure-loving friend, then look no further.</p>
 
+ <p>In this session we focus on fun rather than learning. We set everything up, provide all the safety equipment, and start you off gently with beginners' routes. For anyone finding it too easy, we’ll test you out on something more challenging, making sure everyone in the session gets to push their limits.</p>
+
+<p>Enjoy a work out for your body and your brain and experience what it’s like to be truly in the moment. Do something you never imagined you could. Support each other to overcome your challenges and share the incredible feeling of accomplishment.</p>
+
+<p><span style={{ color: `#23E5BF`}}>€65pp | 4 hours | no prerequisites | all equipment provided</span></p>
+<BookButton style={{margin: `0 50px 0 0`, alignleft: `flex-end`}} onClick={() => window.location.href='/form/Corporate_Climb_Experience'}><h7>Book Now</h7></BookButton>
+          </a>
+
+
+        </FlexCol>
+
+
+      </DetailRow>
+      <br />
+      <br />
+
+ <br />
+        <a id="malta"></a>
+
+        <FullPhoto img={martinImg} style={{minHeight: `50vh`, backgroundPosition: `top`}}/>
+        <DetailRow>
+        <FlexCol><h2> More than <span style={{ color: `#23E5BF`}}>climbing</span><br /></h2></FlexCol>
+
+        <FlexCol right=true>
+            <a>
             <p>It's not just about doing things you never imagined you could. It’s about new friendships built on something different. A worldwide community you’re suddenly and automatically welcomed into. </p>
 
 <p>It's about supporting each other. Sharing the highs and lows. Finding a workout for your body and your brain that you can’t replicate in any other way. Accomplishing personal goals and loving it when you see others reach theirs. And at the end of the day, it’s about sharing the best cold beer you’ve ever had.</p>
@@ -78,13 +106,11 @@ const FirstTime = (props: { setTitle: (v: string) => void, }) => {
 
 <p>This is why we started Gebla. Because we believe in giving people the opportunity to try it for themselves.</p>
             <p>Check out our <a href="/courses">courses</a> and book today!</p>
-          </a>
+            </a>
         </FlexCol>
+        </DetailRow>
 
 
-      </DetailRow>
-      <br />
-      <br />
         <br />
         <br />
 
