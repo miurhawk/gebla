@@ -15,7 +15,9 @@ const Advanced = () => {
 
 
       <DetailRow>
-      <a><p><span style={{fontWeight: `bold`}}>Advance your skills.</span></p>
+      <a><h6><span style={{fontWeight: `bold`, color: `#23E5BF`}}>Advance your skills.</span></h6>
+
+
 
 <p>Our advanced courses assume you're confident with toprope climbing to at least grade 5. We also need you to be happy toprope belaying, and have your own gear.</p>
 

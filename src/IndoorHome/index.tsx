@@ -59,7 +59,8 @@ const IndoorHome = (props: { setTitle: (v: string) => void, }) => {
     <FullPhoto img={constructionImg} style={{backgroundPosition: `0 30%`}}><h1>coming soon</h1></FullPhoto>
 
       <a><p>We're still gearing up.</p>
-      <p>Keep an eye out for updates and exciting news:</p></a>
+ <p>Keep an eye out for updates and exciting news. </p>
+<p>Follow us:</p></a>
       <GroupRow style={{alignSelf: `center`}}>
       <Social img={ig} href="https://www.instagram.com/gebla.climb/" />
       <Social img={fb} href="https://www.facebook.com/gebla.climbing" />

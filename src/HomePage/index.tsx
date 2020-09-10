@@ -27,7 +27,7 @@ const HomePage = () => {
     <a>
     <span style={{fontWeight: `bold`}}><p>Hello. Welcome to Gebla. </p></span>
 
-<p>We love climbing and we think you will too. People of every age, shape and size are taking it up as a new sport every day. Check out <a href="/about">our story</a> to find out why we think you should give it a try. </p>
+<p>We love climbing and we think you will too. People of every age, shape and size are taking it up as a new sport every day. Check out <a href="/about">our story</a> to find out why you should give it a try. </p>
     </a>
     </DetailCol>
 
