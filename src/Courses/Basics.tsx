@@ -5,7 +5,7 @@ import { DetailRow, BookButton, FullPhoto, DetailCol, SmallDetailCol, HalfImageT
 import ig from "../../assets/img/ig.png";
 import fb from "../../assets/img/fb.png";
 import constructionImg from "../../assets/img/gato2.jpg";
-const beginnerImg = require("../../assets/img/img16.jpg");
+const beginnerImg = require("../../assets/img/img56.jpg");
 
 
 const Basics = () => {
@@ -33,10 +33,14 @@ const Basics = () => {
             <p>This fun session allows you to try climbing if you're not sure you want to commit to learning all the skills necessary to climb on your own.</p>
             <p>Our expert guides will look out for your safety and maximise your climbing time.</p>
             <p>While you won't learn any rope skills during the session, it's a great way to introduce yourself and start getting acquainted with the gear and protocols.</p>
+<br>
+</br>
+<BookButton style={{margin: `0`, height: `30px`, width: `100px`}} onClick={() => window.location.href='/form/ClimbExperience'}><h7>Book</h7></BookButton>
+
           </a>
         </SmallDetailCol>
         <SmallDetailCol>
-            <BookButton onClick={() => window.location.href='/form/Climb_Experience'}><h7>Book Now</h7></BookButton>
+            
             </SmallDetailCol>
         <SmallDetailCol>
           <a>
@@ -50,6 +54,9 @@ const Basics = () => {
 <p>We'll get you started with belaying, and of course you’ll get some actual climbing practice during the session.</p>
 
             <p>You won't be ready to climb without supervision after this course, but you'll be well on your way.</p>
+<br>
+</br>
+<BookButton style={{margin: `0`, height: `30px`, width: `100px`}} onClick={() => window.location.href='/form/Introtoclimbing'}><h7>Book</h7></BookButton>
           </a>
         </SmallDetailCol>
         <SmallDetailCol>
@@ -61,10 +68,13 @@ const Basics = () => {
             <p>During the first 3 hours we reinforce what you learnt in the intro. You’ll learn to catch falls, practice belaying and learn about different devices as well as recognising safe anchor set up. </p>
             <p>We’ll help you improve your technique and general competence on the rock and teach you as much as you can take on board!  </p>
             <p>During the last hour we test you - checking the lines, tying in, partner safety checks, belay set up and technique. Assuming you pass, you’d be confident top rope climbing elsewhere and can confidently go to any sport climbing gym and pass their test for entry.</p>
+<br>
+</br>
+<BookButton style={{margin: `0`, height: `30px`, width: `100px`}} onClick={() => window.location.href='/form/ClimbExperience'}><h7>Book</h7></BookButton>
           </a>
         </SmallDetailCol>
         <SmallDetailCol>
-            <BookButton onClick={() => window.location.href='/form/Climb_Experience'}><h7>Book Now</h7></BookButton>
+            
             </SmallDetailCol>
         <SmallDetailCol>
           <a>
@@ -73,6 +83,9 @@ const Basics = () => {
           <p><span style={{ color: `#23E5BF`}}>€120 pp | 3 hours | no prerequisites</span></p>
             <p>Want the thrill without all the hard work? Abseiling may be for you.</p>
             <p>In this course we'll teach you  technique, equipment handling and how to set your own anchors; everything you need to know to be confident and safe when using your own gear. </p>
+<br>
+</br>
+<BookButton style={{margin: `0`, height: `30px`, width: `100px`}} onClick={() => window.location.href='/form/Abseiling'}><h7>Book</h7></BookButton>
           </a>
         </SmallDetailCol>
       </DetailRow>
