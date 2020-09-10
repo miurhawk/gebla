@@ -6,6 +6,7 @@ import { Tabs } from "../components/Tabs";
 import teamImg from "../../assets/img/img13.jpg";
 import costyImg from "../../assets/img/img41.jpg";
 
+
 const Corporate = (props: { setTitle: (v: string) => void, }) => {
   props.setTitle("Corporate");
 return (
@@ -33,6 +34,7 @@ return (
       </DetailRow>
 <br>
 </br>
+
 
  <DetailRow>
           <FlexCol>
