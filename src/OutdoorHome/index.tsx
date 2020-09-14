@@ -5,11 +5,11 @@ import { FunctionComponent, useState } from "react";
 import { Gallery } from "../components/Gallery";
 
 
-import lauraImg from "../../assets/img/img52.jpg";
-import lukasImg from "../../assets/img/img48.jpg";
+import lauraImg from "../../assets/img/img64.jpg";
+import lukasImg from "../../assets/img/img52.jpg";
 import evImg from "../../assets/img/img49.jpg";
-import fenechImg from "../../assets/img/img47.jpg";
-import suhailImg from "../../assets/img/img51.jpg";
+import fenechImg from "../../assets/img/img48.jpg";
+import suhailImg from "../../assets/img/img75.jpg";
 import charlieImg from "../../assets/img/img.jpg"
 
 import otherImg from "../../assets/img/img19.jpg";
@@ -28,7 +28,7 @@ const OutdoorHome = (props: { setTitle: (v: string) => void, }) => {
           <FlexCol>
             <a>
               <h2>GO OUTSIDE <br /><span style={{color: `#23E5BF`}}>FEEL ALIVE</span></h2>
-              <p>If you want to give it a try for the <a href="/first-time">first time</a>, our <a href="/courses#CE">Climb Experience</a> might be right for you.</p>
+              <p>If you want to give climbing a try for the <a href="/first-time">first time</a>, our <a href="/courses#CE">Climb Experience</a> might be right for you.</p>
 
 <p>Once you're hooked we offer a <a href="/courses">series of courses</a> to help you learn the safety and communication protocols of climbing, so you can become a self-sufficient climber and belayer.</p>
               <p>When you become a climber, you join a global community of welcoming, adventurous and eclectic folks who will be eager to share a belay, and a beer, anywhere in the world.</p>

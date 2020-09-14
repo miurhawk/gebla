@@ -8,7 +8,7 @@ import Advanced from "./Advanced.tsx";
 import Kids from "./Kids.tsx";
 import Coaching from "./Coaching.tsx";
 
-const multipitchImg = require("../../assets/img/img27.jpg");
+const multipitchImg = require("../../assets/img/img57.jpg");
 
 
 

@@ -2,7 +2,7 @@ import * as React from "react";
 import { Link } from "react-router-dom";
 import { DetailRow, BookButton, FullPhoto, DetailCol, SmallDetailCol, HalfImageText, FlexCol, Divider } from "../styles";
 
-const towerImg = require("../../assets/img/img43.jpg");//34
+const towerImg = require("../../assets/img/img81.jpg");//34
 
 
 const Advanced = () => {
@@ -15,7 +15,7 @@ const Advanced = () => {
 
 
       <DetailRow>
-      <a><h6><span style={{fontWeight: `bold`, color: `#23E5BF`}}>Advance your skills.</span></h6>
+      <a><h6><span style={{fontWeight: `bold`, color: `#23E5BF`}}>Advance your skills</span></h6>
 
 
 
@@ -45,20 +45,23 @@ const Advanced = () => {
       </SmallDetailCol>
       <SmallDetailCol>
         <a>
-        <h6>Anchor Cleaning</h6>
-       <p><span style={{ color: `#23E5BF`}}>€120 pp | 3 hours | Toprope competency</span></p>
-        <p>In this course we will teach you how to safely clean all types of anchors found on sport climbs.</p>
-        <p>You will practice first on the ground, then on a low hanging anchor, and finally atop a route.</p>
-        </a>
-        <BookButton onClick={() => window.location.href='/form/Anchor_Cleaning_Course'}><h7>Book</h7></BookButton>
+ <h6>Anchor Building</h6>
+         <p><span style={{ color: `#23E5BF`}}>€120 pp | 3 hours | Toprope competency</span></p>
+          <p>During this session we'll teach you how to build several types of anchors which can be used for abseiling, multipitch climbing, hanging belay, and more. </p>
 
-      </SmallDetailCol>
+<p>We'll mainly focus on building anchors on bolts, but are happy to share our knowledge on building natural anchors as well.</p>
+          <p>You will practice first on the ground, then on a low hanging anchor, and finally atop a route.</p>
+<br>
+</br>
+          <BookButton onClick={() => window.location.href='/form/Anchor_Building_Course'}><h7>Book</h7></BookButton>
+          </a>
+              </SmallDetailCol>
         <SmallDetailCol>
           <a>
           <h6>Lead Belaying</h6>
          <p><span style={{ color: `#23E5BF`}}>€120 pp | 3 hours | Toprope competency</span></p>
           <p>In this course you'll learn how to safely lead belay from a standing position.</p>
-          <p>We’ll improve your rope management skills, teach you how to check your rope for wear, and get you confidently belaying on all types of routes.</p>
+          <p>We’ll improve your rope management skills, teach you how to catch a lead fall, how to check your rope for wear and tear, and get you confidently belaying lead climbers on all types of routes.</p>
           </a>
           <BookButton onClick={() => window.location.href='/form/Lead_Belaying_Course'}><h7>Book</h7></BookButton>
 
@@ -66,20 +69,24 @@ const Advanced = () => {
 
         <SmallDetailCol>
           <a>
-          <h6>Anchor Building</h6>
-         <p><span style={{ color: `#23E5BF`}}>€120 pp | 3 hours | Toprope competency</span></p>
-          <p>In this course we will teach you how to build several types of anchors that can be used for abseiling, multipitch climbing, hanging belay, and more. We will mainly focus on building anchors on bolts, but are happy to share our knowledge on building natural anchors as well.</p>
-          <p>You will practice first on the ground, then on a low hanging anchor, and finally atop a route.</p>
-          </a>
-          <BookButton onClick={() => window.location.href='/form/Anchor_Building_Course'}><h7>Book</h7></BookButton>
+         
+<h6>Anchor Cleaning</h6>
+       <p><span style={{ color: `#23E5BF`}}>€120 pp | 3 hours | Toprope competency</span></p>
+        <p>In this course we will teach you how to safely clean all types of anchors found on sport climbs.</p>
+        <p>You'll practice on the ground first, then on a low hanging anchor, and finally atop a route.</p>
+        </a>
+        <BookButton onClick={() => window.location.href='/form/Anchor_Cleaning_Course'}><h7>Book</h7></BookButton>
+
 
         </SmallDetailCol>
         <SmallDetailCol>
           <a>
           <h6>Star Belayer</h6>
-         <p><span style={{ color: `#23E5BF`}}>€120 pp | 3 hours | Toprope competency</span></p>
+         <p><span style={{ color: `#23E5BF`}}>€120 pp | 3 hours | Lead Belaying</span></p>
           <p>Most lead belayers can catch a basic fall. But very few belayers can catch a fall with grace.</p>
-          <p>In this course we'll turn you into a star belayer-- the one everyone wants to give them a catch. You'll learn advanced techniques for catching your partner softly, how to better anticipate your climber's needs, and ways to improve communication when your climber is out of sight.</p>
+          <p>In this course we'll turn you into a star belayer - the one everyone wants to give them a catch. </p>
+
+<p>You'll learn advanced techniques for catching your partner softly, how to better anticipate your climber's needs, and ways to improve communication when your climber is out of sight.</p>
           </a>
           <BookButton onClick={() => window.location.href='/form/Star_Belayer_Course'}><h7>Book</h7></BookButton>
 
@@ -96,7 +103,12 @@ const Advanced = () => {
 
         </SmallDetailCol>
 
+
       </DetailRow>
+<br>
+</br>
+<br>
+</br>
       <FullPhoto img={towerImg} style={{minHeight: `120vh`}}></FullPhoto>
 
     </DetailCol>

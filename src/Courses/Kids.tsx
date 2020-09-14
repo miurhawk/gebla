@@ -2,7 +2,7 @@ import * as React from "react";
 import { Link } from "react-router-dom";
 import { DetailRow, BookButton, FullPhoto, DetailCol, SmallDetailCol, HalfImageText, FlexCol, Divider } from "../styles";
 
-const kidsImg = require("../../assets/img/img17.jpg");
+const kidsImg = require("../../assets/img/img39.jpg");
 
 
 const Basics = () => {
@@ -13,7 +13,11 @@ const Basics = () => {
   return (
     <DetailCol>
       <DetailRow>
-      <a id="kids"><p><span style={{fontWeight: `bold`}}>Climbing is a great activity for children as it combines problem-solving with physical activity</span> and can lead to increased discipline, motivation, and social bonding.</p>
+<a>
+<h6><span style={{fontWeight: `bold`, color: `#23E5BF`}}>Climbing for under 18s</span></h6>
+         
+
+      <p>Climbing is a great activity for children as it combines problem-solving with physical activity and can lead to increased discipline, motivation, and social bonding.</p>
       <p>Our children's programs aren't available until our Msida gym opens in a few months, but you can start getting excited and book your place for once we do open.</p>
       <p>Email <a href="mailto:coach@gebla.mt">coach@gebla.mt</a> with your child's age and climbing experience to inquire further.</p></a>
 
@@ -54,6 +58,10 @@ const Basics = () => {
         </SmallDetailCol>
 
       </DetailRow>
+<br>
+</br>
+<br>
+</br>
       <FullPhoto img={kidsImg} style={{backgroundPosition: `top`, height: `120vh`}}></FullPhoto>
 
     </DetailCol>

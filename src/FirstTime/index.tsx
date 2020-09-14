@@ -4,11 +4,11 @@ import { HalfImageText, BookButton, DetailCol, DetailRow, FullPhoto, FlexCol } f
 import { FunctionComponent, useState } from "react";
 import { Tabs } from "../components/Tabs";
 import enricoImg from "../../assets/img/img9.jpg";
-import costyImg from "../../assets/img/img39.jpg";
+import costyImg from "../../assets/img/img68.jpg";
 import ladiesImg from "../../assets/img/img18.jpg";
 import tACImg from "../../assets/img/img38.jpg";
 import martinImg from "../../assets/img/img54.jpg";
-import teamImg from "../../assets/img/img55.jpg";
+import teamImg from "../../assets/img/img71.jpg";
 
 const FirstTime = (props: { setTitle: (v: string) => void, }) => {
   props.setTitle("First Time");
@@ -22,25 +22,25 @@ const FirstTime = (props: { setTitle: (v: string) => void, }) => {
 </br>
 <BookButton onClick={() => window.location.href='/courses'}><h7>See Our Courses</h7></BookButton></FullPhoto>
             <a>
-              <span style={{fontWeight: `bold`}}><p>Always wanted to try climbing but don't know where to start?</p></span>
+<br>
+</br>
+            
+<h6><span style={{fontWeight: `bold`, color: `#23E5BF`}}>Want to try climbing but not sure  where to start?</span></h6>
               <p>Anyone can climb. We feel pretty passionate about this. You don’t need to be an athlete, have ‘strong fingers’, be able to do pull ups, or be ‘young’.  So if you’re doubting yourself, put that to one side and let’s give it a try.</p>
             </a>
-        <br />
-
- <br />
+     
 
       <DetailRow>
-      <HalfImageText img={tACImg}><h2>Take a course</h2></HalfImageText>
+      <HalfImageText img={tACImg}><h3></h3></HalfImageText>
 
         <FlexCol right=true>
           <a>
-
-          <p>Get to grips with sport climbing! Learn with expert instructors. Master the safety procedures, become comfortable with the basics and you’ll be ready to partner up with other climbers and get out there.</p>
+<h2>Take a course</h2>
+          <p> Get to grips with sport climbing! Learn with expert instructors. Master the safety procedures, become comfortable with the basics and you’ll be ready to partner up with other climbers and get out there.</p>
 
               <p>And when you’d like to take your skills to the next level or improve your technique, we have a range of advanced courses and coaching sessions to chose from.</p>
-              <p>Email <a href="mailto:coach@gebla.mt">coach@gebla.mt</a> to schedule a lesson.</p>
 
-            <p>Check out our <a href="/courses">courses</a> and book today!</p>
+            <p>Take a look at our <a href="/courses">courses</a> to find the right one for you. Or email <a href="mailto:coach@gebla.mt">coach@gebla.mt</a> to schedule a lesson.</p>
           </a>
         </FlexCol>
 
@@ -50,34 +50,34 @@ const FirstTime = (props: { setTitle: (v: string) => void, }) => {
 
         <DetailRow>
           <FlexCol>
-            <a>
-
-              <p>Kids have tons of energy and it’s not easy to find new activities to keep them interested and learning at the same time. Climbing is a great way to put all that energy to good use. </p>
-            <p>It teaches children perseverance, discipline, and respect for the environment. They’ll make lifelong friends, built on something special, and they’ll come home tired and happy.
-</p>
-            <p>It’s also a great activity for families; a chance to come together and build new memories which will last a lifetime. </p>
-            <p>  Check out our <a href="/courses">courses</a> or  <a href="mailto:info@gebla.mt">get in touch</a> to find out more.</p>
-            </a>
-          </FlexCol>
-          <HalfImageText right="true" img={costyImg} style={{backgroundPosition: `left center`}}><h2>Family fun</h2></HalfImageText>
-
-        </DetailRow>
-        <br />
-
-      <DetailRow>
-      <HalfImageText img={teamImg}><h2>Book your Climb Experience</h2></HalfImageText>
-
-        <FlexCol right=true>
-          <a>
-
-            <p>If you are looking for a thrilling outdoor activity to get stuck into, something to bring the family together, or an unforgettable experience gift for an adventure-loving friend, then look no further.</p>
+           <a>
+<h2>Book your Climb Experience</h2>
+              <p><span style={{ color: `#23E5BF`}}>€65pp | 4 hours | no prerequisites | all equipment provided</span></p>         
+<p>If you are looking for a thrilling outdoor activity to get stuck into, something to bring the family together, or an unforgettable experience gift for an adventure-loving friend, then look no further.</p>
 
  <p>In this session we focus on fun rather than learning. We set everything up, provide all the safety equipment, and start you off gently with beginners' routes. For anyone finding it too easy, we’ll test you out on something more challenging, making sure everyone in the session gets to push their limits.</p>
 
 <p>Enjoy a work out for your body and your brain and experience what it’s like to be truly in the moment. Do something you never imagined you could. Support each other to overcome your challenges and share the incredible feeling of accomplishment.</p>
 
-<p><span style={{ color: `#23E5BF`}}>€65pp | 4 hours | no prerequisites | all equipment provided</span></p>
 <BookButton style={{margin: `0 50px 0 0`, alignleft: `flex-end`}} onClick={() => window.location.href='/form/Corporate_Climb_Experience'}><h7>Book Now</h7></BookButton>
+            </a>
+          </FlexCol>
+          <HalfImageText right="true" img={costyImg} style={{backgroundPosition: `left center`}}><h2></h2></HalfImageText>
+
+        </DetailRow>
+        <br />
+
+      <DetailRow>
+      <HalfImageText img={teamImg}><h2></h2></HalfImageText>
+
+        <FlexCol right=true>
+          <a>
+<h2>Family fun</h2>
+              <p>Kids have tons of energy and it’s not easy to find new activities to keep them interested and learning at the same time. Climbing is a great way to put all that energy to good use. </p>
+            <p>It teaches children perseverance, discipline, and respect for the environment. They’ll make lifelong friends, built on something special, and they’ll come home tired and happy.
+</p>
+            <p>It’s also a great activity for families; a chance to come together and build new memories which will last a lifetime. </p>
+            <p>  Check out our <a href="/courses">courses</a> or  <a href="mailto:info@gebla.mt">get in touch</a> to find out more.</p>
           </a>
 
 

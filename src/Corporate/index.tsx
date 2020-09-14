@@ -49,6 +49,7 @@ return (
  <DetailRow>
           <FlexCol>
             <a>
+<h2>book the climb experience</h2>
 <p><span style={{ color: `#23E5BF`}}>Prices start at €65pp | 4 hours | no prerequisites | all equipment provided</span></p>
             <p>Try our Climb Experience for an awesome team building opportunity! We can tailor full or half days, depending on your requirements and group size.</p>
             <p>Designed to be focused on fun rather than learning rope work and climbing skills, we’ll ensure everyone has a great day out while pushing limits and encouraging teamwork, communication and trust.</p>
@@ -60,7 +61,7 @@ return (
             <BookButton style={{margin: `0 50px 0 0`, alignSelf: `flex-end`}} onClick={() => window.location.href='/form/Corporate_Climb_Experience'}><h7>Book Now</h7></BookButton>
 
           </FlexCol>
-          <HalfImageText right="true" img={costyImg} style={{backgroundPosition: `left center`}}><h2>The Climb Experience</h2></HalfImageText>
+          <HalfImageText right="true" img={costyImg} style={{backgroundPosition: `left center`}}><h2></h2></HalfImageText>
 
         </DetailRow>
 

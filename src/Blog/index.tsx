@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Link } from "react-router-dom";
 import { DetailCol, Headline, FullPhoto } from "../styles";
-import shoesImg from "../../assets/img/img15.jpg";
+import shoesImg from "../../assets/img/img62.jpg";
 
 
 const IndoorHome = (props: { setTitle: (v: string) => void, }) => {

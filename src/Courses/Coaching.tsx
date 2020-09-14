@@ -14,8 +14,11 @@ const Coaching = () => {
     <DetailCol>
 
         <a>
-          <p><span style={{fontWeight: `bold`}}>Stuck on your project? Our experienced coaches are here to help! </span>We'll create a personalized training plan for you and meet with you as often as you'd like for techique review and feedback. Coaching sessions start at €55 per hour.</p>
-          <p>Contact <a href="mailto:coach@gebla.mt">coach@gebla.mt</a> or inquire at the gym for more info.</p>
+<h6><span style={{fontWeight: `bold`, color: `#23E5BF`}}>Stuck on your project?</span></h6>
+         
+
+          <p><span style={{fontWeight: `bold`}}>Our experienced coaches are here to help! </span>We'll create a personalised training plan for you and meet with you as often as you'd like for technique review and feedback. Coaching sessions start at €55 per hour.</p>
+          <p>Contact <a href="mailto:coach@gebla.mt">coach@gebla.mt</a> to book your sessions.</p>
         </a>
       <FullPhoto img={charlieImg} style={{height: `120vh`}}></FullPhoto>
 

@@ -5,7 +5,7 @@ import { DetailRow, BookButton, FullPhoto, DetailCol, SmallDetailCol, HalfImageT
 import ig from "../../assets/img/ig.png";
 import fb from "../../assets/img/fb.png";
 import constructionImg from "../../assets/img/gato2.jpg";
-const beginnerImg = require("../../assets/img/img56.jpg");
+const beginnerImg = require("../../assets/img/img67.jpg");
 
 
 const Basics = () => {
@@ -16,7 +16,8 @@ const Basics = () => {
   return (
     <DetailCol>
       <DetailRow>
-          <a><p><span style={{fontWeight: `bold`}}>Discover climbing with one of our Basics courses. </span> </p>
+<a><h6><span style={{fontWeight: `bold`, color: `#23E5BF`}}>Discover climbing</span></h6>
+         
 
 <p>Each one will be tailored to you and we'll bring all the gear you need. Please come with plenty of water, appropriate clothes for exercise, and snacks. We'll send detailed information on where to meet your instructors on the day before your course.</p>
           <p>Email <a href="mailto:info@gebla.mt">info@gebla.mt</a> with your details or click below to book a session.</p>
@@ -72,8 +73,14 @@ const Basics = () => {
           </a>
           <BookButton onClick={() => window.location.href='/form/Abseiling'}><h7>Book</h7></BookButton>
 
+
         </SmallDetailCol>
       </DetailRow>
+<br>
+</br>
+<br>
+</br>
+
       <FullPhoto img={beginnerImg} style={{backgroundPosition: `top`, height: `120vh`}}></FullPhoto>
 
     </DetailCol>
