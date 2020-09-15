@@ -30,8 +30,9 @@ return (
       </Gallery>
 
         <FlexCol right=true>
+        <h1>TEAM BUILDING</h1>
+
           <a>
-            <h1>TEAM BUILDING</h1>
             <p>Bring your team together. Make it one to remember.</p>
             <p>If you’re searching for an exciting and innovative team building activity, look no further!</p>
             <p>Climbing is one of the best sports for team building because it promotes <span style={{fontWeight: `800`}}>trust, team work</span> and <span style={{fontWeight: `800`}}>communication</span>. It’s as much a mental activity as it is physical, so it’s the perfect combination for bringing a group together and encouraging them to think differently.</p>
@@ -48,8 +49,8 @@ return (
 
  <DetailRow>
           <FlexCol>
+          <h2>book the climb experience</h2>
             <a>
-<h2>book the climb experience</h2>
 <p><span style={{ color: `#23E5BF`}}>Prices start at €65pp | 4 hours | no prerequisites | all equipment provided</span></p>
             <p>Try our Climb Experience for an awesome team building opportunity! We can tailor full or half days, depending on your requirements and group size.</p>
             <p>Designed to be focused on fun rather than learning rope work and climbing skills, we’ll ensure everyone has a great day out while pushing limits and encouraging teamwork, communication and trust.</p>
@@ -59,7 +60,8 @@ return (
 
             </a>
             <BookButton style={{margin: `0 50px 0 0`, alignSelf: `flex-end`}} onClick={() => window.location.href='/form/Corporate_Climb_Experience'}><h7>Book Now</h7></BookButton>
-
+            <br />
+            <br />
           </FlexCol>
           <HalfImageText right="true" img={costyImg} style={{backgroundPosition: `left center`}}><h2></h2></HalfImageText>
 

@@ -68,7 +68,7 @@ export const CenteredPage = styled.div`
   a:visited {color: ${Theme.colors.a1}; text-decoration: none;};
   a:visited:hover {color: ${Theme.colors.a3}; text-decoration: none;};
   a:visited:active {color: ${Theme.colors.a4}; text-decoration: none;};
-  @media (max-width: 780px) {
+  @media (max-width: 1080px) {
     a {font-size: 24px;};
     h6 {font-size: 28px;};
     h7 {font-size: 26px;};
@@ -227,8 +227,15 @@ export const HalfImageText = styled.div`
   a {
     margin: 0;
   };
-  @media (max-width: 780px) {
+  @media (max-width: 1080px) {
     width: 100vw;
+    margin: 0;
+    h2 {
+      padding: 2rem 2rem 0 2rem;
+    }
+    h3 {
+      padding: 2rem 2rem 0 2rem;
+    }
   }
 
 `;
@@ -296,6 +303,7 @@ export const DetailRow = styled.div`
   justify-contents: space-evenly;
   padding-top: 1rem;
   padding-bottom: 1rem;
+  width: 100vw;
   flex-grow: 5;
   -webkit-flex-grow: 5;
   flex-wrap: wrap;
@@ -340,7 +348,7 @@ export const SmallDetailCol = styled.div`
     height: 30px;
     width: 100px;
   }
-  @media (max-width: 780px) {
+  @media (max-width: 1080px) {
     max-width: 100vw;
   }
 `;
@@ -369,6 +377,7 @@ export const StyledForm = styled.form`
     value {
       font-size: 30pt;
     }
+    min-height: 30px;
   };
 
   label {
@@ -405,7 +414,7 @@ export const FlexCol = styled.div`
   h1 {
     text-align: ${props => props.right ? `left` : `right`};
     margin: 0;
-    padding: ${props => props.right ? `2rem 2rem 0 0` : `2rem 0 0 2rem`};
+    padding: ${props => props.right ? `2rem 0 0 2rem` : `2rem 2rem 0 0`};
   }
   h1:nth-child(2) {
     padding: 0.5rem 2rem 0 2rem;
@@ -413,17 +422,20 @@ export const FlexCol = styled.div`
   h2 {
     text-align: ${props => props.right ? `left` : `right`};
     margin: 0;
-    padding: ${props => props.right ? `2rem 2rem 0 0` : `2rem 0 0 2rem`};
+    padding: ${props => props.right ? `2rem 0 0 2rem` : `2rem 2rem 0 0`};
   }
   h2:nth-child(2) {
-    padding: 0.5rem 2rem 0 2rem;
+    padding-top: 0.5rem 2rem 0 2rem;
   }
-  @media (max-width: 780px) {
+  @media (max-width: 1080px) {
     width: 100vw;
+    h2 {
+      padding: 2rem 2rem 0 2rem;
+    }
   }
   button {
     align-self: ${props => props.right ? `flex-start` : `flex-end`};
-    margin: ${props => props.right ? `0 0 0 2rem` : `0 2rem 0 0`};
+    margin: ${props => props.right ? `0 2rem 0 2rem` : `0 2rem 0 2rem`};
   }
 `;
 
@@ -466,7 +478,7 @@ export const StyledMenu = styled.nav<{ open: boolean }>`
       :hover {color: ${Theme.colors.a1};};
     };
   };
-  @media (max-width: 780px) {
+  @media (max-width: 1080px) {
     width: 100vw;
     height: 100vh;
     a {
@@ -516,8 +528,8 @@ export const MenuButton = styled.button<{ open: boolean, right: boolean }>`
   div:nth-child(3) {
     transform: ${({ open }) => open ? `rotate(-45deg)` : `` };
   }
-  @media (max-width: 780px) {
-    right: 80px;
+  @media (max-width: 1080px) {
+    right: ${({ open }) => open ? `80vw` : `20px` };
   };
 `;
 
@@ -609,12 +621,13 @@ export const InfoDetail = styled.div`
   flex-grow: 1;
   -webkit-flex-grow: 1;
   flex-direction: column;
-  min-height: 30vh;
+  min-height: 500px;
   padding: 0;
   text-align: center;
   padding-top: ${props => props.padding};
   background-image: url(${props => props.img});
   background-size: cover;
+  margin: ${props => props.right ? `0 0 0 2vw` : `0 2vw 0 0`};
 `;
 
 export const GalleryDetail = styled.div`

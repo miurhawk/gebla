@@ -22,13 +22,13 @@ const Courses = (props: { setTitle: (v: string) => void, }) => {
 
 
   useEffect(() => {
-    setTimeout(() => updateColor1(""), 200)
-    setTimeout(() => updateColor2("#23E5BF"), 200)
-    setTimeout(() => updateColor2(""), 400)
-    setTimeout(() => updateColor3("#23E5BF"), 400)
-    setTimeout(() => updateColor3(""), 600)
-    setTimeout(() => updateColor4("#23E5BF"), 600)
-    setTimeout(() => updateColor4(""), 800)
+    setTimeout(() => updateColor1(""), 250)
+    setTimeout(() => updateColor2("#23E5BF"), 250)
+    setTimeout(() => updateColor2(""), 500)
+    setTimeout(() => updateColor3("#23E5BF"), 500)
+    setTimeout(() => updateColor3(""), 750)
+    setTimeout(() => updateColor4("#23E5BF"), 750)
+    setTimeout(() => updateColor4(""), 1000)
   }, []);
 
   return (

@@ -18,52 +18,44 @@ const FirstTime = (props: { setTitle: (v: string) => void, }) => {
     <DetailCol>
 
           <FullPhoto img={enricoImg} style={{backgroundPosition: `0% 50%`}}><h1>Find the climber in you</h1>
-<br>
-</br>
+          <br>
+          </br>
 <BookButton onClick={() => window.location.href='/courses'}><h7>See Our Courses</h7></BookButton></FullPhoto>
             <a>
 <br>
 </br>
-            
+
 <h6><span style={{fontWeight: `bold`, color: `#23E5BF`}}>Want to try climbing but not sure  where to start?</span></h6>
               <p>Anyone can climb. We feel pretty passionate about this. You don’t need to be an athlete, have ‘strong fingers’, be able to do pull ups, or be ‘young’.  So if you’re doubting yourself, put that to one side and let’s give it a try.</p>
             </a>
-     
+
 
       <DetailRow>
-      <HalfImageText img={tACImg}><h3></h3></HalfImageText>
-
-        <FlexCol right=true>
+        <HalfImageText img={tACImg} />
+          <FlexCol right=true>
+          <h2>Take a course</h2>
           <a>
-<h2>Take a course</h2>
-          <p> Get to grips with sport climbing! Learn with expert instructors. Master the safety procedures, become comfortable with the basics and you’ll be ready to partner up with other climbers and get out there.</p>
-
-              <p>And when you’d like to take your skills to the next level or improve your technique, we have a range of advanced courses and coaching sessions to chose from.</p>
-
+            <p> Get to grips with sport climbing! Learn with expert instructors. Master the safety procedures, become comfortable with the basics and you’ll be ready to partner up with other climbers and get out there.</p>
+            <p>And when you’d like to take your skills to the next level or improve your technique, we have a range of advanced courses and coaching sessions to chose from.</p>
             <p>Take a look at our <a href="/courses">courses</a> to find the right one for you. Or email <a href="mailto:coach@gebla.mt">coach@gebla.mt</a> to schedule a lesson.</p>
           </a>
         </FlexCol>
-
       </DetailRow>
       <br />
-
-
-        <DetailRow>
-          <FlexCol>
-           <a>
-<h2>Book your Climb Experience</h2>
-              <p><span style={{ color: `#23E5BF`}}>€65pp | 4 hours | no prerequisites | all equipment provided</span></p>         
-<p>If you are looking for a thrilling outdoor activity to get stuck into, something to bring the family together, or an unforgettable experience gift for an adventure-loving friend, then look no further.</p>
-
- <p>In this session we focus on fun rather than learning. We set everything up, provide all the safety equipment, and start you off gently with beginners' routes. For anyone finding it too easy, we’ll test you out on something more challenging, making sure everyone in the session gets to push their limits.</p>
-
-<p>Enjoy a work out for your body and your brain and experience what it’s like to be truly in the moment. Do something you never imagined you could. Support each other to overcome your challenges and share the incredible feeling of accomplishment.</p>
-
-<BookButton style={{margin: `0 50px 0 0`, alignleft: `flex-end`}} onClick={() => window.location.href='/form/Corporate_Climb_Experience'}><h7>Book Now</h7></BookButton>
-            </a>
+      <DetailRow>
+        <FlexCol>
+          <h2>Book your Climb Experience</h2>
+          <a>
+            <p><span style={{ color: `#23E5BF`}}>€65pp | 4 hours | no prerequisites | all equipment provided</span></p>
+            <p>If you are looking for a thrilling outdoor activity to get stuck into, something to bring the family together, or an unforgettable experience gift for an adventure-loving friend, then look no further.</p>
+            <p>In this session we focus on fun rather than learning. We set everything up, provide all the safety equipment, and start you off gently with beginners' routes. For anyone finding it too easy, we’ll test you out on something more challenging, making sure everyone in the session gets to push their limits.</p>
+            <p>Enjoy a work out for your body and your brain and experience what it’s like to be truly in the moment. Do something you never imagined you could. Support each other to overcome your challenges and share the incredible feeling of accomplishment.</p>
+            <BookButton style={{margin: `0 50px 0 0`, alignleft: `flex-end`}} onClick={() => window.location.href='/form/Corporate_Climb_Experience'}><h7>Book Now</h7></BookButton>
+            <br />
+            <br />
+          </a>
           </FlexCol>
           <HalfImageText right="true" img={costyImg} style={{backgroundPosition: `left center`}}><h2></h2></HalfImageText>
-
         </DetailRow>
         <br />
 
@@ -71,50 +63,36 @@ const FirstTime = (props: { setTitle: (v: string) => void, }) => {
       <HalfImageText img={teamImg}><h2></h2></HalfImageText>
 
         <FlexCol right=true>
+        <h2>Family fun</h2>
           <a>
-<h2>Family fun</h2>
-              <p>Kids have tons of energy and it’s not easy to find new activities to keep them interested and learning at the same time. Climbing is a great way to put all that energy to good use. </p>
-            <p>It teaches children perseverance, discipline, and respect for the environment. They’ll make lifelong friends, built on something special, and they’ll come home tired and happy.
-</p>
+            <p>Kids have tons of energy and it’s not easy to find new activities to keep them interested and learning at the same time. Climbing is a great way to put all that energy to good use. </p>
+            <p>It teaches children perseverance, discipline, and respect for the environment. They’ll make lifelong friends, built on something special, and they’ll come home tired and happy.</p>
             <p>It’s also a great activity for families; a chance to come together and build new memories which will last a lifetime. </p>
             <p>  Check out our <a href="/courses">courses</a> or  <a href="mailto:info@gebla.mt">get in touch</a> to find out more.</p>
           </a>
-
-
         </FlexCol>
-
-
       </DetailRow>
       <br />
       <br />
-
- <br />
-        <a id="malta"></a>
-
-        <FullPhoto img={martinImg} style={{minHeight: `50vh`, backgroundPosition: `top`}}/>
-        <DetailRow>
-        <FlexCol><a><h2> More than <span style={{ color: `#23E5BF`}}>climbing</span><br /></h2></a></FlexCol>
-
+      <br />
+      <a id="malta"></a>
+      <FullPhoto img={martinImg} style={{minHeight: `50vh`, backgroundPosition: `top`}} />
+      <DetailRow>
+        <FlexCol><h2> More than <span style={{ color: `#23E5BF`}}>climbing</span></h2></FlexCol>
         <FlexCol right=true>
-            <a>
+          <a>
             <p>It's not just about doing things you never imagined you could. It’s about new friendships built on something different. A worldwide community you’re suddenly and automatically welcomed into. </p>
-
-<p>It's about supporting each other. Sharing the highs and lows. Finding a workout for your body and your brain that you can’t replicate in any other way. Accomplishing personal goals and loving it when you see others reach theirs. And at the end of the day, it’s about sharing the best cold beer you’ve ever had.</p>
+            <p>It's about supporting each other. Sharing the highs and lows. Finding a workout for your body and your brain that you can’t replicate in any other way. Accomplishing personal goals and loving it when you see others reach theirs. And at the end of the day, it’s about sharing the best cold beer you’ve ever had.</p>
             <p>It’s not about scaling Everest or taking up an adrenaline sport, but you will get to experience what it’s like to truly be in the moment. Forced to overcome fears, negative thoughts and anxiety. You’ll be a better person when you come back down to earth than when you left it.</p>
-
- <p>It’s about the art of movement and balance. About watching slim girls climb harder than big muscly guys. About not making judgements, or feeling judged. And it’s about feeling empowered, and knowing yourself, in a way you never did before.</p>
-
-<p>This is why we started Gebla. Because we believe in giving people the opportunity to try it for themselves.</p>
+            <p>It’s about the art of movement and balance. About watching slim girls climb harder than big muscly guys. About not making judgements, or feeling judged. And it’s about feeling empowered, and knowing yourself, in a way you never did before.</p>
+            <p>This is why we started Gebla. Because we believe in giving people the opportunity to try it for themselves.</p>
             <p>Check out our <a href="/courses">courses</a> and book today!</p>
-            </a>
+          </a>
         </FlexCol>
-        </DetailRow>
-
-
-        <br />
-        <br />
-
-        </DetailCol>
+      </DetailRow>
+      <br />
+      <br />
+    </DetailCol>
 };
 
 //

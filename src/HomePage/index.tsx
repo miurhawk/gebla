@@ -13,12 +13,12 @@ const HomePage = () => {
 
     <DetailRow>
         <FlexAColumnFill href="/indoor-home">
-          <FlexRowFill style={{justifyContent: `center`}} img={indoorImg}>
+          <FlexRowFill style={{justifyContent: `center`, minHeight: `500px`}} img={indoorImg}>
             <h3>Indoor</h3>
           </FlexRowFill>
         </FlexAColumnFill>
         <FlexAColumnFill href="/outdoor-home">
-          <FlexRowFill right="true" img={outdoorImg} style={{backgroundPosition: `centre`, justifyContent: `center`}}>
+          <FlexRowFill right="true" img={outdoorImg} style={{backgroundPosition: `centre`, justifyContent: `center`, minHeight: `500px`}}>
             <h3>Outdoor</h3>
           </FlexRowFill>
         </FlexAColumnFill>
