@@ -20,15 +20,13 @@ const FirstTime = (props: { setTitle: (v: string) => void, }) => {
           <FullPhoto img={enricoImg} style={{backgroundPosition: `0% 50%`}}><h1>Find the climber in you</h1>
           <br>
           </br>
-<BookButton onClick={() => window.location.href='/courses'}><h7>See Our Courses</h7></BookButton></FullPhoto>
+          <BookButton onClick={() => window.location.href='/courses'}><h7>See Our Courses</h7></BookButton></FullPhoto>
             <a>
-<br>
-</br>
-
-<h6><span style={{fontWeight: `bold`, color: `#23E5BF`}}>Want to try climbing but not sure  where to start?</span></h6>
+          <br>
+          </br>
+          <h6><span style={{fontWeight: `bold`, color: `#23E5BF`}}>Want to try climbing but not sure  where to start?</span></h6>
               <p>Anyone can climb. We feel pretty passionate about this. You don’t need to be an athlete, have ‘strong fingers’, be able to do pull ups, or be ‘young’.  So if you’re doubting yourself, put that to one side and let’s give it a try.</p>
             </a>
-
 
       <DetailRow>
         <HalfImageText img={tACImg} />
@@ -50,10 +48,11 @@ const FirstTime = (props: { setTitle: (v: string) => void, }) => {
             <p>If you are looking for a thrilling outdoor activity to get stuck into, something to bring the family together, or an unforgettable experience gift for an adventure-loving friend, then look no further.</p>
             <p>In this session we focus on fun rather than learning. We set everything up, provide all the safety equipment, and start you off gently with beginners' routes. For anyone finding it too easy, we’ll test you out on something more challenging, making sure everyone in the session gets to push their limits.</p>
             <p>Enjoy a work out for your body and your brain and experience what it’s like to be truly in the moment. Do something you never imagined you could. Support each other to overcome your challenges and share the incredible feeling of accomplishment.</p>
-            <BookButton style={{margin: `0 50px 0 0`, alignleft: `flex-end`}} onClick={() => window.location.href='/form/Corporate_Climb_Experience'}><h7>Book Now</h7></BookButton>
-            <br />
-            <br />
+
           </a>
+          <BookButton onClick={() => window.location.href='/form/Corporate_Climb_Experience'}><h7>Book Now</h7></BookButton>
+          <br />
+          <br />
           </FlexCol>
           <HalfImageText right="true" img={costyImg} style={{backgroundPosition: `left center`}}><h2></h2></HalfImageText>
         </DetailRow>

@@ -9,7 +9,6 @@ import "typeface-montserrat";
 import { CenteredPage, GlobalStyle, Divider, PageTitle } from "./styles";
 import { FullMenu } from "./components/FullMenu";
 
-
 const AppContainer = () => {
   const [title, setTitle] = useState("");
 

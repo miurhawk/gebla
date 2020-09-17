@@ -1,5 +1,5 @@
 import styled, { createGlobalStyle } from "styled-components";
-import logo from "../assets/img/logo.png";
+import logo from "../assets/img/logo.svg";
 import "typeface-montserrat";
 import liberatorHeavyURL from "../assets/fonts/Liberator-Heavy.ttf";
 import liberatorMediumURL from "../assets/fonts/Liberator-Medium.ttf";
@@ -60,7 +60,7 @@ export const CenteredPage = styled.div`
   h5 {color: ${Theme.colors.dark}; font-family: ${Theme.fonts.heading};};
   h6 {color: ${Theme.colors.light}; font-family: ${Theme.fonts.body}; font-size: 26px; margin: 0;};
   h7 {color: ${Theme.colors.dark}; font-family: ${Theme.fonts.body}; font-size: 16px; margin: 0;};
-  a {color: ${Theme.colors.light}; font-family: ${Theme.fonts.body}; font-size: 16px;};
+  a {color: ${Theme.colors.light}; font-family: ${Theme.fonts.body}; font-size: 18px; line-height: 22px;};
   a:link {color: ${Theme.colors.a1}; text-decoration: none; padding: 0;};
   a:link:hover {color: ${Theme.colors.a3}; text-decoration: none;};
   a:link:active {color: ${Theme.colors.a4}; text-decoration: none;};
@@ -69,27 +69,34 @@ export const CenteredPage = styled.div`
   a:visited:hover {color: ${Theme.colors.a3}; text-decoration: none;};
   a:visited:active {color: ${Theme.colors.a4}; text-decoration: none;};
   @media (max-width: 1080px) {
-    a {font-size: 24px;};
+    a {font-size: 20px; line-height: 26px;};
+    h1 {font-size: 50px;};
+    h2 {font-size: 50px;};
+    h3 {font-size: 30px;};
+    h4 {font-size: 24px;};
+    h5 {font-size: 24px;};
     h6 {font-size: 28px;};
-    h7 {font-size: 26px;};
+    h7 {font-size: 18px;};
   }
 `;
 
 export const BrandA = styled.a`
-  margin: 8px;
-  top: 0;
-  left: 45%;
-  position: fixed;
+  margin: auto;
   height: 70px;
   width: 200px;
-  padding-right: 1rem;
   background-image: url(${logo});
   background-size: contain;
+  align-self: center;
   justify-self: center;
   background-repeat: no-repeat;
+  background-position: center;
   flex-grow: 1;
   -webkit-flex-grow: 1;
   href: ${props => props.href};
+  @media (max-width: 1080px) {
+    margin: 8px;
+    background-position: left;
+  }
 `;
 
 export const BookButton = styled.button`
@@ -103,7 +110,7 @@ export const BookButton = styled.button`
     margin: 0;
   }
   border: none;
-  box-shadow: 8px 8px 0px ${Theme.colors.light};
+  box-shadow: -4px 4px 0px ${Theme.colors.light};
   :hover {
     box-shadow: none;
     h7 {
@@ -206,10 +213,9 @@ export const FlexAColumnFill = styled.a`
 
 export const HalfImageText = styled.div`
   display: flex;
-  flex-direction: column;
   width: 48vw;
   margin: ${props => props.right ? `0 0 0 2vw` : `0 2vw 0 0`};
-  min-height: 30vw;
+  min-height: ${props => props.gall ? `500px` : `200px`};
   align-items: ${props => props.right ? `flex-start` : `flex-end`};
   flex-wrap: wrap;
   background-image: url(${props => props.img});
@@ -229,6 +235,7 @@ export const HalfImageText = styled.div`
   };
   @media (max-width: 1080px) {
     width: 100vw;
+    min-height: 400px;
     margin: 0;
     h2 {
       padding: 2rem 2rem 0 2rem;
@@ -271,6 +278,7 @@ export const FullPhoto = styled.div`
   flex-wrap: wrap;
   background-image: url(${props => props.img});
   background-size: cover;
+  background-position: center;
   min-height: 20rem;
   text-align: left;
   h1 {
@@ -306,8 +314,11 @@ export const DetailRow = styled.div`
   width: 100vw;
   flex-grow: 5;
   -webkit-flex-grow: 5;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   href: ${props => props.href};
+  @media (max-width: 1080px) {
+    flex-wrap: wrap;
+  }
 `;
 
 export const DetailCol = styled.div`
@@ -317,6 +328,7 @@ export const DetailCol = styled.div`
   justify-contents: flex-start;
   padding-top: 1rem;
   padding-bottom: 1rem;
+  width: 100vw;
   flex-grow: 5;
   -webkit-flex-grow: 5;
   flex-wrap: wrap;
@@ -325,6 +337,11 @@ export const DetailCol = styled.div`
     padding: 1rem 20vw 1rem 20vw;
     text-align: center;
   };
+  @media (max-width: 1080px) {
+    a {
+      padding: 10px;
+    };
+  }
 `;
 
 export const SmallDetailCol = styled.div`
@@ -350,6 +367,9 @@ export const SmallDetailCol = styled.div`
   }
   @media (max-width: 1080px) {
     max-width: 100vw;
+    a {
+      padding: 10px;
+    }
   }
 `;
 
@@ -395,6 +415,9 @@ export const StyledForm = styled.form`
     };
 
   };
+  @media (max-width: 1080px) {
+    max-width: 90vw;
+  }
 
 `;
 
@@ -437,6 +460,57 @@ export const FlexCol = styled.div`
     align-self: ${props => props.right ? `flex-start` : `flex-end`};
     margin: ${props => props.right ? `0 2rem 0 2rem` : `0 2rem 0 2rem`};
   }
+`;
+
+
+export const StyledGallery = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 50vw;
+  flex-wrap: wrap;
+  font-family: ${Theme.fonts.body};
+  color: ${Theme.colors.a4};
+  href: ${props => props.href};
+  position: relative;
+  @media (max-width: 1080px) {
+    width: 100vw;
+    button {
+      height: 400px;
+    }
+  }
+  button {
+    z-index: 5;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 500px;
+    width: 150px;
+    outline: none;
+    background-color: transparent;
+    position: absolute;
+    top: 0%;
+    margin: ${props => props.right ? `0 2rem 0 2rem` : `0 2rem 0 2rem`};
+    div {
+      width: 15px;
+      height: 15px;
+      border-radius: 15px;
+      background-color: ${Theme.colors.a1};
+    }
+    :hover {
+      div {
+        background-color: ${Theme.colors.a4};
+      }
+    }
+  }
+  button:nth-child(1) {
+    align-self: flex-start;
+  };
+  button:nth-child(2) {
+    align-self: flex-end;
+    justify-content: flex-end;
+  };
 `;
 
 
@@ -580,11 +654,11 @@ export const InfoItem = styled.div`
   a {
     font-weight: bold;
     font-size: 18pt;
-    padding: 1rem;
+    padding: 15px 5px 15px 5px;
     color: ${({ props.isActive }) => isActive ? Theme.colors.dark : Theme.colors.light};
   };
   h3 {
-    padding: 0 3rem 0 3rem;
+    padding: 0 10px 0 10px;
   }
   div {
     position: ${({ open }) => open ? `fixed` : `relative` };
@@ -610,6 +684,11 @@ export const InfoItem = styled.div`
   div:nth-child(3) {
     transform: rotate(-45deg);
 
+  };
+  @media (max-width: 1080px) {
+    a: {
+      font-size: 12px;
+    }
   };
 `;
 

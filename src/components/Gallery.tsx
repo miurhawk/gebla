@@ -1,34 +1,101 @@
 import * as React from "react";
-import { FunctionComponent, useState, createContext } from "react";
-import * as ReactDOM from "react-dom";
-import styled from "styled-components";
-import { GalleryItem, IGalleryItemProps } from "./GalleryItem";
-import { GalleryID, IGalleryIDProps } from "./GalleryID";
+import { useEffect } from "react";
+import styled, { css } from "styled-components";
+import { HalfImageText, StyledGallery } from "../styles"
 
+const SCarouselWrapper = styled.div`
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row;
+  width: 50vw;
+  @media (max-width: 1080px) {
+    width: 100vw;
+    margin-bottom: 400px;
 
-interface IGalleryComposition {
-  GalleryID: FunctionComponent<IGalleryIDProps>;
-  GalleryItem: FunctionComponent<IGalleryItemProps>;
+  }
+`;
+
+interface ICarouselSlide {
+  active?: boolean;
 }
 
-interface IGalleryContext {
-  activeTab: number
-  setActiveTab: (label: number) => void
+const SCarouselSlide = styled.div<ICarouselSlide>`
+  opacity: ${props => (props.active ? 1 : 0)};
+  z-index: ${props => (props.active ? 0 : -1)};
+  transition: all 0.5s ease;
+  width: 50vw;
+  display: flex;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  flex-grow: 1;
+  @media (max-width: 1080px) {
+    width: 100vw;
+  }
+`;
+
+interface ICarouselProps {
+  currentSlide: number;
 }
 
-export const GalleryContext = createContext<IGalleryContext | undefined>(
-  undefined
-)
+const SCarouselSlides = styled.div<ICarouselProps>`
+  display: flex;
+  transition: all 0.5s ease;
+  margin: 0;
+  padding: 0;
+  flex-grow: 1;
+  width: 50vw;
+  @media (max-width: 1080px) {
+    width: 100vw;
+  }
+`;
 
-const Gallery: FunctionComponent  & IGalleryComposition = props => {
-  const [activeTab, setActiveTab] = useState(props.defaultTab)
+interface IProps {
+  children: JSX.Element[];
+}
+
+const Gallery = ({ children }: IProps) => {
+
+
+  const [currentSlide, setCurrentSlide] = React.useState(0);
+  const current = React.useRef(currentSlide);
+  current.current = currentSlide;
+
+  const activeSlide = children.map((slide, index) => (
+    <SCarouselSlide active={currentSlide === index} key={index}>
+      {slide}
+    </SCarouselSlide>
+  ));
+
+  const moveRight = () => {
+    setCurrentSlide((current.current - 1 + activeSlide.length) % activeSlide.length);
+  };
+  const moveLeft = () => {
+    console.log(current);
+    console.log(currentSlide);
+    setCurrentSlide((current.current + 1) % activeSlide.length);
+  };
+  useEffect(() => {
+    for (let i = 0; i < activeSlide.length; i++ ) {
+      console.log(i+1);
+      const timer = setTimeout(() => moveLeft(), 5000*(i+1));
+
+    }
+  return () => clearTimeout(timer);
+
+  }, [,]);
+
   return (
-    <GalleryContext.Provider value={{ activeTab, setActiveTab}}>
-        {props.children}
-    </GalleryContext.Provider>
-  )
-}
+    <StyledGallery>
+      <SCarouselWrapper>
+        <SCarouselSlides currentSlide={currentSlide}>
+          {activeSlide}
+        </SCarouselSlides>
+      </SCarouselWrapper>
+      <button onClick={moveRight}><div /></button>
+      <button onClick={moveLeft}><div /></button>
+    </StyledGallery>
+  );
+};
 
-Gallery.GalleryID = GalleryID;
-Gallery.GalleryItem = GalleryItem;
-export { Gallery };
+export default Gallery;

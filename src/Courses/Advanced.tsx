@@ -12,22 +12,13 @@ const Advanced = () => {
   // const Details = [BoulderingDetail, CoachingDetail];
   return (
     <DetailCol>
-
-
-      <DetailRow>
-      <a><h6><span style={{fontWeight: `bold`, color: `#23E5BF`}}>Advance your skills</span></h6>
-
-
-
-<p>Our advanced courses assume you're confident with toprope climbing to at least grade 5. We also need you to be happy toprope belaying, and have your own gear.</p>
-
+    <a><h6><span style={{fontWeight: `bold`, color: `#23E5BF`}}>Advance your skills</span></h6>
+      <p>Our advanced courses assume you're confident with toprope climbing to at least grade 5. We also need you to be happy toprope belaying, and have your own gear.</p>
       <p>Because each student is unique, we can't tell you beforehand how many sessions will be required to gain a competence in a new skill. </p>
-
-<p>We'll evaluate you after each session and tell you whether we think you're ready to perform the skill without supervision or not. But expect each skill to take 2-5 sessions to master.</p>
+      <p>We'll evaluate you after each session and tell you whether we think you're ready to perform the skill without supervision or not. But expect each skill to take 2-5 sessions to master.</p>
       <p>Each session is 3 hours long and costs €120. A maximum of 2 participants per guide is allowed.</p>
-      <p><a href="/form/Advanced_Course">Click here</a> or email <a href="mailto:info@gebla.mt">info@gebla.mt</a> with your details to book a session.</p></a>
-
-      </DetailRow>
+      <p>
+    <a href="/form/Advanced_Course">Click here</a> or email <a href="mailto:info@gebla.mt">info@gebla.mt</a> with your details to book a session.</p></a>
 
       <DetailRow style={{flexWrap: `wrap`, justifyContent: `center`, alignContent: `space-between`}}>
       <SmallDetailCol>
@@ -41,7 +32,8 @@ const Advanced = () => {
         <p>Our guides will get you to the point where you are safe and comfortable on a lead route, and taking falls above and below a bolt.</p>
         </a>
         <BookButton onClick={() => window.location.href='/form/Lead_Climbing_Course'}><h7>Book</h7></BookButton>
-
+        <br />
+        <br />
       </SmallDetailCol>
       <SmallDetailCol>
         <a>
@@ -69,7 +61,7 @@ const Advanced = () => {
 
         <SmallDetailCol>
           <a>
-         
+
 <h6>Anchor Cleaning</h6>
        <p><span style={{ color: `#23E5BF`}}>€120 pp | 3 hours | Toprope competency</span></p>
         <p>In this course we will teach you how to safely clean all types of anchors found on sport climbs.</p>

@@ -1,8 +1,8 @@
 import * as React from "react";
 import { Link } from "react-router-dom";
 import { DetailRow, BookButton, FlexCol, HalfImageText, FlexRowFill, GalleryDots, Divider, DetailCol, Headline, StyledTable, InfoItem, InfoItems, InfoDetail, FullPhoto } from "../styles";
-import { FunctionComponent, useState } from "react";
-import { Gallery } from "../components/Gallery";
+import { FunctionComponent, useState, useEffect } from "react";
+import Gallery from "../components/Gallery";
 
 
 import lauraImg from "../../assets/img/img64.jpg";
@@ -12,7 +12,6 @@ import fenechImg from "../../assets/img/img48.jpg";
 import suhailImg from "../../assets/img/img75.jpg";
 import charlieImg from "../../assets/img/img.jpg"
 
-import otherImg from "../../assets/img/img19.jpg";
 import martinImg from "../../assets/img/img23.jpg";
 
 const OutdoorHome = (props: { setTitle: (v: string) => void, }) => {
@@ -20,6 +19,8 @@ const OutdoorHome = (props: { setTitle: (v: string) => void, }) => {
   let colorArray: Array<string> = ["#23E5BF","#57D0FF","#8888FF","#FF8DEA"];
   // const CoachingDetail = <InfoDetail><h3>Coaching</h3></InfoDetail>;
   props.setTitle("Outdoor");
+
+
   // const Details = [BoulderingDetail, CoachingDetail];
   return (
     <DetailCol>
@@ -36,36 +37,17 @@ const OutdoorHome = (props: { setTitle: (v: string) => void, }) => {
             <BookButton style={{margin: `0 50px 0 0`, alignleft: `flex-end`}} onClick={() => window.location.href='/form/Corporate_Climb_Experience'}><h7>Find out more</h7></BookButton>
             <br />
             <br />
+            <a id="guiding"></a>
           </FlexCol>
-            <Gallery defaultTab="1">
-              <InfoDetail right=true>
-                <Gallery.GalleryItem label="1">
-                  <FlexRowFill right="true" img={lauraImg}></FlexRowFill>
-                </Gallery.GalleryItem>
-                <Gallery.GalleryItem label="2">
-                  <FlexRowFill img={lukasImg} />
-                </Gallery.GalleryItem>
-                <Gallery.GalleryItem label="3">
-                  <FlexRowFill img={evImg} style={{backgroundPosition: `left top`}} />
-                </Gallery.GalleryItem>
-                <Gallery.GalleryItem label="4">
-                  <FlexRowFill img={fenechImg}></FlexRowFill>
-                </Gallery.GalleryItem>
-                <Gallery.GalleryItem label="5">
-                  <FlexRowFill img={suhailImg} />
-                </Gallery.GalleryItem>
-              </InfoDetail>
-              <GalleryDots>
-                <Gallery.GalleryID hideLabel=true darkenHover=true label="1" color={colorArray[Math.floor(Math.random() * colorArray.length)]}></Gallery.GalleryID>
-                <Gallery.GalleryID hideLabel=true darkenHover=true label="2" color={colorArray[Math.floor(Math.random() * colorArray.length)]}></Gallery.GalleryID>
-                <Gallery.GalleryID hideLabel=true darkenHover=true label="3" color={colorArray[Math.floor(Math.random() * colorArray.length)]}></Gallery.GalleryID>
-                <Gallery.GalleryID hideLabel=true darkenHover=true label="4" color={colorArray[Math.floor(Math.random() * colorArray.length)]}></Gallery.GalleryID>
-                <Gallery.GalleryID hideLabel=true darkenHover=true label="5" color={colorArray[Math.floor(Math.random() * colorArray.length)]}></Gallery.GalleryID>
-              </GalleryDots>
-            </Gallery>
+          <Gallery right=true>
+            <HalfImageText right="true" gall="true" img={lauraImg}></HalfImageText>
+            <HalfImageText right="true" gall="true" img={lukasImg} />
+            <HalfImageText right="true" gall="true" img={evImg} style={{backgroundPosition: `left top`}} />
+            <HalfImageText right="true" gall="true" img={fenechImg} ></HalfImageText>
+            <HalfImageText right="true" gall="true" img={suhailImg} />
+          </Gallery>
         </DetailRow>
-        <br />
-        <a id="guiding"></a>
+
         <DetailRow>
         <HalfImageText img={charlieImg}></HalfImageText>
 

@@ -12,18 +12,15 @@ const Basics = () => {
   // const Details = [BoulderingDetail, CoachingDetail];
   return (
     <DetailCol>
-      <DetailRow>
-<a>
-<h6><span style={{fontWeight: `bold`, color: `#23E5BF`}}>Climbing for under 18s</span></h6>
-         
-
-      <p>Climbing is a great activity for children as it combines problem-solving with physical activity and can lead to increased discipline, motivation, and social bonding.</p>
-      <p>Our children's programs aren't available until our Msida gym opens in a few months, but you can start getting excited and book your place for once we do open.</p>
-      <p>Email <a href="mailto:coach@gebla.mt">coach@gebla.mt</a> with your child's age and climbing experience to inquire further.</p></a>
+    <a>
+    <h6><span style={{fontWeight: `bold`, color: `#23E5BF`}}>Climbing for under 18s</span></h6>
 
 
+          <p>Climbing is a great activity for children as it combines problem-solving with physical activity and can lead to increased discipline, motivation, and social bonding.</p>
+          <p>Our children's programs aren't available until our Msida gym opens in a few months, but you can start getting excited and book your place for once we do open.</p>
+          <p>Email <a href="mailto:coach@gebla.mt">coach@gebla.mt</a> with your child's age and climbing experience to inquire further.</p></a>
 
-      </DetailRow>
+
 
       <DetailRow style={{flexWrap: `wrap`, justifyContent: `center`}}>
         <SmallDetailCol>
