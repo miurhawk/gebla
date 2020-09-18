@@ -5,7 +5,7 @@ import { FunctionComponent, useState } from "react";
 import { Tabs } from "../components/Tabs";
 import teamImg from "../../assets/img/img13.jpg";
 import costyImg from "../../assets/img/img41.jpg";
-import { Gallery } from "../components/Gallery.tsx";
+import Gallery from "../components/Gallery.tsx";
 
 
 const Corporate = (props: { setTitle: (v: string) => void, }) => {
@@ -17,16 +17,9 @@ return (
 
       <DetailRow>
 
-      <Gallery defaultTab="1">
-        <InfoDetail>
-          <Gallery.GalleryItem label="1">
-            <FlexRowFill right="true" img={teamImg}></FlexRowFill>
-          </Gallery.GalleryItem>
-
-        </InfoDetail>
-        <GalleryDots>
-          <Gallery.GalleryID hideLabel=true darkenHover=true label="1" color={colorArray[Math.floor(Math.random() * colorArray.length)]}></Gallery.GalleryID>
-        </GalleryDots>
+      <Gallery>
+            <HalfImageText gall=true right="true" img={teamImg}></HalfImageText>
+            <HalfImageText gall=true right="true" img={teamImg}></HalfImageText>
       </Gallery>
 
         <FlexCol right=true>

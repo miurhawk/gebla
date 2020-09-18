@@ -71,13 +71,10 @@ const Gallery = ({ children }: IProps) => {
     setCurrentSlide((current.current - 1 + activeSlide.length) % activeSlide.length);
   };
   const moveLeft = () => {
-    console.log(current);
-    console.log(currentSlide);
     setCurrentSlide((current.current + 1) % activeSlide.length);
   };
   useEffect(() => {
     for (let i = 0; i < activeSlide.length; i++ ) {
-      console.log(i+1);
       const timer = setTimeout(() => moveLeft(), 5000*(i+1));
 
     }

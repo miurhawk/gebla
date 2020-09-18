@@ -35,9 +35,10 @@ const OutdoorHome = (props: { setTitle: (v: string) => void, }) => {
             </a>
 
             <BookButton style={{margin: `0 50px 0 0`, alignleft: `flex-end`}} onClick={() => window.location.href='/form/Corporate_Climb_Experience'}><h7>Find out more</h7></BookButton>
-            <br />
-            <br />
             <a id="guiding"></a>
+
+            <br />
+            <br />
           </FlexCol>
           <Gallery right=true>
             <HalfImageText right="true" gall="true" img={lauraImg}></HalfImageText>
