@@ -35,7 +35,7 @@ const FirstTime = (props: { setTitle: (v: string) => void, }) => {
           <a>
             <p> Get to grips with sport climbing! Learn with expert instructors. Master the safety procedures, become comfortable with the basics and you’ll be ready to partner up with other climbers and get out there.</p>
             <p>And when you’d like to take your skills to the next level or improve your technique, we have a range of advanced courses and coaching sessions to chose from.</p>
-            <p>Take a look at our <a href="/courses">courses</a> to find the right one for you. Or email <a href="mailto:coach@gebla.mt">coach@gebla.mt</a> to schedule a lesson.</p>
+            <p>Take a look at our <a href="/courses">courses</a> to find the right one for you, or <a href="mailto:info@gebla.mt">email us</a> to schedule a lesson.</p>
           </a>
         </FlexCol>
       </DetailRow>
@@ -50,7 +50,7 @@ const FirstTime = (props: { setTitle: (v: string) => void, }) => {
             <p>Enjoy a work out for your body and your brain and experience what it’s like to be truly in the moment. Do something you never imagined you could. Support each other to overcome your challenges and share the incredible feeling of accomplishment.</p>
 
           </a>
-          <BookButton onClick={() => window.location.href='/form/Corporate_Climb_Experience'}><h7>Book Now</h7></BookButton>
+          <BookButton onClick={() => window.location.href='/form/Climb_Experience'}><h7>Book Now</h7></BookButton>
           <br />
           <br />
           </FlexCol>
