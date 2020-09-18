@@ -2,7 +2,7 @@ import * as React from "react";
 import { Link } from "react-router-dom";
 import { HalfImageText, Headline, DetailRow, DetailCol, FlexRowFill, FlexAColumnFill } from "../styles";
 
-const indoorImg = require("../../assets/img/holds.jpg");
+const indoorImg = require("../../assets/img/test.jpg");
 const outdoorImg = require("../../assets/img/img43.jpg");
 
 
