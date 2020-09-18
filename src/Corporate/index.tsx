@@ -80,7 +80,7 @@ return (
 
  <p>A great activity for team building, abseiling offers a fantastic day out which can be enjoyed by anyone, of any ability.</p>
 
-<p>With lines from 10 to 50 metres across a range of locations, we can tailor the day to suit you. </p>
+<p>With lines from 20 to 50 metres across a range of locations, we can tailor the day to suit you. </p>
 
 <p>We can also combine it with rock climbing for a full day’s adventure.</p>
 
