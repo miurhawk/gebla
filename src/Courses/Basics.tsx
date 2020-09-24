@@ -64,7 +64,9 @@ const Basics = () => {
 
           <p><span style={{ color: `#23E5BF`}}>€120 pp | 3 hours | no prerequisites</span></p>
             <p>Want the thrill without all the hard work? Abseiling may be for you.</p>
-            <p>In this course we'll teach you  technique, equipment handling and how to set your own anchors; everything you need to know to be confident and safe when using your own gear. </p>
+            <p>Not only is it great fun, but several of our stunning sea cliff climbs are accessible only by abseil, so it's a great skill to have if you want to make the most of Malta's wildest spots.</p>
+
+<p>In this course we'll teach you  technique, equipment handling and how to set your own anchors; everything you need to know to be confident and safe when using your own gear. </p>
 
           </a>
           <BookButton onClick={() => window.location.href='/form/Abseiling'}><h7>Book</h7></BookButton>

@@ -63,9 +63,9 @@ const Advanced = () => {
           <a>
 
 <h6>Anchor Cleaning</h6>
-       <p><span style={{ color: `#23E5BF`}}>€120 pp | 3 hours | Toprope competency</span></p>
+       <p><span style={{ color: `#23E5BF`}}>€80 pp | 2 hours | Toprope competency</span></p>
         <p>In this course we will teach you how to safely clean all types of anchors found on sport climbs.</p>
-        <p>You'll practice on the ground first, then on a low hanging anchor, and finally atop a route.</p>
+        <p>You'll practice on the ground first, then on a low hanging anchor, and finally at the top of a route.</p>
         </a>
         <BookButton onClick={() => window.location.href='/form/Anchor_Cleaning_Course'}><h7>Book</h7></BookButton>
 
