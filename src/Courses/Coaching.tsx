@@ -17,11 +17,11 @@ const Coaching = () => {
 <h6><span style={{fontWeight: `bold`, color: `#23E5BF`}}>Stuck on your project?</span></h6>
          
 
-          <p><span style={{fontWeight: `bold`}}>Our experienced coaches are here to help! </span>Want to practise falling, improve your technique on overhangs, or work on your overall strength and fitness? Or maybe you just want to send that project you've been working on? </p>
+          <p>Our experienced coaches are here to help! Want to practice falling, improve your technique on overhangs, or work on your overall strength and fitness? Or maybe you just want to send that project you've been working on? </p>
 <p>We'll create a personalised training plan to help you reach your goal, and meet with you as often as you like for technique review and feedback. </p>
 
 <p>Coaching sessions start at €55 per hour.</p>
-          <p>Contact <a href="mailto:coach@gebla.mt">coach@gebla.mt</a> to book your sessions.</p>
+          <p>Contact <a href="mailto:coach@gebla.mt">coach@gebla.mt</a> to plan and book your sessions.</p>
         </a>
       <FullPhoto img={charlieImg} style={{height: `120vh`}}></FullPhoto>
 
