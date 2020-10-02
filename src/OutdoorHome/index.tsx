@@ -58,10 +58,10 @@ const OutdoorHome = (props: { setTitle: (v: string) => void, }) => {
               <p>Our highly experienced - and very enthusiastic - guides are ready to show you a great day on the rocks. </p>
               <p>Available on an hourly basis, guides can:</p>
               <ul>
-                <li>take an experienced group of climbers to a new area,</li>
-                <li>act as a belay or multipitch partner,</li>
-                <li>show climbers from abroad to, and around, the crag,</li>
-                <li>take less experienced climbers to a toprope climbing area.</li>
+                <li>take an experienced group of climbers to a new area</li>
+                <li>act as a belay or multipitch partner</li>
+                <li>show climbers from abroad to, and around, the crag</li>
+                <li>take less experienced climbers to a toprope climbing area</li>
 
               </ul>
               <p>Guiding services are €35 per hour, per guide. <a href="mailto:info@gebla.mt">Contact us</a> with your party size and dates to book.</p>

@@ -16,7 +16,7 @@ const Basics = () => {
   return (
     <DetailCol>
       <a><h6><span style={{fontWeight: `bold`, color: `#23E5BF`}}>Discover climbing</span></h6>
-        <p>Each one will be tailored to you and we'll bring all the gear you need. Please come with plenty of water, appropriate clothes for exercise, and snacks. We'll send detailed information on where to meet your instructors on the day before your course.</p>
+        <p>Each course will be tailored to you and we'll bring all the gear you need. Please come with plenty of water, appropriate clothes for exercise, and snacks. We'll send detailed information on where to meet your instructors on the day before your course.</p>
         <p>Email <a href="mailto:info@gebla.mt">info@gebla.mt</a> with your details or click below to book a session.</p>
       </a>
 

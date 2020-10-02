@@ -26,7 +26,7 @@ const HomePage = () => {
       </DetailRow>
       <a>
         <h6><span style={{fontWeight: `bold`}}>Welcome to Gebla.</span></h6>
-        <p>We love climbing and think you will too. It's a fantastic sport anyone can try. Climb Malta's stunning cliffs and valleys, and see these beautiful Islands from a whole new perspective. Use your body and mind, and feel the exhilaration of achieving something you maybe never imagined you could. </p>
+        <p>We love climbing and think you will too. It's a fantastic sport anyone can try. Climb Malta's stunning cliffs and valleys, see these beautiful Islands from a whole new perspective and feel the exhilaration of achieving something you maybe never imagined you could. </p>
 
 <p>People of every age, shape and size are taking it up as a new sport every day. <a href="/first-time">Find out more</a> about climbing, take a look at our range of <a href="/courses">courses</a> or try our  <a href="/climb-exp">Climb Experience</a> for an unforgettable day out.</p>
 

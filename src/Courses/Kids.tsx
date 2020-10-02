@@ -18,7 +18,7 @@ const Basics = () => {
 
           <p>Climbing is a great activity for children as it combines problem-solving with physical activity and can lead to increased discipline, motivation, and social bonding.</p>
           <p>Our children's programs aren't available until our Msida gym opens in a few months, but you can start getting excited and book your place for once we do open.</p>
-          <p>Email <a href="mailto:coach@gebla.mt">coach@gebla.mt</a> with your child's age and climbing experience to inquire further.</p></a>
+          <p>Email <a href="mailto:coach@gebla.mt">coach@gebla.mt</a> with your child's age and climbing experience to enquire further.</p></a>
 
 
 
@@ -40,7 +40,7 @@ const Basics = () => {
           <p style={{ color: `#23E5BF`}}>€250 per month | ages 8-19</p>
           <p>The competitive team is for kids who want to excel at climbing and compete internationally.</p>
           <p>We will accept children of all ability levels, as long as they are motivated to train hard and improve. The team will meet three times per week to train together, and all team members will have free access to the gym during any opening hours.</p>
-          <p>Team dues also include competition jerseys, individual training plans, and coaching at local and international competitions.</p>
+          <p>The fee will also include competition jerseys, individual training plans, and coaching at local and international competitions.</p>
           </a>
           <BookButton onClick={() => window.location.href='/form/Competitive_Team'}><h7>Join</h7></BookButton>
         </SmallDetailCol>

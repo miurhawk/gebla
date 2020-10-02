@@ -12,9 +12,9 @@ const Chris = () => {
     <HalfImageText style={{minHeight: `600px`} img={chrisImg} />
       <FlexCol right=true>
         <a>
-        <p>Chris has been climbing for 6 years. He first learned in his native Italy, but has happily adapted to the Maltese limestone.</p>
-        <p>Chris is our numbers guy and his attention to detail is unparalleled.</p>
-        <p>As a co-owner of Ġebla, Chris hopes to share his knowledge of climbing safety and protocols to foster a succesful next generation of climbers.</p>
+        <p>Chris has been climbing for 7 years, starting out on the Alps in his native Italy before moving to Malta and happily adapting to the local limestone cliffs.</p>
+        
+        <p>As a co-owner of Ġebla, Chris looks forward to sharing his knowledge of climbing gear and techniques to foster a successful next generation of climbers venturing outdoors.</p>
         <br />
         <p><a href="mailto:chris@gebla.mt">chris@gebla.mt</a></p>        </a>
       </FlexCol>

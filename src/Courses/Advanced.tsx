@@ -13,9 +13,9 @@ const Advanced = () => {
   return (
     <DetailCol>
     <a><h6><span style={{fontWeight: `bold`, color: `#23E5BF`}}>Advance your skills</span></h6>
-      <p>Our advanced courses assume you're confident with toprope climbing to at least grade 5. We also need you to be happy toprope belaying, and have your own gear.</p>
+      <p>All our advanced courses need you to be confident toprope climbing to at least grade 5, be proficient in toprope belaying and have your own gear.</p>
       <p>Because each student is unique, we can't tell you beforehand how many sessions will be required to gain a competence in a new skill. </p>
-      <p>We'll evaluate you after each session and tell you whether we think you're ready to perform the skill without supervision or not. But expect each skill to take 2-5 sessions to master.</p>
+      <p>We'll evaluate you after each session and tell you whether we think you're ready to perform the skill without supervision or not. But expect each skill to take more than one session to master.</p>
       <p>Each session is 3 hours long and costs €120. A maximum of 2 participants per guide is allowed.</p>
       <p>
     <a href="/form/Advanced_Course">Click here</a> or email <a href="mailto:info@gebla.mt">info@gebla.mt</a> with your details to book a session.</p></a>
@@ -87,7 +87,7 @@ const Advanced = () => {
         <SmallDetailCol>
           <a>
           <h6>Multipitch</h6>
-        <p><span style={{ color: `#23E5BF`}}>€120 pp | 3 hours | Lead climbing & anchor building</span></p>
+        <p><span style={{ color: `#23E5BF`}}>€120 pp | 4 hours | Lead climbing & anchor building</span></p>
           <p>Multipitch climbing will give you access to the stunning seacliff multipitches around the island, as well as countless adventures abroad.</p>
           <p>With this skill you'll solidify your anchor building and cleaning abilities, take your rope management skills to the next level, and be ready for adventures you never dreamed of.</p>
           <p>You should have all of your own gear for this skill, including at least 3 slings or cordelets, at least 3 locking carabiners, a full set of quickdraws, an ATC or similar belay device, a helmet, and your usual climbing gear.</p></a>

@@ -32,7 +32,7 @@ return (
             <p>If you’re searching for an exciting and innovative team building activity, look no further!</p>
             <p>Climbing is one of the best sports for team building because it promotes trust, team work and communication. It’s as much a mental activity as it is physical, so it’s the perfect combination for bringing a group together and encouraging them to think differently.</p>
             <p>Climbing fosters a supportive and collaborative environment, as we gently encourage people to step outside their comfort zone. And it provides a new opportunity for problem solving and building confidence - individually and as a team.</p>
-            <p>No one will be forced to do more than they are able. But since climbing really is an activity anyone can try, the whole group will leave feeling inspired and that they have accomplished something they never imagined they could.</p>
+            <p>No one will be forced to do more than they are able. Since climbing really is an activity anyone can try the whole group will leave feeling inspired, having accomplished something they never imagined they could.</p>
        <br>
 </br>
           </a>
@@ -49,7 +49,7 @@ return (
 <p><span style={{ color: `#23E5BF`}}>Prices start at €65pp | 4 hours | no prerequisites | all equipment provided</span></p>
             <p>Try our Climb Experience for an awesome team building opportunity! We can tailor full or half days, depending on your requirements and group size.</p>
             <p>Designed to be focused on fun rather than learning rope work and climbing skills, we’ll ensure everyone has a great day out while pushing limits and encouraging teamwork, communication and trust.</p>
- <p>No matter how big your group is, there are several exercises which can be done in pairs or small groups to help build the team and bring people together.</p>
+ <p>No matter how big your group, there are several exercises which can be done in pairs or small groups to help build the team and bring people together.</p>
 <p> Our expert guides will set everything up, provide all the equipment needed and ensure everyone is comfortable and safe. </p>
 <p>We can also include a picnic before or after the session, at the crag or in a scenic spot nearby.</p>
 
@@ -72,7 +72,7 @@ return (
 
 <p><span style={{ color: `#23E5BF`}}>Prices start at €65pp | no prerequisites | all equipment provided</span></p>
 
-         <p>Do something thrilling in the safest way possible. Overcome the challenge with your friends or team mates and see the Maltese Islands from an entirely new aspect.</p>
+         <p>Do something thrilling in the safest way possible. Overcome the challenge with your friends or team mates and see the Maltese Islands from an entirely new perspective.</p>
 
  <p>The abseiling experience in Malta is fantastic; with sea cliffs, stunning valleys and limestone slabs, you’ll get to enjoy breathtaking views as you take a leap of faith and descend the rock face. </p>
    

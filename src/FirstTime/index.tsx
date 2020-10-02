@@ -34,7 +34,7 @@ const FirstTime = (props: { setTitle: (v: string) => void, }) => {
           <h2>Take a course</h2>
           <a>
             <p> Get to grips with sport climbing! Learn with expert instructors. Master the safety procedures, become comfortable with the basics and you’ll be ready to partner up with other climbers and get out there.</p>
-            <p>And when you’d like to take your skills to the next level or improve your technique, we have a range of advanced courses and coaching sessions to chose from.</p>
+            <p>And when you’d like to take your skills to the next level or improve your technique, we have a range of advanced courses and coaching sessions to choose from.</p>
             <p>Take a look at our <a href="/courses">courses</a> to find the right one for you, or <a href="mailto:info@gebla.mt">email us</a> to schedule a lesson.</p>
           </a>
         </FlexCol>
@@ -45,7 +45,7 @@ const FirstTime = (props: { setTitle: (v: string) => void, }) => {
           <h2>Book your Climb Experience</h2>
           <a>
             <p><span style={{ color: `#23E5BF`}}>€65pp | 4 hours | no prerequisites | all equipment provided</span></p>
-            <p>If you are looking for a thrilling outdoor activity to get stuck into, something to bring the family together, or an unforgettable experience gift for an adventure-loving friend, then look no further.</p>
+            <p>If you are looking for a thrilling outdoor activity, something to bring the family together, or an unforgettable experience gift for an adventure-loving friend, then look no further.</p>
             <p>In this session we focus on fun rather than learning. We set everything up, provide all the safety equipment, and start you off gently with beginners' routes. For anyone finding it too easy, we’ll test you out on something more challenging, making sure everyone in the session gets to push their limits.</p>
             <p>Enjoy a work out for your body and your brain and experience what it’s like to be truly in the moment. Do something you never imagined you could. Support each other to overcome your challenges and share the incredible feeling of accomplishment.</p>
 
