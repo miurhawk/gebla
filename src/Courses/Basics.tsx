@@ -5,7 +5,7 @@ import { DetailRow, BookButton, FullPhoto, DetailCol, SmallDetailCol, HalfImageT
 import ig from "../../assets/img/ig.png";
 import fb from "../../assets/img/fb.png";
 import constructionImg from "../../assets/img/gato2.jpg";
-const beginnerImg = require("../../assets/img/img67.jpg");
+const beginnerImg = require("../../assets/img/img18.jpg");
 
 
 const Basics = () => {
