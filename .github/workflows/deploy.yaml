@@ -77,5 +77,5 @@ jobs:
         run: |-
           sed -i 's/VERSION/${{steps.tag.outputs.tag}}/g' deployment.yaml
           ./kustomize build . | kubectl apply -f -
-          kubectl rollout status gebla-website
+          kubectl rollout status deployment/gebla-website
           kubectl get services -o wide
