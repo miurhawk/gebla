@@ -19,7 +19,7 @@ on:
 
 env:
   PROJECT_ID: ${{ secrets.GKE_PROJECT }}
-  GKE_CLUSTER: beta-cluster
+  GKE_CLUSTER: gebla-website
   GKE_ZONE: europe-north1-a
   DEPLOYMENT_NAME: gebla
 
@@ -49,7 +49,7 @@ jobs:
           gcloud --quiet auth configure-docker
       # Get the GKE credentials so we can deploy to the cluster
       - run: |-
-          gcloud container clusters get-credentials beta-cluster --zone europe-north1-a
+          gcloud container clusters get-credentials gebla-website --zone europe-north1-a
       # Build the Docker image
       - name: Build
         env:
