@@ -32,15 +32,15 @@ const About = (props: { setTitle: (v: string) => void, }) => {
     <DetailCol>
       <Tabs defaultTab="Intro">
         <InfoItems height="40vh">
-          <Tabs.Tab img={steveImg} style={{backgroundPosition: `0% 28%`}} label="Steve" color={colorArray[Math.floor(Math.random() * colorArray.length)]}></Tabs.Tab>
-          <Tabs.Tab img={chrisImg} label="Chris" color={colorArray[Math.floor(Math.random() * colorArray.length)]}></Tabs.Tab>
-          <Tabs.Tab img={carlyImg} label="Carly" color={colorArray[Math.floor(Math.random() * colorArray.length)]}></Tabs.Tab>
+          <Tabs.Tab img={steveImg} style={{backgroundPosition: `55% 28%`}} label="Steve" color={colorArray[Math.floor(Math.random() * colorArray.length)]}></Tabs.Tab>
+          <Tabs.Tab img={chrisImg} style={{backgroundPosition: `85% 50%`}} label="Chris" color={colorArray[Math.floor(Math.random() * colorArray.length)]}></Tabs.Tab>
+          <Tabs.Tab img={carlyImg} style={{backgroundPosition: `80% 0%`}} label="Carly" color={colorArray[Math.floor(Math.random() * colorArray.length)]}></Tabs.Tab>
           <Tabs.Tab img={miuraImg} label="Miura" color={colorArray[Math.floor(Math.random() * colorArray.length)]}></Tabs.Tab>
         </InfoItems>
           <Tabs.Panel label="Intro">
 
             <a>
-<h6><span style={{fontWeight: `bold`}}>Welcome to Gebla!</span></h6>
+<h6><span style={{fontWeight: `bold`}}>Welcome to Ġebla!</span></h6>
 
                                                 <p>We all started climbing for different reasons, at different times in our lives. In cities, in the mountains, indoor, and outdoors. Each of us discovered the same thing every climber will tell you - it’s about so much more than climbing. </p>
                         <p>We believe in giving people the opportunity to try it for themselves. To open up a new way to keep fit, without the repetition of gym sessions. To inspire people to do more than they thought they could. To overcome challenges and feel the incredible sense of accomplishment you get right from that very first session. </p>

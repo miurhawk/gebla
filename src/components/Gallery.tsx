@@ -24,8 +24,10 @@ const SCarouselSlide = styled.div<ICarouselSlide>`
   z-index: ${props => (props.active ? 0 : -1)};
   transition: all 0.5s ease;
   width: 50vw;
+  align-items: stretch;
   display: flex;
   position: absolute;
+  height: 100%;
   margin: 0;
   padding: 0;
   flex-grow: 1;
@@ -39,7 +41,9 @@ interface ICarouselProps {
 }
 
 const SCarouselSlides = styled.div<ICarouselProps>`
-  display: flex;
+  display: fixed;
+  flex-direction: row;
+  align-items: stretch;
   transition: all 0.5s ease;
   margin: 0;
   padding: 0;
@@ -55,7 +59,6 @@ interface IProps {
 }
 
 const Gallery = ({ children }: IProps) => {
-
 
   const [currentSlide, setCurrentSlide] = React.useState(0);
   const current = React.useRef(currentSlide);
@@ -83,7 +86,7 @@ const Gallery = ({ children }: IProps) => {
   }, [,]);
 
   return (
-    <StyledGallery>
+    <StyledGallery right={children[0].props.right}>
       <SCarouselWrapper>
         <SCarouselSlides currentSlide={currentSlide}>
           {activeSlide}

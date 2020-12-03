@@ -44,7 +44,7 @@ const Theme = {
     heading: `Liberator, sans-serif`
   }
 }
-
+// todo: H3 is overriden
 export const CenteredPage = styled.div`
   width: 100%;
   display: flex;
@@ -58,9 +58,9 @@ export const CenteredPage = styled.div`
   h3 {color: ${Theme.colors.light}; font-family: ${Theme.fonts.heading}; font-size: 40pt;};
   h4 {color: ${Theme.colors.a4}; font-family: ${Theme.fonts.heading};};
   h5 {color: ${Theme.colors.dark}; font-family: ${Theme.fonts.heading};};
-  h6 {color: ${Theme.colors.light}; font-family: ${Theme.fonts.body}; font-size: 26px; margin: 0;};
-  h7 {color: ${Theme.colors.dark}; font-family: ${Theme.fonts.body}; font-size: 16px; margin: 0;};
-  a {color: ${Theme.colors.light}; font-family: ${Theme.fonts.body}; font-size: 18px; line-height: 22px;};
+  h6 {color: ${Theme.colors.light}; font-family: ${Theme.fonts.body}; font-size: 20pt; margin: 0;};
+  h7 {color: ${Theme.colors.dark}; font-family: ${Theme.fonts.body}; font-size: 14pt; margin: 0;};
+  a {color: ${Theme.colors.light}; font-family: ${Theme.fonts.body}; font-size: 14pt;};
   a:link {color: ${Theme.colors.a1}; text-decoration: none; padding: 0;};
   a:link:hover {color: ${Theme.colors.a3}; text-decoration: none;};
   a:link:active {color: ${Theme.colors.a4}; text-decoration: none;};
@@ -68,15 +68,25 @@ export const CenteredPage = styled.div`
   a:visited {color: ${Theme.colors.a1}; text-decoration: none;};
   a:visited:hover {color: ${Theme.colors.a3}; text-decoration: none;};
   a:visited:active {color: ${Theme.colors.a4}; text-decoration: none;};
-  @media (max-width: 1080px) {
-    a {font-size: 20px; line-height: 26px;};
-    h1 {font-size: 50px;};
-    h2 {font-size: 50px;};
-    h3 {font-size: 30px;};
-    h4 {font-size: 24px;};
-    h5 {font-size: 24px;};
-    h6 {font-size: 28px;};
-    h7 {font-size: 18px;};
+  @media only screen and (max-width: 1028px) {
+    a {font-size: 12pt;};
+    h1 {font-size: 40pt;};
+    h2 {font-size: 40pt;};
+    h3 {font-size: 40pt;};
+    h4 {font-size: 24pt;};
+    h5 {font-size: 24pt;};
+    h6 {font-size: 19pt;};
+    h7 {font-size: 14pt;};
+  }
+  @media only screen and (max-width: 600px) {
+    a {font-size: 14pt;};
+    h1 {font-size: 40pt;};
+    h2 {font-size: 40pt;};
+    h3 {font-size: 27pt;};
+    h4 {font-size: 24pt;};
+    h5 {font-size: 24pt;};
+    h6 {font-size: 19pt;};
+    h7 {font-size: 14pt;};
   }
 `;
 
@@ -93,8 +103,9 @@ export const BrandA = styled.a`
   flex-grow: 1;
   -webkit-flex-grow: 1;
   href: ${props => props.href};
-  @media (max-width: 1080px) {
+  @media only screen and (max-width: 600px) {
     margin: 8px;
+    margin-left: 20px;
     background-position: left;
   }
 `;
@@ -204,52 +215,18 @@ export const FlexAColumnFill = styled.a`
   flex-wrap: wrap;
   min-width: 40vw;
   href: ${props => props.href};
-  transition: min-width 0.5s ease 0s;
-  -webkit-transition: min-width 0.5s ease 0s;
+  transition: min-width 0.5s;
+  -webkit-transition: min-width 0.5s;
   -moz-transition: min-width 0.5s;
   -o-transition: min-width 0.5s;
   :hover {min-width: 55vw;};
 `;
 
-export const HalfImageText = styled.div`
-  display: flex;
-  width: 48vw;
-  margin: ${props => props.right ? `0 0 0 2vw` : `0 2vw 0 0`};
-  min-height: ${props => props.gall ? `500px` : `200px`};
-  align-items: ${props => props.right ? `flex-start` : `flex-end`};
-  flex-wrap: wrap;
-  background-image: url(${props => props.img});
-  background-position: center;
-  background-size: cover;
-  text-align: ${props => props.right ? `left` : `right`};
-  h2 {
-    padding: ${props => props.right ? `2rem 0 0 2rem` : `2rem 2rem 0 0` };
-    margin: 0;
-  };
-  h3 {
-    padding: ${props => props.right ? `2rem 0 0 2rem` : `2rem 2rem 0 0` };
-    margin: 0;
-  };
-  a {
-    margin: 0;
-  };
-  @media (max-width: 1080px) {
-    width: 100vw;
-    min-height: 400px;
-    margin: 0;
-    h2 {
-      padding: 2rem 2rem 0 2rem;
-    }
-    h3 {
-      padding: 2rem 2rem 0 2rem;
-    }
-  }
-
-`;
 export const FlexRowFill = styled.div`
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+  min-height: 450px;
   -webkit-flex-grow: 1;
   align-items: ${props => props.right ? `flex-start` : `flex-end`};
   justify-content: top;
@@ -263,7 +240,21 @@ export const FlexRowFill = styled.div`
   };
   h3 {
     align-self: center;
+    transition: font-size 0.5s;
 
+  }
+  :hover {
+    h3 {
+      font-size: 55pt;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    min-height: 30vh;
+    :hover {
+      h3 {
+        font-size: 30pt;
+      }
+    }
   }
 `;
 
@@ -280,6 +271,7 @@ export const FullPhoto = styled.div`
   background-size: cover;
   background-position: center;
   min-height: 20rem;
+  width: 100%;
   text-align: left;
   h1 {
     margin: 0 60vw 0 0;
@@ -299,8 +291,9 @@ export const FullPhoto = styled.div`
   button {
     align-self: flex-start;
     margin: 0 0 0 3rem;
-    width: 300px;
+    width: 250px;
   }
+
 `;
 
 
@@ -316,7 +309,7 @@ export const DetailRow = styled.div`
   -webkit-flex-grow: 5;
   flex-wrap: nowrap;
   href: ${props => props.href};
-  @media (max-width: 1080px) {
+  @media only screen and (max-width: 600px) {
     flex-wrap: wrap;
   }
 `;
@@ -333,14 +326,62 @@ export const DetailCol = styled.div`
   -webkit-flex-grow: 5;
   flex-wrap: wrap;
   href: ${props => props.href};
+  h3 {
+    margin: 0;
+    padding-bottom: 20px;
+  }
   a {
     padding: 1rem 20vw 1rem 20vw;
     text-align: center;
   };
-  @media (max-width: 1080px) {
+  @media only screen and (max-width: 600px) {
     a {
       padding: 10px;
     };
+  }
+`;
+
+export const TC = styled.div`
+  position: fixed;
+  bottom: 0;
+  height: ${props => props.show ? `10vh` : `0vh`};
+  width: 100vw;
+  overflow: auto;
+  background: ${Theme.colors.light};
+  font-family: Montserrat;
+  display: ${props => props.show ? `flex` : `none`};
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: nowrap;
+  z-index: 2;
+  a {
+    font-size: 12pt;
+    padding: 5px 10px 0 20px;
+    color: ${Theme.colors.dark};
+  }
+  div {
+    width: auto;
+    flex-grow: 0;
+    margin: 0 0 0 auto;
+    padding: 0;
+    justify-content: flex-end;
+  }
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  button {
+    font-weight: bold;
+    box-shadow: -4px 4px 0px ${Theme.colors.dark};
+    height: 40px;
+    width: 75px;
+    margin: 10px;
+  }
+  @media only screen and (max-width: 600px) {
+    a {
+      font-size: 11pt;
+      padding: 0 0 0 5px;
+    }
+    button {
+      margin: 5px;
+    }
   }
 `;
 
@@ -365,7 +406,7 @@ export const SmallDetailCol = styled.div`
     height: 30px;
     width: 100px;
   }
-  @media (max-width: 1080px) {
+  @media only screen and (max-width: 600px) {
     max-width: 100vw;
     a {
       padding: 10px;
@@ -386,6 +427,9 @@ export const StyledForm = styled.form`
   };
   label {
     font-family: ${Theme.fonts.body};
+    h6 {
+      font-size: 18pt;
+    }
   };
   select {
     background-color: ${Theme.colors.light};
@@ -394,9 +438,26 @@ export const StyledForm = styled.form`
   input {
     background-color: ${Theme.colors.light};
     border: none;
-    value {
-      font-size: 30pt;
+    font-size: 14pt;
+    font-family: ${Theme.fonts.body};
+    min-height: 30px;
+  };
+  .input__submit {
+    border: none;
+    box-shadow: -4px 4px 0px ${Theme.colors.light};
+    :hover {
+      box-shadow: none;
+      h7 {
+        font-weight: bold;
+      };
+      font-weight: bold;
     }
+  }
+  select {
+    background-color: ${Theme.colors.light};
+    border: none;
+    font-size: 14pt;
+    font-family: ${Theme.fonts.body};
     min-height: 30px;
   };
 
@@ -415,7 +476,7 @@ export const StyledForm = styled.form`
     };
 
   };
-  @media (max-width: 1080px) {
+  @media only screen and (max-width: 600px) {
     max-width: 90vw;
   }
 
@@ -450,18 +511,68 @@ export const FlexCol = styled.div`
   h2:nth-child(2) {
     padding-top: 0.5rem 2rem 0 2rem;
   }
-  @media (max-width: 1080px) {
+  button {
+    align-self: ${props => props.right ? `flex-start` : `flex-end`};
+    margin: 0 2rem 0 2rem;
+
+  }
+  @media only screen and (max-width: 600px) {
     width: 100vw;
+    h2 {
+      text-align: center;
+      padding: 2rem 2rem 0 2rem;
+    }
+    h1 {
+      text-align: center;
+      padding: 2rem 2rem 0 2rem;
+    }
+    a {
+      text-align: center;
+    }
+    button {
+      align-self: center;
+    }
+  }
+
+`;
+
+
+export const HalfImageText = styled.div`
+  display: flex;
+  width: 48vw;
+  margin: ${props => props.right ? `0 0 0 2vw` : `0 2vw 0 0`};
+  align-items: ${props => props.right ? `flex-start` : `flex-end`};
+  flex-wrap: wrap;
+
+  background-image: url(${props => props.img});
+  background-position: center;
+  background-size: cover;
+  text-align: ${props => props.right ? `left` : `right`};
+  h2 {
+    padding: ${props => props.right ? `2rem 0 0 2rem` : `2rem 2rem 0 0` };
+    margin: 0;
+  };
+  h3 {
+    padding: ${props => props.right ? `2rem 0 0 2rem` : `2rem 2rem 0 0` };
+    margin: 0;
+  };
+  a {
+    margin: 0;
+  };
+  @media only screen and (max-width: 600px) {
+    width: 100vw;
+    min-height: 400px;
+    margin: 0;
     h2 {
       padding: 2rem 2rem 0 2rem;
     }
+    h3 {
+      padding: 2rem 2rem 0 2rem;
+    }
+    order: 1;
   }
-  button {
-    align-self: ${props => props.right ? `flex-start` : `flex-end`};
-    margin: ${props => props.right ? `0 2rem 0 2rem` : `0 2rem 0 2rem`};
-  }
-`;
 
+`;
 
 export const StyledGallery = styled.div`
   display: flex;
@@ -473,25 +584,22 @@ export const StyledGallery = styled.div`
   color: ${Theme.colors.a4};
   href: ${props => props.href};
   position: relative;
-  @media (max-width: 1080px) {
-    width: 100vw;
-    button {
-      height: 400px;
-    }
-  }
+
   button {
     z-index: 1;
     border: none;
-    display: flex;
+    position: fixed;
     flex-direction: row;
+    display: flex;
     align-items: center;
-    height: 500px;
+    -webkit-align-items: center;
+    height: 100%;
     width: 150px;
     outline: none;
     background-color: transparent;
     position: absolute;
     top: 0%;
-    margin: ${props => props.right ? `0 2rem 0 2rem` : `0 2rem 0 2rem`};
+    padding: ${props => props.right ? `0 2vw 0 4vw` : `0 4vw 0 2vw`};
     div {
       width: 15px;
       height: 15px;
@@ -511,13 +619,22 @@ export const StyledGallery = styled.div`
     align-self: flex-end;
     justify-content: flex-end;
   };
+  @media only screen and (max-width: 600px) {
+    button {
+      margin: 0 2vw 0 2vw;
+      height: 400px;
+
+    }
+    width: 100vw;
+    order: 1;
+  };
 `;
 
 
 export const StyledMenu = styled.nav<{ open: boolean }>`
   top: 0;
   right: 0;
-  height: 500px;
+  height: 520px;
   flex-wrap: nowrap;
   position: fixed;
   display: flex;
@@ -552,12 +669,17 @@ export const StyledMenu = styled.nav<{ open: boolean }>`
       :hover {color: ${Theme.colors.a1};};
     };
   };
-  @media (max-width: 1080px) {
+  @media only screen and (max-width: 600px) {
     width: 100vw;
     height: 100vh;
     a {
-      :link {font-size: 30px;};
+      :link {
+        font-size: 18pt;
+        padding: 10px 0 0 0;
+      };
     }
+    align-items: center;
+
   };
 `;
 
@@ -573,7 +695,7 @@ export const MenuButton = styled.button<{ open: boolean, right: boolean }>`
   margin-right: 2rem;
   margin-left: 1rem;
   margin-top: 1rem;
-  background-color: ${Theme.colors.dark};
+  background-color: transparent;
   outline: none;
   border: none;
   z-index: 3;
@@ -602,8 +724,8 @@ export const MenuButton = styled.button<{ open: boolean, right: boolean }>`
   div:nth-child(3) {
     transform: ${({ open }) => open ? `rotate(-45deg)` : `` };
   }
-  @media (max-width: 1080px) {
-    right: ${({ open }) => open ? `80vw` : `20px` };
+  @media only screen and (max-width: 600px) {
+    right: ${({ open }) => open ? `80vw` : `5px` };
   };
 `;
 
@@ -649,7 +771,9 @@ export const InfoItem = styled.div`
   -webkit-transition: padding 1s;
   -moz-transition: padding 1s;
   -o-transition: padding 1s;
-  padding: 0;
+  padding-top: 8px;
+  padding-bottom: 8px;
+
   margin: 0;
   a {
     font-weight: bold;
@@ -685,9 +809,9 @@ export const InfoItem = styled.div`
     transform: rotate(-45deg);
 
   };
-  @media (max-width: 1080px) {
-    a: {
-      font-size: 12px;
+  @media only screen and (max-width: 600px) {
+    a {
+      font-size: 10pt;
     }
   };
 `;
@@ -721,7 +845,7 @@ export const GalleryDetail = styled.div`
   background-image: url(${props => props.img});
   background-size: cover;
   z-index: 0;
-`;
+  `;
 
 export const GalleryDot = styled.div`
   width: 15px;

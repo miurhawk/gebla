@@ -34,12 +34,11 @@ const OutdoorHome = (props: { setTitle: (v: string) => void, }) => {
               <p>When you become a climber, you join a global community of welcoming, adventurous and eclectic folks who will be eager to share a belay, and a beer, anywhere in the world.</p>
             </a>
 
-            <BookButton style={{margin: `0 50px 0 0`, alignleft: `flex-end`}} onClick={() => window.location.href="/first-time"}><h7>Find out more</h7></BookButton>
-            <a id="guiding"></a>
-
+            <BookButton onClick={() => window.location.href="/first-time"}><h7>Find out more</h7></BookButton>
             <br />
             <br />
           </FlexCol>
+
           <Gallery right=true>
             <HalfImageText right="true" gall="true" img={lauraImg}></HalfImageText>
             <HalfImageText right="true" gall="true" img={lukasImg} />
@@ -47,8 +46,14 @@ const OutdoorHome = (props: { setTitle: (v: string) => void, }) => {
             <HalfImageText right="true" gall="true" img={fenechImg} ></HalfImageText>
             <HalfImageText right="true" gall="true" img={suhailImg} />
           </Gallery>
-        </DetailRow>
 
+        </DetailRow>
+        <a id="guiding"></a>
+        <br />
+        <br />
+
+        <br />
+        <br />
         <DetailRow>
         <HalfImageText img={charlieImg}></HalfImageText>
 
@@ -77,7 +82,7 @@ const OutdoorHome = (props: { setTitle: (v: string) => void, }) => {
         <br />
         <a id="malta"></a>
 
-        <FullPhoto img={martinImg} style={{minHeight: `50vh`, backgroundPosition: `center`}}/>
+        <FullPhoto img={martinImg} style={{minHeight: `50vh`, backgroundPosition: `100% 0%`}}/>
         <DetailRow>
         <FlexCol><h2><span style={{ color: `#23E5BF`}}>malta:</span> Discover<br />something special</h2></FlexCol>
 

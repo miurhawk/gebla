@@ -46,10 +46,10 @@ const Courses = (props: { setTitle: (v: string) => void, }) => {
         <Tabs.Panel label="Intro">
           <DetailCol>
             <a>
-<h3> <span style={{fontWeight: `bold`, color: `#23E5BF`}}>Something</span> for everyone</h3>
-           <p>Our courses range from entry level through to coaching for advanced technique. </p>
-            <p>Our instructors are all highly experienced, so we'll make sure you're confident and proficient before we release you into the wild on your own.</p>
-            <p>Check out the options above, or <a href="mailto:info@gebla.mt">get in touch</a> to find out more.</p>
+              <h3> <span style={{fontWeight: `bold`, color: `#23E5BF`}}>Something</span> for everyone</h3>
+              <span style={{fontWeight: `800`}}><p>Our courses range from entry level through to coaching for advanced technique. </p></span>
+              <p>Our instructors are all highly experienced, so we'll make sure you're confident and proficient before we release you into the wild on your own.</p>
+              <p>Check out the options above, or <a href="mailto:info@gebla.mt">get in touch</a> to find out more.</p>
 
             </a>
           </DetailCol>

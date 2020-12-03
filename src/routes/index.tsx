@@ -11,21 +11,22 @@ import Corporate from "../Corporate";
 import Form from "../Form";
 import Success from "../Success";
 import ClimbExp from "../ClimbExp";
+import Privacy from "../Privacy";
 
 
 export const Paths = {
   HOME: "/",
-  LOG_IN_PAGE: "/log-in",
   INDOOR_HOME_PAGE: "/indoor-home",
   OUTDOOR_HOME_PAGE: "/outdoor-home",
   FIRST_TIME: "/first-time",
   COURSES: "/courses",
   ABOUT: "/about",
   BLOG: "/blog",
-  CORPORATE: "/corporate",
+  CORPORATE: "/teambuilding",
   FORM: "/form/:product",
-  SUCCESS: "/success"
-  CLIMB_EXP: "/climb-exp"
+  SUCCESS: "/success",
+  CLIMB_EXP: "/climb-exp",
+  PRIVACY: "/privacy"
 };
 
 type RouterProps = {
@@ -43,8 +44,9 @@ const Routes = (props: RouterProps) => {
       <Route path={Paths.ABOUT}><About setTitle={props.setTitle} /></Route>
       <Route path={Paths.BLOG}><Blog setTitle={props.setTitle} /></Route>
       <Route path={Paths.CORPORATE}><Corporate setTitle={props.setTitle} /></Route>
-      <Route path={Paths.FORM}><Form setTitle={props.setTitle} /></Route>
+      <Route path={Paths.FORM}><Form /></Route>
       <Route path={Paths.SUCCESS}><Success /></Route>
+      <Route path={Paths.PRIVACY}><Privacy /></Route>
       <Route path={Paths.CLIMB_EXP}><ClimbExp setTitle={props.setTitle} /></Route>
 
     </Switch>

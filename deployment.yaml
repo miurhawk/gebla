@@ -1,0 +1,22 @@
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: gebla-website
+  name: gebla-website
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: gebla-website
+  template:
+    metadata:
+      labels:
+        app: gebla-website
+    spec:
+      containers:
+        - name: gebla-website
+          image: docker.io/miurhawk/gebla:VERSION
+          ports:
+            - containerPort: 80

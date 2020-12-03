@@ -21,7 +21,7 @@ return (
 
  <DetailRow>
 
-      <Gallery>
+      <Gallery right=false>
         <HalfImageText gall=true img={lauraImg}></HalfImageText>
 
         <HalfImageText gall=true img={lukasImg} />

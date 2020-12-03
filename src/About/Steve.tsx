@@ -11,7 +11,7 @@ const Steve = () => {
     <DetailRow>
       <FlexCol>
       <a>
-        <p>Steve is one of 5 Maltese people to climb a grade 8 climb.</p>
+        <p>Steve is one of five Maltese people to climb a grade 8 climb.</p>
         <p>He started climbing three years ago and it was love at first onsight. In his real life he's an architect, but he spends as much time as he can on the rocks.</p>
         <p>At Ġebla Steve is a co-owner, as well as a guide and instructor.</p>
         <br />

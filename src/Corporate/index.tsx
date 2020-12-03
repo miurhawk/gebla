@@ -19,8 +19,8 @@ return (
       <DetailRow>
 
       <Gallery>
-            <HalfImageText gall=true right="true" img={teamImg}></HalfImageText>
-            <HalfImageText gall=true right="true" img={teamImg}></HalfImageText>
+            <HalfImageText gall=true img={teamImg}></HalfImageText>
+            <HalfImageText gall=true img={teamImg}></HalfImageText>
       </Gallery>
 
         <FlexCol right=true>
@@ -54,11 +54,11 @@ return (
 <p>We can also include a picnic before or after the session, at the crag or in a scenic spot nearby.</p>
 
             </a>
-            <BookButton style={{margin: `0 50px 0 0`, alignSelf: `flex-end`}} onClick={() => window.location.href='/form/Corporate_Climb_Experience'}><h7>Book Now</h7></BookButton>
+            <BookButton onClick={() => window.location.href='/form/Corporate_Climb_Experience'}><h7>Book Now</h7></BookButton>
             <br />
             <br />
           </FlexCol>
-          <HalfImageText right="true" img={costyImg} style={{backgroundPosition: `left center`}}><h2></h2></HalfImageText>
+          <HalfImageText right="true" img={costyImg} style={{backgroundPosition: `60% center`}}><h2></h2></HalfImageText>
 
         </DetailRow>
 <br/>
@@ -75,7 +75,7 @@ return (
          <p>Do something thrilling in the safest way possible. Overcome the challenge with your friends or team mates and see the Maltese Islands from an entirely new perspective.</p>
 
  <p>The abseiling experience in Malta is fantastic; with sea cliffs, stunning valleys and limestone slabs, you’ll get to enjoy breathtaking views as you take a leap of faith and descend the rock face. </p>
-   
+
 <p>Our experienced abseiling guides will talk you through everything, put everyone at ease and show you how to take control of your descent.</p>
 
  <p>A great activity for team building, abseiling offers a fantastic day out which can be enjoyed by anyone, of any ability.</p>

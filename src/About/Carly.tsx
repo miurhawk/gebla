@@ -16,7 +16,7 @@ const Carly = () => {
         <p>Carly is originally from the UK but is now settled in Malta, happy on the rocks or in the sea!</p>
         <p>She first tried climbing a decade ago, starting out as an indoor boulderer in a London gym and turning to sport climbing when she arrived in Malta, four years ago. </p>
 
-<p>When she's not busy climbing or focused on Gebla, she's a freelance brand strategy consultant and BRND WGN associate.</p>
+<p>When she's not busy climbing or focused on Ġebla, she's a freelance brand strategy consultant and BRND WGN associate.</p>
 
         <p>As co-owner of Ġebla, Carly is passionate about giving people the opportunity to try climbing, creating a community and sharing her love for the outdoors.</p>
         <br />

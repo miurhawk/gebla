@@ -25,11 +25,12 @@ const FullMenu = (props: MenuProps) => {
       <a href="/outdoor-home" onClick={() => close()}>Outdoor</a>
       <a href="/courses" onClick={() => close()}>Courses & Coaching</a>
       <a href="/outdoor-home#guiding" onClick={() => close()}>Guiding</a>
-      <a href="/corporate" onClick={() => close()}>Team Building</a>
+      <a href="/teambuilding" onClick={() => close()}>Team Building</a>
       <a href="/courses?dummy=y##Kids'%20Programs" onClick={() => close()}>Kids</a>
       <a href="/indoor-home" onClick={() => close()}>Indoor</a>
       <a href="/blog" onClick={() => close()}>Blog</a>
       <a href="/about" onClick={() => close()}>About</a>
+      <a href="/privacy" onClick={() => close()}>Privacy Policy</a>
 
 
     </StyledMenu>

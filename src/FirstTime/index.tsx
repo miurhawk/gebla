@@ -17,7 +17,7 @@ const FirstTime = (props: { setTitle: (v: string) => void, }) => {
   return (
     <DetailCol>
 
-          <FullPhoto img={enricoImg} style={{backgroundPosition: `0% 50%`}}><h1>Find the climber in you</h1>
+          <FullPhoto img={enricoImg} style={{backgroundPosition: `30% 50%`}}><h1>Find the climber in you</h1>
           <br>
           </br>
           <BookButton onClick={() => window.location.href='/courses'}><h7>See Our Courses</h7></BookButton></FullPhoto>
@@ -84,7 +84,7 @@ const FirstTime = (props: { setTitle: (v: string) => void, }) => {
             <p>It's about supporting each other. Sharing the highs and lows. Finding a workout for your body and your brain that you can’t replicate in any other way. Accomplishing personal goals and loving it when you see others reach theirs. And at the end of the day, it’s about sharing the best cold beer you’ve ever had.</p>
             <p>It’s not about scaling Everest or taking up an adrenaline sport, but you will get to experience what it’s like to truly be in the moment. Forced to overcome fears, negative thoughts and anxiety. You’ll be a better person when you come back down to earth than when you left it.</p>
             <p>It’s about the art of movement and balance. About watching slim girls climb harder than big muscly guys. About not making judgements, or feeling judged. And it’s about feeling empowered, and knowing yourself, in a way you never did before.</p>
-            <p>This is why we started Gebla. Because we believe in giving people the opportunity to try it for themselves.</p>
+            <p>This is why we started Ġebla. Because we believe in giving people the opportunity to try it for themselves.</p>
             <p>Check out our <a href="/courses">courses</a> and book today!</p>
           </a>
         </FlexCol>

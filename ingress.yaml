@@ -1,0 +1,11 @@
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  name: gebla-ingress
+  annotations:
+    kubernetes.io/ingress.global-static-ip-name: gebla-ip
+    networking.gke.io/managed-certificates: gebla-cert
+spec:
+  backend:
+    serviceName: gebla-svc
+    servicePort: 80

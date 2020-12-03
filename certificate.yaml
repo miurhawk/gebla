@@ -1,0 +1,9 @@
+apiVersion: networking.gke.io/v1
+kind: ManagedCertificate
+metadata:
+  name: gebla-cert
+spec:
+  domains:
+    - www.gebla.mt
+    - blog.gebla.mt
+    - gebla.mt

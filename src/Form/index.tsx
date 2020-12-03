@@ -2,13 +2,17 @@ import * as React from "react";
 import { useParams, useHistory, withRouter } from "react-router-dom";
 import { StyledForm } from "../styles";
 import { useState } from "react";
+import ReactGA from "react-ga";
 
 import otherImg from "../../assets/img/img19.jpg";
 import martinImg from "../../assets/img/img23.jpg";
 
 const BaseForm = (props: { setTitle: (v: string) => void, }) => {
   const { product } = useParams();
-  console.log(product);
+  ReactGA.event({
+  category: "Open Form",
+  action: "User opened the form for "+product,
+});
   if (product) {
     var re = /_/gi;
     let endProduct = product.replace(re, " ");
@@ -23,6 +27,8 @@ const BaseForm = (props: { setTitle: (v: string) => void, }) => {
   const [phone, setPhone] = useState(""):
   const [date, setDate] = useState(today);
   const [time, setTime] = useState("morning");
+  const [comment, setComment] = useState("");
+
   const [number, setNumber] = useState(1);
   let history = useHistory();
 
@@ -31,7 +37,7 @@ const BaseForm = (props: { setTitle: (v: string) => void, }) => {
     evt.preventDefault();
     console.log(name + email + phone + date + time + endProduct);
 
-    var text = "Good Day,\nThis is a confirmation that "+name+" has requested a "+endProduct+" booking for "+number+" people on "+date+" "+time+".\nContact details: "+phone;
+    var text = "Good Day,\nThis is a confirmation that "+name+" has requested a "+endProduct+" booking for "+number+" people on "+date+" "+time+".\nContact details: "+phone+"\n\n\nAdditional comments:\n"+comment;
     let data = JSON.stringify({
       text: text,
       title: "New " +endProduct+" Booking Request",
@@ -85,8 +91,9 @@ const BaseForm = (props: { setTitle: (v: string) => void, }) => {
           <option value="8">8+</option>
         </select>
       </label>
+      <label><h6>Comments: </h6><input type="text" required value={comment} onChange={(e) => setComment(e.target.value)} /></label>
 
-      <input style={{backgroundColor: `#23E5BF`, height: `60px`, width: `200px`, border: `none`, alignSelf: `center`, fontFamily: `Montserrat`, fontSize: `16pt`}} type="submit" value="Submit" />
+      <input class="input__submit" style={{backgroundColor: `#23E5BF`, height: `60px`, width: `200px`, border: `none`, alignSelf: `center`, fontFamily: `Montserrat`, fontSize: `16pt`}} type="submit" value="Submit" />
     </StyledForm>
 
   );
