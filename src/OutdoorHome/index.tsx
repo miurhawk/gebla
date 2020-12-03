@@ -6,9 +6,9 @@ import Gallery from "../components/Gallery";
 
 
 import lauraImg from "../../assets/img/img64.jpg";
-import lukasImg from "../../assets/img/img52.jpg";
-import evImg from "../../assets/img/img49.jpg";
-import fenechImg from "../../assets/img/img48.jpg";
+import lukasImg from "../../assets/img/img52.JPG";
+import evImg from "../../assets/img/img49.JPG";
+import fenechImg from "../../assets/img/img48.JPG";
 import suhailImg from "../../assets/img/img75.jpg";
 import charlieImg from "../../assets/img/img.jpg"
 
