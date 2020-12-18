@@ -1,6 +1,6 @@
 {
   "name": "gebla",
-  "version": "1.9",
+  "version": "1.10",
   "description": "Gebla Website",
   "main": "index.ts",
   "repository": "https://github.com/miurhawk/gebla.git",

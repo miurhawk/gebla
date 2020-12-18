@@ -37,7 +37,7 @@ const Checkout = (props: { setTitle: (v: string) => void, }) => {
           setContinueLabel("Make Payment");
           setContinued(false);
       } else {
-          var response = fetch('http://server.chalk-technologies.com/pos/gebla/'+groupSize).then(function(response) {
+          var response = fetch('https://server.chalk-technologies.com/pos/gebla/'+groupSize).then(function(response) {
               return response.json();
           }).then(function(responseJson) {
               setSecret(responseJson.client_secret);
@@ -79,7 +79,7 @@ const Checkout = (props: { setTitle: (v: string) => void, }) => {
                   recipient: email,
                   secret: "XmTpO1",
               });
-              fetch("http://server.chalk-technologies.com/system/mail", {
+              fetch("https://server.chalk-technologies.com/system/mail", {
                   method: "POST",
                   body: data,
               }).then( (response) => {
