@@ -1,6 +1,6 @@
 {
   "name": "gebla",
-  "version": "1.8",
+  "version": "1.9",
   "description": "Gebla Website",
   "main": "index.ts",
   "repository": "https://github.com/miurhawk/gebla.git",
@@ -12,6 +12,8 @@
     "build": "parcel build src/index.html --no-source-maps"
   },
   "dependencies": {
+    "@stripe/react-stripe-js": "^1.1.2",
+    "@stripe/stripe-js": "^1.11.0",
     "@types/node": "^14.6.4",
     "@types/nodemailer": "^6.4.0",
     "@types/nodemailer-direct-transport": "^1.0.31",

@@ -11,6 +11,9 @@ import { CenteredPage, GlobalStyle, Divider, PageTitle } from "./styles";
 import { FullMenu } from "./components/FullMenu";
 import ReactGA from "react-ga";
 import { createBrowserHistory } from "history";
+import {Elements} from '@stripe/react-stripe-js';
+import {loadStripe} from '@stripe/stripe-js';
+const stripePromise = loadStripe('pk_live_51HlELzHG9SHb2zLPR0wtaSaqB1s9q5EmWXgOZGNaBv9mB3Opj6FG0LuOgUTUH8367SEOTJSGhLbLBHIkYtFw4YpL00ScEvbeoS');
 
 const history = createBrowserHistory();
 const AppContainer = () => {
@@ -26,6 +29,7 @@ const AppContainer = () => {
   return (
     <div>
     <GlobalStyle />
+    <Elements stripe={stripePromise}>
     <CenteredPage>
       <Navigation title={title} />
       {FullMenu}
@@ -44,6 +48,7 @@ const AppContainer = () => {
       <Footer />
       <Terms />
     </CenteredPage>
+    </Elements>
     </div>
   );
 

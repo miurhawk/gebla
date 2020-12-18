@@ -4,8 +4,6 @@ import { StyledForm } from "../styles";
 import { useState } from "react";
 import ReactGA from "react-ga";
 
-import otherImg from "../../assets/img/img19.jpg";
-import martinImg from "../../assets/img/img23.jpg";
 
 const BaseForm = (props: { setTitle: (v: string) => void, }) => {
   const { product } = useParams();
@@ -13,18 +11,19 @@ const BaseForm = (props: { setTitle: (v: string) => void, }) => {
   category: "Open Form",
   action: "User opened the form for "+product,
 });
+  let endProduct: string;
   if (product) {
     var re = /_/gi;
-    let endProduct = product.replace(re, " ");
+    endProduct = product.replace(re, " ");
   } else {
 
-    let endProduct = "Climb Experience";
+    endProduct = "Climb Experience";
   }
   const today = new Date().toLocaleDateString("en-CA");
 
-  const [name, setName] = useState(""):
-  const [email, setEmail] = useState(""):
-  const [phone, setPhone] = useState(""):
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
   const [date, setDate] = useState(today);
   const [time, setTime] = useState("morning");
   const [comment, setComment] = useState("");
