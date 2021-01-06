@@ -43,7 +43,7 @@ const BaseForm = (props: { setTitle: (v: string) => void, }) => {
       recipient: email,
       secret: "XmTpO1",
     });
-    fetch("http://app.theoffwidth.com/system/mail", {
+    fetch("https://server.chalk-technologies.com/system/mail", {
           method: "POST",
           body: data,
         }).then( (response) => {
