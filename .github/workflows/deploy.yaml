@@ -37,19 +37,19 @@ jobs:
         run: |
           packageVersion=$(cat ./package.json | grep version | head -1 | awk -F: '{ print $2 }' | sed 's/[",]//g' | tr -d '[[:space:]]')
           echo "::set-output name=tag::$packageVersion"
-      # Setup gcloud CLI
-      - uses: GoogleCloudPlatform/github-actions/setup-gcloud@v0.2.0
-        with:
-          service_account_key: ${{ secrets.GKE_SA_KEY }}
-          project_id: ${{ secrets.GKE_PROJECT }}
-
-      # Configure Docker to use the gcloud command-line tool as a credential
-      # helper for authentication
-      - run: |-
-          gcloud --quiet auth configure-docker
-      # Get the GKE credentials so we can deploy to the cluster
-      - run: |-
-          gcloud container clusters get-credentials gebla-website --zone europe-north1-a
+#      # Setup gcloud CLI
+#      - uses: GoogleCloudPlatform/github-actions/setup-gcloud@v0.2.0
+#        with:
+#          service_account_key: ${{ secrets.GKE_SA_KEY }}
+#          project_id: ${{ secrets.GKE_PROJECT }}
+#
+#      # Configure Docker to use the gcloud command-line tool as a credential
+#      # helper for authentication
+#      - run: |-
+#          gcloud --quiet auth configure-docker
+#      # Get the GKE credentials so we can deploy to the cluster
+#      - run: |-
+#          gcloud container clusters get-credentials gebla-website --zone europe-north1-a
       # Build the Docker image
       - name: Build
         env:
@@ -68,14 +68,14 @@ jobs:
         run: |-
           make push -e
       # Set up kustomize
-      - name: Set up Kustomize
-        run: |-
-          curl -sfLo kustomize https://github.com/kubernetes-sigs/kustomize/releases/download/v3.1.0/kustomize_3.1.0_linux_amd64
-          chmod u+x ./kustomize
-      # Deploy the Docker image to the GKE cluster
-      - name: Deploy
-        run: |-
-          sed -i 's/VERSION/${{steps.tag.outputs.tag}}/g' deployment.yaml
-          ./kustomize build . | kubectl apply -f -
-          kubectl rollout status deployment/gebla-website
-          kubectl get services -o wide
+#      - name: Set up Kustomize
+#        run: |-
+#          curl -sfLo kustomize https://github.com/kubernetes-sigs/kustomize/releases/download/v3.1.0/kustomize_3.1.0_linux_amd64
+#          chmod u+x ./kustomize
+#      # Deploy the Docker image to the GKE cluster
+#      - name: Deploy
+#        run: |-
+#          sed -i 's/VERSION/${{steps.tag.outputs.tag}}/g' deployment.yaml
+#          ./kustomize build . | kubectl apply -f -
+#          kubectl rollout status deployment/gebla-website
+#          kubectl get services -o wide
