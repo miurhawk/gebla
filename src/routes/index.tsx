@@ -13,6 +13,8 @@ import Checkout from "../Checkout";
 import Success from "../Success";
 import ClimbExp from "../ClimbExp";
 import Privacy from "../Privacy";
+import SignUp from "../SignUp";
+import BO from "../BackOffice";
 
 
 export const Paths = {
@@ -28,6 +30,8 @@ export const Paths = {
   CHECKOUT: "/checkout/:product",
   SUCCESS: "/success",
   CLIMB_EXP: "/climb-exp",
+  SIGN_UP: "/signup",
+  BACK_OFFICE: "/back-office",
   PRIVACY: "/privacy"
 };
 
@@ -47,6 +51,8 @@ const Routes = (props: RouterProps) => {
       {/*<Route path={Paths.BLOG}><Blog setTitle={props.setTitle} /></Route>*/}
       <Route path={Paths.CORPORATE}><Corporate setTitle={props.setTitle} /></Route>
       <Route path={Paths.FORM}><Form /></Route>
+      <Route path={Paths.SIGN_UP}><SignUp /></Route>
+      <Route path={Paths.BACK_OFFICE}><BO /></Route>
       <Route path={Paths.CHECKOUT}><Checkout /></Route>
       <Route path={Paths.SUCCESS}><Success /></Route>
       <Route path={Paths.PRIVACY}><Privacy /></Route>
