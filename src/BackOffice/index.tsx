@@ -32,7 +32,7 @@ const BOBase = () => {
     const handleSubmit = (evt) => {
     evt.preventDefault();
 
-    fetch("http://server-chalk-technologies.com/gym/climbers?key="+pwd, {
+    fetch("https://server.chalk-technologies.com/gym/climbers?key="+pwd, {
           method: "GET",
         // headers: {Authentication: pwd}
         }).then( (response) => {
