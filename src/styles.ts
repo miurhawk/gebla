@@ -752,16 +752,16 @@ export const GalleryDots = styled.div`
 
 export const InfoItem = styled.div`
   :hover {
-    background-color: ${({props}) => props.isActive ? Theme.colors.light : props.darkenHover ? Theme.colors.dark : Theme.colors.a1};
+    background-color: ${({props.isActive, props.darkenHover}) => isActive ? Theme.colors.light : darkenHover ? Theme.colors.dark : Theme.colors.a1};
     padding: 0 5vw 0 5vw;
     a {color: ${Theme.colors.dark};};
   };
-  opacity: ${({ props }) => props.img ? props.isActive ? 0.5 : 1 : 1};
-  background-image: url(${({ props }) => props.img});
+  opacity: ${({ props.img, props.isActive }) => img ? isActive ? 0.5 : 1 : 1};
+  background-image: url(${({ props.img }) => img});
   align-items: center;
   background-size: cover;
   background-position: left;
-  background-color: ${({ props }) => props.color ? props.color : props.isActive ? Theme.colors.light : Theme.colors.dark};
+  background-color: ${({ props.color, props.isActive }) => color ? color : isActive ? Theme.colors.light : Theme.colors.dark};
   flex-grow: 1;
   -webkit-flex-grow: 1;
   flex-wrap: wrap;
