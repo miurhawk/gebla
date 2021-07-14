@@ -2,12 +2,10 @@ import * as React from "react";
 import { useParams, useHistory, withRouter } from "react-router-dom";
 import { StyledForm, SmallDetailCol } from "../styles";
 import {useEffect, useState} from "react";
-import ReactGA from "react-ga";
 import {Elements, CardElement, PaymentRequestButtonElement, useStripe, useElements} from '@stripe/react-stripe-js';
-import {loadStripe} from '@stripe/stripe-js';
 
 // const stripePromise = loadStripe('pk_live_51HlELzHG9SHb2zLPR0wtaSaqB1s9q5EmWXgOZGNaBv9mB3Opj6FG0LuOgUTUH8367SEOTJSGhLbLBHIkYtFw4YpL00ScEvbeoS');
-const Checkout = (props: { setTitle: (v: string) => void, }) => {
+const Checkout = () => {
   // Single - €65
   // Family 3 - €180
   // Family 4 - €220

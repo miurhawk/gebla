@@ -6,7 +6,6 @@ import OutdoorHome from "../OutdoorHome";
 import FirstTime from "../FirstTime";
 import Courses from "../Courses";
 import About from "../About";
-// import Blog from "../Blog";
 import Corporate from "../Corporate";
 import Form from "../Form";
 import Checkout from "../Checkout";
@@ -15,6 +14,7 @@ import ClimbExp from "../ClimbExp";
 import Privacy from "../Privacy";
 import SignUp from "../SignUp";
 import BO from "../BackOffice";
+import Book from "../Book";
 
 
 export const Paths = {
@@ -28,6 +28,7 @@ export const Paths = {
   CORPORATE: "/teambuilding",
   FORM: "/form/:product",
   CHECKOUT: "/checkout/:product",
+  BOOK: "/book",
   SUCCESS: "/success",
   CLIMB_EXP: "/climb-exp",
   SIGN_UP: "/signup",
@@ -54,6 +55,7 @@ const Routes = (props: RouterProps) => {
       <Route path={Paths.SIGN_UP}><SignUp /></Route>
       <Route path={Paths.BACK_OFFICE}><BO /></Route>
       <Route path={Paths.CHECKOUT}><Checkout /></Route>
+      <Route path={Paths.BOOK}><Book /></Route>
       <Route path={Paths.SUCCESS}><Success /></Route>
       <Route path={Paths.PRIVACY}><Privacy /></Route>
       <Route path={Paths.CLIMB_EXP}><ClimbExp setTitle={props.setTitle} /></Route>
