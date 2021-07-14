@@ -6,8 +6,7 @@ import {useEffect, useState} from "react";
 import {BASEURL} from "../app";
 import UserInfo from "../UserInfo/UserInfo";
 import {useCookies} from "react-cookie";
-// @ts-ignore
-import moment from "moment";
+
 
 export interface Climber {
     key: number;
@@ -27,7 +26,7 @@ export interface Event {
     key: number;
     organizer: number;
     organizer_obj: Climber;
-    start_time: string;
+    start_time: Date;
     cancelled: boolean;
     template: EventTemplate;
 }
@@ -191,12 +190,12 @@ const EventInfo = (props: EventProps) => {
             }
         });
     };
-
+    console.log(typeof(props.event.start_time));
     return (
         <tr>
             <td>{props.event.template.name}</td>
-            <td>{moment(props.event.start_time).format("DD/MM")}</td>
-            <td>{moment(props.event.start_time).format("HH:mm")}</td>
+            <td>{new Date(props.event.start_time).toLocaleDateString([], {day: '2-digit', month:'2-digit'})}</td>
+            <td>{new Date(props.event.start_time).toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'})}</td>
             <td>{<UserInfo id={props.event.organizer} verbose={false} />}</td>
             <td>
                 {!props.isUserAttending &&
