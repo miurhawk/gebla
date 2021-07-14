@@ -196,7 +196,7 @@ const EventInfo = (props: EventProps) => {
         <tr>
             <td>{props.event.template.name}</td>
             <td>{moment(props.event.start_time).format("DD/MM")}</td>
-            <td>{moment(props.event.start_time).format("HH:MM")}</td>
+            <td>{moment(props.event.start_time).format("HH:mm")}</td>
             <td>{<UserInfo id={props.event.organizer} verbose={false} />}</td>
             <td>
                 {!props.isUserAttending &&
